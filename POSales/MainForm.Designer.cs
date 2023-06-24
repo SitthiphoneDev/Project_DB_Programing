@@ -513,6 +513,7 @@ namespace POSales
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Point Of Sales";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panelSlide.ResumeLayout(false);
             this.panelSlide.PerformLayout();
