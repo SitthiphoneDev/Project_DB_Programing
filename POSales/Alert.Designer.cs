@@ -61,7 +61,7 @@ namespace POSales
             this.lblPcode.AutoSize = true;
             this.lblPcode.Location = new System.Drawing.Point(343, 54);
             this.lblPcode.Name = "lblPcode";
-            this.lblPcode.Size = new System.Drawing.Size(20, 17);
+            this.lblPcode.Size = new System.Drawing.Size(25, 21);
             this.lblPcode.TabIndex = 7;
             this.lblPcode.Text = "lb";
             this.lblPcode.Visible = false;
@@ -76,6 +76,7 @@ namespace POSales
             this.lblMsg.TabIndex = 6;
             this.lblMsg.Text = "Message Text";
             this.lblMsg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblMsg.Click += new System.EventHandler(this.lblMsg_Click);
             // 
             // btnClose
             // 
@@ -105,7 +106,7 @@ namespace POSales
             // 
             // Alert
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(370, 75);

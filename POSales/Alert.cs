@@ -114,6 +114,11 @@ namespace POSales
             stockIn.addStockIn(lblPcode.Text);
         }
 
+        private void lblMsg_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private Color SelectThemeColor()
         {
             int index = random.Next(ThemeColor.ColorList.Count);
