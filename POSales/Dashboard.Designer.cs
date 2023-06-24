@@ -214,6 +214,7 @@ namespace POSales
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(227, 114);
             this.panel4.TabIndex = 1;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // lblTotalProduct
             // 
