@@ -65,7 +65,7 @@ namespace POSales
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(110)))), ((int)(((byte)(4)))));
             this.panel1.Controls.Add(this.picClose);
             this.panel1.Controls.Add(this.lblTitle);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -93,7 +93,7 @@ namespace POSales
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location = new System.Drawing.Point(3, 12);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(82, 18);
+            this.lblTitle.Size = new System.Drawing.Size(104, 23);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Sold Items";
             this.lblTitle.Visible = false;
@@ -104,7 +104,7 @@ namespace POSales
             this.dtFrom.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtFrom.Location = new System.Drawing.Point(155, 15);
             this.dtFrom.Name = "dtFrom";
-            this.dtFrom.Size = new System.Drawing.Size(125, 26);
+            this.dtFrom.Size = new System.Drawing.Size(125, 30);
             this.dtFrom.TabIndex = 10;
             this.dtFrom.ValueChanged += new System.EventHandler(this.dtFrom_ValueChanged);
             // 
@@ -114,7 +114,7 @@ namespace POSales
             this.dtTo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtTo.Location = new System.Drawing.Point(313, 15);
             this.dtTo.Name = "dtTo";
-            this.dtTo.Size = new System.Drawing.Size(125, 26);
+            this.dtTo.Size = new System.Drawing.Size(125, 30);
             this.dtTo.TabIndex = 10;
             this.dtTo.ValueChanged += new System.EventHandler(this.dtTo_ValueChanged);
             // 
@@ -124,7 +124,7 @@ namespace POSales
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(7, 18);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(146, 20);
+            this.label2.Size = new System.Drawing.Size(182, 22);
             this.label2.TabIndex = 11;
             this.label2.Text = "Filter By Date: From";
             // 
@@ -134,7 +134,7 @@ namespace POSales
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(285, 18);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(24, 20);
+            this.label3.Size = new System.Drawing.Size(30, 22);
             this.label3.TabIndex = 11;
             this.label3.Text = "To";
             // 
@@ -156,7 +156,7 @@ namespace POSales
             this.cboCashier.FormattingEnabled = true;
             this.cboCashier.Location = new System.Drawing.Point(452, 14);
             this.cboCashier.Name = "cboCashier";
-            this.cboCashier.Size = new System.Drawing.Size(131, 28);
+            this.cboCashier.Size = new System.Drawing.Size(131, 30);
             this.cboCashier.TabIndex = 13;
             this.cboCashier.Text = "Select Cashier";
             this.cboCashier.SelectedIndexChanged += new System.EventHandler(this.cboCashier_SelectedIndexChanged);
@@ -195,7 +195,7 @@ namespace POSales
             this.dgvSold.BackgroundColor = System.Drawing.Color.White;
             this.dgvSold.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -220,6 +220,7 @@ namespace POSales
             this.dgvSold.Location = new System.Drawing.Point(0, 44);
             this.dgvSold.Name = "dgvSold";
             this.dgvSold.RowHeadersVisible = false;
+            this.dgvSold.RowHeadersWidth = 51;
             this.dgvSold.Size = new System.Drawing.Size(1010, 445);
             this.dgvSold.TabIndex = 16;
             this.dgvSold.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSold_CellContentClick_1);
@@ -228,34 +229,40 @@ namespace POSales
             // 
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column1.HeaderText = "No";
+            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
-            this.Column1.Width = 53;
+            this.Column1.Width = 63;
             // 
             // Column9
             // 
             this.Column9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column9.HeaderText = "Id";
+            this.Column9.MinimumWidth = 6;
             this.Column9.Name = "Column9";
             this.Column9.Visible = false;
-            this.Column9.Width = 49;
+            this.Column9.Width = 57;
             // 
             // Column3
             // 
             this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column3.HeaderText = "Invoice#";
+            this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
+            this.Column3.Width = 120;
             // 
             // Column2
             // 
             this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column2.HeaderText = "Pcode";
+            this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
-            this.Column2.Width = 81;
+            this.Column2.Width = 97;
             // 
             // Column4
             // 
             this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column4.HeaderText = "Description";
+            this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
             // 
             // Column7
@@ -264,8 +271,9 @@ namespace POSales
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.Column7.DefaultCellStyle = dataGridViewCellStyle2;
             this.Column7.HeaderText = "Price";
+            this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
-            this.Column7.Width = 69;
+            this.Column7.Width = 81;
             // 
             // Column5
             // 
@@ -273,8 +281,9 @@ namespace POSales
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.Column5.DefaultCellStyle = dataGridViewCellStyle3;
             this.Column5.HeaderText = "Qty";
+            this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
-            this.Column5.Width = 58;
+            this.Column5.Width = 72;
             // 
             // Column6
             // 
@@ -282,8 +291,9 @@ namespace POSales
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.Column6.DefaultCellStyle = dataGridViewCellStyle4;
             this.Column6.HeaderText = "Discount";
+            this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
-            this.Column6.Width = 95;
+            this.Column6.Width = 116;
             // 
             // Column8
             // 
@@ -291,20 +301,22 @@ namespace POSales
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.Column8.DefaultCellStyle = dataGridViewCellStyle5;
             this.Column8.HeaderText = "Total";
+            this.Column8.MinimumWidth = 6;
             this.Column8.Name = "Column8";
-            this.Column8.Width = 65;
+            this.Column8.Width = 80;
             // 
             // Cancel
             // 
             this.Cancel.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Cancel.HeaderText = "";
             this.Cancel.Image = ((System.Drawing.Image)(resources.GetObject("Cancel.Image")));
+            this.Cancel.MinimumWidth = 6;
             this.Cancel.Name = "Cancel";
-            this.Cancel.Width = 5;
+            this.Cancel.Width = 6;
             // 
             // DailySale
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1010, 548);

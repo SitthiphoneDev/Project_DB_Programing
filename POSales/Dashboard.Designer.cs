@@ -349,7 +349,9 @@ namespace POSales
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Dashboard";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "DASHBOARD";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel8.ResumeLayout(false);

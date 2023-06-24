@@ -47,7 +47,7 @@ namespace POSales
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(110)))), ((int)(((byte)(4)))));
             this.panel1.Controls.Add(this.picClose);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -74,7 +74,7 @@ namespace POSales
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(3, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(176, 18);
+            this.label1.Size = new System.Drawing.Size(222, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Change Your Password";
             // 
@@ -128,7 +128,7 @@ namespace POSales
             this.lblUsername.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsername.Location = new System.Drawing.Point(100, 96);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(82, 18);
+            this.lblUsername.Size = new System.Drawing.Size(103, 23);
             this.lblUsername.TabIndex = 12;
             this.lblUsername.Text = "Username";
             // 
@@ -223,7 +223,7 @@ namespace POSales
             // btnNext
             // 
             this.btnNext.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnNext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.btnNext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(110)))), ((int)(((byte)(4)))));
             this.btnNext.FlatAppearance.BorderSize = 0;
             this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNext.ForeColor = System.Drawing.Color.White;
@@ -237,7 +237,7 @@ namespace POSales
             // 
             // ChangePassword
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(447, 299);
             this.Controls.Add(this.btnNext);

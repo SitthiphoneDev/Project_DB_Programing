@@ -52,13 +52,13 @@ namespace POSales
             this.btnProduct = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.lblName = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
             this.lblRole = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelTitle = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelMain = new System.Windows.Forms.Panel();
-            this.lblName = new System.Windows.Forms.Label();
             this.panelSlide.SuspendLayout();
             this.panelSubSetting.SuspendLayout();
             this.panelSubRecord.SuspendLayout();
@@ -424,6 +424,17 @@ namespace POSales
             this.panelLogo.Size = new System.Drawing.Size(179, 170);
             this.panelLogo.TabIndex = 1;
             // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.ForeColor = System.Drawing.Color.White;
+            this.lblName.Location = new System.Drawing.Point(5, 97);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(31, 22);
+            this.lblName.TabIndex = 0;
+            this.lblName.Text = "Ln";
+            this.lblName.Visible = false;
+            // 
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
@@ -458,12 +469,14 @@ namespace POSales
             // 
             // panelTitle
             // 
+            this.panelTitle.AutoScroll = true;
+            this.panelTitle.AutoSize = true;
+            this.panelTitle.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(110)))), ((int)(((byte)(4)))));
             this.panelTitle.Controls.Add(this.lblTitle);
-            this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitle.Location = new System.Drawing.Point(200, 0);
             this.panelTitle.Name = "panelTitle";
-            this.panelTitle.Size = new System.Drawing.Size(984, 40);
+            this.panelTitle.Size = new System.Drawing.Size(670, 32);
             this.panelTitle.TabIndex = 1;
             // 
             // lblTitle
@@ -481,21 +494,10 @@ namespace POSales
             // 
             this.panelMain.BackColor = System.Drawing.Color.White;
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMain.Location = new System.Drawing.Point(200, 40);
+            this.panelMain.Location = new System.Drawing.Point(200, 0);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(984, 621);
+            this.panelMain.Size = new System.Drawing.Size(984, 661);
             this.panelMain.TabIndex = 2;
-            // 
-            // lblName
-            // 
-            this.lblName.AutoSize = true;
-            this.lblName.ForeColor = System.Drawing.Color.White;
-            this.lblName.Location = new System.Drawing.Point(5, 97);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(31, 22);
-            this.lblName.TabIndex = 0;
-            this.lblName.Text = "Ln";
-            this.lblName.Visible = false;
             // 
             // MainForm
             // 
@@ -509,6 +511,7 @@ namespace POSales
             this.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(1200, 700);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -526,6 +529,7 @@ namespace POSales
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelTitle.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

@@ -69,7 +69,7 @@ namespace POSales
             // 
             // panel1
             // 
-            panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(110)))), ((int)(((byte)(4)))));
             panel1.Controls.Add(this.picClose);
             panel1.Controls.Add(this.label1);
             panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -96,7 +96,7 @@ namespace POSales
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(3, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(157, 18);
+            this.label1.Size = new System.Drawing.Size(195, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Cancel Order Detail";
             // 
@@ -105,7 +105,7 @@ namespace POSales
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(29, 108);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(32, 20);
+            this.label2.Size = new System.Drawing.Size(38, 22);
             this.label2.TabIndex = 10;
             this.label2.Text = "Id :";
             // 
@@ -114,7 +114,7 @@ namespace POSales
             this.txtId.Enabled = false;
             this.txtId.Location = new System.Drawing.Point(177, 105);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(181, 26);
+            this.txtId.Size = new System.Drawing.Size(181, 30);
             this.txtId.TabIndex = 11;
             // 
             // txtPcode
@@ -122,7 +122,7 @@ namespace POSales
             this.txtPcode.Enabled = false;
             this.txtPcode.Location = new System.Drawing.Point(177, 145);
             this.txtPcode.Name = "txtPcode";
-            this.txtPcode.Size = new System.Drawing.Size(181, 26);
+            this.txtPcode.Size = new System.Drawing.Size(181, 30);
             this.txtPcode.TabIndex = 11;
             // 
             // txtDesc
@@ -139,7 +139,7 @@ namespace POSales
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(29, 148);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(121, 20);
+            this.label3.Size = new System.Drawing.Size(150, 22);
             this.label3.TabIndex = 10;
             this.label3.Text = "Product Code :";
             // 
@@ -148,7 +148,7 @@ namespace POSales
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(29, 188);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(99, 20);
+            this.label4.Size = new System.Drawing.Size(121, 22);
             this.label4.TabIndex = 10;
             this.label4.Text = "Description :";
             // 
@@ -157,7 +157,7 @@ namespace POSales
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(394, 108);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(124, 20);
+            this.label5.Size = new System.Drawing.Size(156, 22);
             this.label5.TabIndex = 10;
             this.label5.Text = "Transaction No :";
             // 
@@ -166,7 +166,7 @@ namespace POSales
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(394, 148);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(54, 20);
+            this.label6.Size = new System.Drawing.Size(64, 22);
             this.label6.TabIndex = 10;
             this.label6.Text = "Price :";
             // 
@@ -175,7 +175,7 @@ namespace POSales
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(394, 188);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(113, 20);
+            this.label7.Size = new System.Drawing.Size(142, 22);
             this.label7.TabIndex = 10;
             this.label7.Text = "Qty / Discount";
             // 
@@ -184,7 +184,7 @@ namespace POSales
             this.txtTransno.Enabled = false;
             this.txtTransno.Location = new System.Drawing.Point(531, 105);
             this.txtTransno.Name = "txtTransno";
-            this.txtTransno.Size = new System.Drawing.Size(316, 26);
+            this.txtTransno.Size = new System.Drawing.Size(316, 30);
             this.txtTransno.TabIndex = 11;
             // 
             // txtPrice
@@ -192,7 +192,7 @@ namespace POSales
             this.txtPrice.Enabled = false;
             this.txtPrice.Location = new System.Drawing.Point(531, 145);
             this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(316, 26);
+            this.txtPrice.Size = new System.Drawing.Size(316, 30);
             this.txtPrice.TabIndex = 11;
             // 
             // txtQty
@@ -200,7 +200,7 @@ namespace POSales
             this.txtQty.Enabled = false;
             this.txtQty.Location = new System.Drawing.Point(531, 185);
             this.txtQty.Name = "txtQty";
-            this.txtQty.Size = new System.Drawing.Size(127, 26);
+            this.txtQty.Size = new System.Drawing.Size(127, 30);
             this.txtQty.TabIndex = 11;
             // 
             // txtDisc
@@ -208,7 +208,7 @@ namespace POSales
             this.txtDisc.Enabled = false;
             this.txtDisc.Location = new System.Drawing.Point(692, 185);
             this.txtDisc.Name = "txtDisc";
-            this.txtDisc.Size = new System.Drawing.Size(155, 26);
+            this.txtDisc.Size = new System.Drawing.Size(155, 30);
             this.txtDisc.TabIndex = 11;
             // 
             // txtTotal
@@ -216,7 +216,7 @@ namespace POSales
             this.txtTotal.Enabled = false;
             this.txtTotal.Location = new System.Drawing.Point(531, 225);
             this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Size = new System.Drawing.Size(316, 26);
+            this.txtTotal.Size = new System.Drawing.Size(316, 30);
             this.txtTotal.TabIndex = 11;
             this.txtTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -225,7 +225,7 @@ namespace POSales
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(394, 228);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(50, 20);
+            this.label8.Size = new System.Drawing.Size(63, 22);
             this.label8.TabIndex = 10;
             this.label8.Text = "Total :";
             // 
@@ -236,7 +236,7 @@ namespace POSales
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.label9.Location = new System.Drawing.Point(29, 70);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(83, 18);
+            this.label9.Size = new System.Drawing.Size(102, 23);
             this.label9.TabIndex = 10;
             this.label9.Text = "SOLD ITEM";
             // 
@@ -247,7 +247,7 @@ namespace POSales
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.label10.Location = new System.Drawing.Point(30, 278);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(125, 18);
+            this.label10.Size = new System.Drawing.Size(155, 23);
             this.label10.TabIndex = 10;
             this.label10.Text = "CANCEL ITEM(S)";
             // 
@@ -256,14 +256,14 @@ namespace POSales
             this.txtCancelBy.Enabled = false;
             this.txtCancelBy.Location = new System.Drawing.Point(177, 351);
             this.txtCancelBy.Name = "txtCancelBy";
-            this.txtCancelBy.Size = new System.Drawing.Size(181, 26);
+            this.txtCancelBy.Size = new System.Drawing.Size(181, 30);
             this.txtCancelBy.TabIndex = 16;
             // 
             // txtVoidBy
             // 
             this.txtVoidBy.Location = new System.Drawing.Point(177, 311);
             this.txtVoidBy.Name = "txtVoidBy";
-            this.txtVoidBy.Size = new System.Drawing.Size(181, 26);
+            this.txtVoidBy.Size = new System.Drawing.Size(181, 30);
             this.txtVoidBy.TabIndex = 17;
             // 
             // label11
@@ -271,7 +271,7 @@ namespace POSales
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(29, 394);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(147, 20);
+            this.label11.Size = new System.Drawing.Size(187, 22);
             this.label11.TabIndex = 12;
             this.label11.Text = "Add To Inventory ?";
             // 
@@ -280,7 +280,7 @@ namespace POSales
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(29, 354);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(115, 20);
+            this.label12.Size = new System.Drawing.Size(142, 22);
             this.label12.TabIndex = 13;
             this.label12.Text = "Cancelled By :";
             // 
@@ -289,7 +289,7 @@ namespace POSales
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(29, 314);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(72, 20);
+            this.label13.Size = new System.Drawing.Size(90, 22);
             this.label13.TabIndex = 14;
             this.label13.Text = "Void By :";
             // 
@@ -301,7 +301,7 @@ namespace POSales
             "No"});
             this.cboInventory.Location = new System.Drawing.Point(177, 394);
             this.cboInventory.Name = "cboInventory";
-            this.cboInventory.Size = new System.Drawing.Size(181, 28);
+            this.cboInventory.Size = new System.Drawing.Size(181, 30);
             this.cboInventory.TabIndex = 18;
             this.cboInventory.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cboInventory_KeyPress);
             // 
@@ -318,7 +318,7 @@ namespace POSales
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(394, 351);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(87, 20);
+            this.label14.Size = new System.Drawing.Size(109, 22);
             this.label14.TabIndex = 19;
             this.label14.Text = "Reason(s) :";
             // 
@@ -327,14 +327,14 @@ namespace POSales
             this.label15.AutoSize = true;
             this.label15.Location = new System.Drawing.Point(394, 311);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(101, 20);
+            this.label15.Size = new System.Drawing.Size(127, 22);
             this.label15.TabIndex = 20;
             this.label15.Text = "Cancel Qty :";
             // 
             // btnCOrder
             // 
             this.btnCOrder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.btnCOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(110)))), ((int)(((byte)(4)))));
             this.btnCOrder.FlatAppearance.BorderSize = 0;
             this.btnCOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCOrder.ForeColor = System.Drawing.Color.White;
@@ -342,7 +342,8 @@ namespace POSales
             this.btnCOrder.Name = "btnCOrder";
             this.btnCOrder.Size = new System.Drawing.Size(155, 35);
             this.btnCOrder.TabIndex = 23;
-            this.btnCOrder.Text = "Cance Order";
+            this.btnCOrder.Text = "Cancel Order";
+            this.btnCOrder.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.btnCOrder.UseVisualStyleBackColor = false;
             this.btnCOrder.Click += new System.EventHandler(this.btnCOrder_Click);
             // 
@@ -355,13 +356,13 @@ namespace POSales
             0,
             0});
             this.udCancelQty.Name = "udCancelQty";
-            this.udCancelQty.Size = new System.Drawing.Size(316, 26);
+            this.udCancelQty.Size = new System.Drawing.Size(316, 30);
             this.udCancelQty.TabIndex = 24;
             this.udCancelQty.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // CancelOrder
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(894, 494);

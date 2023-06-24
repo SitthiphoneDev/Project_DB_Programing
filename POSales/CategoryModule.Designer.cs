@@ -45,7 +45,7 @@ namespace POSales
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(110)))), ((int)(((byte)(4)))));
             this.panel1.Controls.Add(this.picClose);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -72,7 +72,7 @@ namespace POSales
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(3, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 18);
+            this.label1.Size = new System.Drawing.Size(173, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Category Module";
             // 
@@ -81,7 +81,7 @@ namespace POSales
             this.lblId.AutoSize = true;
             this.lblId.Location = new System.Drawing.Point(12, 158);
             this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(22, 20);
+            this.lblId.Size = new System.Drawing.Size(26, 22);
             this.lblId.TabIndex = 13;
             this.lblId.Text = "id";
             this.lblId.Visible = false;
@@ -89,7 +89,7 @@ namespace POSales
             // btnCancel
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancel.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnCancel.BackColor = System.Drawing.Color.Silver;
             this.btnCancel.FlatAppearance.BorderSize = 0;
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.ForeColor = System.Drawing.Color.Black;
@@ -104,7 +104,7 @@ namespace POSales
             // btnUpdate
             // 
             this.btnUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(60)))), ((int)(((byte)(132)))));
             this.btnUpdate.FlatAppearance.BorderSize = 0;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
@@ -121,14 +121,14 @@ namespace POSales
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 98);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(135, 20);
+            this.label2.Size = new System.Drawing.Size(170, 22);
             this.label2.TabIndex = 10;
             this.label2.Text = "Category Name :";
             // 
             // btnSave
             // 
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(110)))), ((int)(((byte)(4)))));
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.ForeColor = System.Drawing.Color.White;
@@ -144,12 +144,12 @@ namespace POSales
             // 
             this.txtCategory.Location = new System.Drawing.Point(159, 95);
             this.txtCategory.Name = "txtCategory";
-            this.txtCategory.Size = new System.Drawing.Size(531, 26);
+            this.txtCategory.Size = new System.Drawing.Size(531, 30);
             this.txtCategory.TabIndex = 8;
             // 
             // CategoryModule
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(716, 192);
             this.Controls.Add(this.panel1);
