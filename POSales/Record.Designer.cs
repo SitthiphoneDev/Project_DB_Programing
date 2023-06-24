@@ -175,7 +175,7 @@ namespace POSales
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(110)))), ((int)(((byte)(4)))));
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 505);
@@ -249,6 +249,7 @@ namespace POSales
             this.dgvTopSelling.Location = new System.Drawing.Point(0, 69);
             this.dgvTopSelling.Name = "dgvTopSelling";
             this.dgvTopSelling.RowHeadersVisible = false;
+            this.dgvTopSelling.RowHeadersWidth = 51;
             this.dgvTopSelling.Size = new System.Drawing.Size(976, 394);
             this.dgvTopSelling.TabIndex = 5;
             // 
@@ -256,20 +257,23 @@ namespace POSales
             // 
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column1.HeaderText = "No";
+            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
-            this.Column1.Width = 53;
+            this.Column1.Width = 63;
             // 
             // Column2
             // 
             this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column2.HeaderText = "Pcode";
+            this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
-            this.Column2.Width = 81;
+            this.Column2.Width = 97;
             // 
             // Column4
             // 
             this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column4.HeaderText = "Description";
+            this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
             // 
             // Column6
@@ -278,8 +282,9 @@ namespace POSales
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.Column6.DefaultCellStyle = dataGridViewCellStyle2;
             this.Column6.HeaderText = "Qty";
+            this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
-            this.Column6.Width = 58;
+            this.Column6.Width = 72;
             // 
             // Column7
             // 
@@ -287,8 +292,9 @@ namespace POSales
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.Column7.DefaultCellStyle = dataGridViewCellStyle3;
             this.Column7.HeaderText = "Total Sales";
+            this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
-            this.Column7.Width = 105;
+            this.Column7.Width = 129;
             // 
             // panel2
             // 
@@ -343,7 +349,7 @@ namespace POSales
             "Sort By Total Amount"});
             this.cbTopSell.Location = new System.Drawing.Point(395, 21);
             this.cbTopSell.Name = "cbTopSell";
-            this.cbTopSell.Size = new System.Drawing.Size(183, 28);
+            this.cbTopSell.Size = new System.Drawing.Size(183, 30);
             this.cbTopSell.TabIndex = 3;
             this.cbTopSell.Text = "Select sort type";
             // 
@@ -352,7 +358,7 @@ namespace POSales
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(238, 24);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(24, 20);
+            this.label3.Size = new System.Drawing.Size(30, 22);
             this.label3.TabIndex = 2;
             this.label3.Text = "To";
             // 
@@ -361,7 +367,7 @@ namespace POSales
             this.dtToTopSell.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtToTopSell.Location = new System.Drawing.Point(267, 21);
             this.dtToTopSell.Name = "dtToTopSell";
-            this.dtToTopSell.Size = new System.Drawing.Size(104, 26);
+            this.dtToTopSell.Size = new System.Drawing.Size(104, 30);
             this.dtToTopSell.TabIndex = 1;
             // 
             // dtFromTopSell
@@ -369,7 +375,7 @@ namespace POSales
             this.dtFromTopSell.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtFromTopSell.Location = new System.Drawing.Point(128, 21);
             this.dtFromTopSell.Name = "dtFromTopSell";
-            this.dtFromTopSell.Size = new System.Drawing.Size(104, 26);
+            this.dtFromTopSell.Size = new System.Drawing.Size(104, 30);
             this.dtFromTopSell.TabIndex = 1;
             // 
             // label2
@@ -377,7 +383,7 @@ namespace POSales
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(8, 24);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(114, 20);
+            this.label2.Size = new System.Drawing.Size(141, 22);
             this.label2.TabIndex = 0;
             this.label2.Text = "Filter By :  From";
             // 
@@ -420,6 +426,7 @@ namespace POSales
             this.dgvSoldItems.Location = new System.Drawing.Point(0, 69);
             this.dgvSoldItems.Name = "dgvSoldItems";
             this.dgvSoldItems.RowHeadersVisible = false;
+            this.dgvSoldItems.RowHeadersWidth = 51;
             this.dgvSoldItems.Size = new System.Drawing.Size(976, 394);
             this.dgvSoldItems.TabIndex = 6;
             // 
@@ -427,20 +434,23 @@ namespace POSales
             // 
             this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn1.HeaderText = "No";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 53;
+            this.dataGridViewTextBoxColumn1.Width = 63;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn2.HeaderText = "Pcode";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 81;
+            this.dataGridViewTextBoxColumn2.Width = 97;
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dataGridViewTextBoxColumn3.HeaderText = "Description";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
             // Column16
@@ -449,8 +459,9 @@ namespace POSales
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.Column16.DefaultCellStyle = dataGridViewCellStyle5;
             this.Column16.HeaderText = "Price";
+            this.Column16.MinimumWidth = 6;
             this.Column16.Name = "Column16";
-            this.Column16.Width = 69;
+            this.Column16.Width = 81;
             // 
             // dataGridViewTextBoxColumn4
             // 
@@ -458,15 +469,18 @@ namespace POSales
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridViewTextBoxColumn4.HeaderText = "Qty";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 58;
+            this.dataGridViewTextBoxColumn4.Width = 72;
             // 
             // Column3
             // 
             dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.Column3.DefaultCellStyle = dataGridViewCellStyle7;
             this.Column3.HeaderText = "Discount";
+            this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
+            this.Column3.Width = 125;
             // 
             // dataGridViewTextBoxColumn5
             // 
@@ -474,8 +488,9 @@ namespace POSales
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridViewTextBoxColumn5.HeaderText = "Total";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Width = 65;
+            this.dataGridViewTextBoxColumn5.Width = 80;
             // 
             // panel3
             // 
@@ -538,7 +553,7 @@ namespace POSales
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(238, 24);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(24, 20);
+            this.label4.Size = new System.Drawing.Size(30, 22);
             this.label4.TabIndex = 2;
             this.label4.Text = "To";
             // 
@@ -547,7 +562,7 @@ namespace POSales
             this.dtToSoldItems.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtToSoldItems.Location = new System.Drawing.Point(267, 21);
             this.dtToSoldItems.Name = "dtToSoldItems";
-            this.dtToSoldItems.Size = new System.Drawing.Size(104, 26);
+            this.dtToSoldItems.Size = new System.Drawing.Size(104, 30);
             this.dtToSoldItems.TabIndex = 1;
             // 
             // dtFromSoldItems
@@ -555,7 +570,7 @@ namespace POSales
             this.dtFromSoldItems.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtFromSoldItems.Location = new System.Drawing.Point(128, 21);
             this.dtFromSoldItems.Name = "dtFromSoldItems";
-            this.dtFromSoldItems.Size = new System.Drawing.Size(104, 26);
+            this.dtFromSoldItems.Size = new System.Drawing.Size(104, 30);
             this.dtFromSoldItems.TabIndex = 1;
             // 
             // label5
@@ -563,7 +578,7 @@ namespace POSales
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(8, 24);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(114, 20);
+            this.label5.Size = new System.Drawing.Size(141, 22);
             this.label5.TabIndex = 0;
             this.label5.Text = "Filter By :  From";
             // 
@@ -607,6 +622,7 @@ namespace POSales
             this.dgvCriticalItems.Location = new System.Drawing.Point(0, 0);
             this.dgvCriticalItems.Name = "dgvCriticalItems";
             this.dgvCriticalItems.RowHeadersVisible = false;
+            this.dgvCriticalItems.RowHeadersWidth = 51;
             this.dgvCriticalItems.Size = new System.Drawing.Size(976, 463);
             this.dgvCriticalItems.TabIndex = 4;
             // 
@@ -614,42 +630,48 @@ namespace POSales
             // 
             this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn6.HeaderText = "No";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.Width = 53;
+            this.dataGridViewTextBoxColumn6.Width = 63;
             // 
             // dataGridViewTextBoxColumn7
             // 
             this.dataGridViewTextBoxColumn7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn7.HeaderText = "Pcode";
+            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.Width = 81;
+            this.dataGridViewTextBoxColumn7.Width = 97;
             // 
             // dataGridViewTextBoxColumn8
             // 
             this.dataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn8.HeaderText = "Barcode";
+            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.Width = 96;
+            this.dataGridViewTextBoxColumn8.Width = 116;
             // 
             // dataGridViewTextBoxColumn9
             // 
             this.dataGridViewTextBoxColumn9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dataGridViewTextBoxColumn9.HeaderText = "Description";
+            this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             // 
             // Column5
             // 
             this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column5.HeaderText = "Brand";
+            this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
-            this.Column5.Width = 75;
+            this.Column5.Width = 92;
             // 
             // dataGridViewTextBoxColumn10
             // 
             this.dataGridViewTextBoxColumn10.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn10.HeaderText = "Category";
+            this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.Width = 102;
+            this.dataGridViewTextBoxColumn10.Width = 126;
             // 
             // dataGridViewTextBoxColumn11
             // 
@@ -657,8 +679,9 @@ namespace POSales
             dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.dataGridViewTextBoxColumn11.DefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridViewTextBoxColumn11.HeaderText = "Price";
+            this.dataGridViewTextBoxColumn11.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.Width = 69;
+            this.dataGridViewTextBoxColumn11.Width = 81;
             // 
             // Column8
             // 
@@ -666,8 +689,9 @@ namespace POSales
             dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.Column8.DefaultCellStyle = dataGridViewCellStyle11;
             this.Column8.HeaderText = "Re-Order";
+            this.Column8.MinimumWidth = 6;
             this.Column8.Name = "Column8";
-            this.Column8.Width = 99;
+            this.Column8.Width = 121;
             // 
             // Column9
             // 
@@ -675,8 +699,9 @@ namespace POSales
             dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.Column9.DefaultCellStyle = dataGridViewCellStyle12;
             this.Column9.HeaderText = "Stock On Hand";
+            this.Column9.MinimumWidth = 6;
             this.Column9.Name = "Column9";
-            this.Column9.Width = 141;
+            this.Column9.Width = 177;
             // 
             // tabPage4
             // 
@@ -719,6 +744,7 @@ namespace POSales
             this.dgvInventoryList.Location = new System.Drawing.Point(0, 53);
             this.dgvInventoryList.Name = "dgvInventoryList";
             this.dgvInventoryList.RowHeadersVisible = false;
+            this.dgvInventoryList.RowHeadersWidth = 51;
             this.dgvInventoryList.Size = new System.Drawing.Size(976, 410);
             this.dgvInventoryList.TabIndex = 5;
             // 
@@ -726,42 +752,48 @@ namespace POSales
             // 
             this.dataGridViewTextBoxColumn12.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn12.HeaderText = "No";
+            this.dataGridViewTextBoxColumn12.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.Width = 53;
+            this.dataGridViewTextBoxColumn12.Width = 63;
             // 
             // dataGridViewTextBoxColumn13
             // 
             this.dataGridViewTextBoxColumn13.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn13.HeaderText = "Pcode";
+            this.dataGridViewTextBoxColumn13.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            this.dataGridViewTextBoxColumn13.Width = 81;
+            this.dataGridViewTextBoxColumn13.Width = 97;
             // 
             // dataGridViewTextBoxColumn14
             // 
             this.dataGridViewTextBoxColumn14.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn14.HeaderText = "Barcode";
+            this.dataGridViewTextBoxColumn14.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
-            this.dataGridViewTextBoxColumn14.Width = 96;
+            this.dataGridViewTextBoxColumn14.Width = 116;
             // 
             // dataGridViewTextBoxColumn15
             // 
             this.dataGridViewTextBoxColumn15.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dataGridViewTextBoxColumn15.HeaderText = "Description";
+            this.dataGridViewTextBoxColumn15.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
             // 
             // dataGridViewTextBoxColumn16
             // 
             this.dataGridViewTextBoxColumn16.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn16.HeaderText = "Brand";
+            this.dataGridViewTextBoxColumn16.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
-            this.dataGridViewTextBoxColumn16.Width = 75;
+            this.dataGridViewTextBoxColumn16.Width = 92;
             // 
             // dataGridViewTextBoxColumn17
             // 
             this.dataGridViewTextBoxColumn17.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn17.HeaderText = "Category";
+            this.dataGridViewTextBoxColumn17.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
-            this.dataGridViewTextBoxColumn17.Width = 102;
+            this.dataGridViewTextBoxColumn17.Width = 126;
             // 
             // dataGridViewTextBoxColumn18
             // 
@@ -769,8 +801,9 @@ namespace POSales
             dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.dataGridViewTextBoxColumn18.DefaultCellStyle = dataGridViewCellStyle14;
             this.dataGridViewTextBoxColumn18.HeaderText = "Price";
+            this.dataGridViewTextBoxColumn18.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
-            this.dataGridViewTextBoxColumn18.Width = 69;
+            this.dataGridViewTextBoxColumn18.Width = 81;
             // 
             // dataGridViewTextBoxColumn20
             // 
@@ -778,8 +811,9 @@ namespace POSales
             dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dataGridViewTextBoxColumn20.DefaultCellStyle = dataGridViewCellStyle15;
             this.dataGridViewTextBoxColumn20.HeaderText = "Qty";
+            this.dataGridViewTextBoxColumn20.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
-            this.dataGridViewTextBoxColumn20.Width = 58;
+            this.dataGridViewTextBoxColumn20.Width = 72;
             // 
             // dataGridViewTextBoxColumn19
             // 
@@ -787,8 +821,9 @@ namespace POSales
             dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dataGridViewTextBoxColumn19.DefaultCellStyle = dataGridViewCellStyle16;
             this.dataGridViewTextBoxColumn19.HeaderText = "Re-Order";
+            this.dataGridViewTextBoxColumn19.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
-            this.dataGridViewTextBoxColumn19.Width = 99;
+            this.dataGridViewTextBoxColumn19.Width = 121;
             // 
             // panel4
             // 
@@ -855,6 +890,7 @@ namespace POSales
             this.dgvCancel.Location = new System.Drawing.Point(0, 69);
             this.dgvCancel.Name = "dgvCancel";
             this.dgvCancel.RowHeadersVisible = false;
+            this.dgvCancel.RowHeadersWidth = 51;
             this.dgvCancel.Size = new System.Drawing.Size(976, 394);
             this.dgvCancel.TabIndex = 8;
             // 
@@ -862,42 +898,48 @@ namespace POSales
             // 
             this.dataGridViewTextBoxColumn21.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn21.HeaderText = "No";
+            this.dataGridViewTextBoxColumn21.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
-            this.dataGridViewTextBoxColumn21.Width = 53;
+            this.dataGridViewTextBoxColumn21.Width = 63;
             // 
             // dataGridViewTextBoxColumn22
             // 
             this.dataGridViewTextBoxColumn22.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn22.HeaderText = "Tran No";
+            this.dataGridViewTextBoxColumn22.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
-            this.dataGridViewTextBoxColumn22.Width = 86;
+            this.dataGridViewTextBoxColumn22.Width = 107;
             // 
             // Column10
             // 
             this.Column10.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column10.HeaderText = "Pcode";
+            this.Column10.MinimumWidth = 6;
             this.Column10.Name = "Column10";
-            this.Column10.Width = 81;
+            this.Column10.Width = 97;
             // 
             // dataGridViewTextBoxColumn23
             // 
             this.dataGridViewTextBoxColumn23.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dataGridViewTextBoxColumn23.HeaderText = "Description";
+            this.dataGridViewTextBoxColumn23.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
             // 
             // Column11
             // 
             this.Column11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column11.HeaderText = "Price";
+            this.Column11.MinimumWidth = 6;
             this.Column11.Name = "Column11";
-            this.Column11.Width = 69;
+            this.Column11.Width = 81;
             // 
             // dataGridViewTextBoxColumn24
             // 
             this.dataGridViewTextBoxColumn24.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn24.HeaderText = "Qty";
+            this.dataGridViewTextBoxColumn24.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
-            this.dataGridViewTextBoxColumn24.Width = 58;
+            this.dataGridViewTextBoxColumn24.Width = 72;
             // 
             // dataGridViewTextBoxColumn26
             // 
@@ -905,8 +947,9 @@ namespace POSales
             dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.dataGridViewTextBoxColumn26.DefaultCellStyle = dataGridViewCellStyle18;
             this.dataGridViewTextBoxColumn26.HeaderText = "Total";
+            this.dataGridViewTextBoxColumn26.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
-            this.dataGridViewTextBoxColumn26.Width = 65;
+            this.dataGridViewTextBoxColumn26.Width = 80;
             // 
             // dataGridViewTextBoxColumn25
             // 
@@ -914,36 +957,41 @@ namespace POSales
             dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.dataGridViewTextBoxColumn25.DefaultCellStyle = dataGridViewCellStyle19;
             this.dataGridViewTextBoxColumn25.HeaderText = "Date";
+            this.dataGridViewTextBoxColumn25.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
-            this.dataGridViewTextBoxColumn25.Width = 68;
+            this.dataGridViewTextBoxColumn25.Width = 83;
             // 
             // Column12
             // 
             this.Column12.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column12.HeaderText = "Void By";
+            this.Column12.MinimumWidth = 6;
             this.Column12.Name = "Column12";
-            this.Column12.Width = 87;
+            this.Column12.Width = 107;
             // 
             // Column13
             // 
             this.Column13.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column13.HeaderText = "Cancelled By";
+            this.Column13.MinimumWidth = 6;
             this.Column13.Name = "Column13";
-            this.Column13.Width = 130;
+            this.Column13.Width = 159;
             // 
             // Column14
             // 
             this.Column14.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column14.HeaderText = "Reason";
+            this.Column14.MinimumWidth = 6;
             this.Column14.Name = "Column14";
-            this.Column14.Width = 86;
+            this.Column14.Width = 105;
             // 
             // Column15
             // 
             this.Column15.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column15.HeaderText = "Add Inventory";
+            this.Column15.MinimumWidth = 6;
             this.Column15.Name = "Column15";
-            this.Column15.Width = 138;
+            this.Column15.Width = 173;
             // 
             // panel5
             // 
@@ -995,7 +1043,7 @@ namespace POSales
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(238, 24);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(24, 20);
+            this.label7.Size = new System.Drawing.Size(30, 22);
             this.label7.TabIndex = 2;
             this.label7.Text = "To";
             // 
@@ -1004,7 +1052,7 @@ namespace POSales
             this.dtToCancel.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtToCancel.Location = new System.Drawing.Point(267, 21);
             this.dtToCancel.Name = "dtToCancel";
-            this.dtToCancel.Size = new System.Drawing.Size(104, 26);
+            this.dtToCancel.Size = new System.Drawing.Size(104, 30);
             this.dtToCancel.TabIndex = 1;
             // 
             // dtFromCancel
@@ -1012,7 +1060,7 @@ namespace POSales
             this.dtFromCancel.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtFromCancel.Location = new System.Drawing.Point(128, 21);
             this.dtFromCancel.Name = "dtFromCancel";
-            this.dtFromCancel.Size = new System.Drawing.Size(104, 26);
+            this.dtFromCancel.Size = new System.Drawing.Size(104, 30);
             this.dtFromCancel.TabIndex = 1;
             // 
             // label8
@@ -1020,7 +1068,7 @@ namespace POSales
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(8, 24);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(114, 20);
+            this.label8.Size = new System.Drawing.Size(141, 22);
             this.label8.TabIndex = 0;
             this.label8.Text = "Filter By :  From";
             // 
@@ -1040,7 +1088,7 @@ namespace POSales
             this.dgvStockIn.BackgroundColor = System.Drawing.Color.White;
             this.dgvStockIn.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(110)))), ((int)(((byte)(4)))));
             dataGridViewCellStyle20.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle20.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -1065,6 +1113,7 @@ namespace POSales
             this.dgvStockIn.Location = new System.Drawing.Point(0, 69);
             this.dgvStockIn.Name = "dgvStockIn";
             this.dgvStockIn.RowHeadersVisible = false;
+            this.dgvStockIn.RowHeadersWidth = 51;
             this.dgvStockIn.Size = new System.Drawing.Size(976, 394);
             this.dgvStockIn.TabIndex = 10;
             // 
@@ -1072,34 +1121,39 @@ namespace POSales
             // 
             this.dataGridViewTextBoxColumn27.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn27.HeaderText = "No";
+            this.dataGridViewTextBoxColumn27.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
-            this.dataGridViewTextBoxColumn27.Width = 53;
+            this.dataGridViewTextBoxColumn27.Width = 63;
             // 
             // dataGridViewTextBoxColumn28
             // 
             this.dataGridViewTextBoxColumn28.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn28.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn28.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
-            this.dataGridViewTextBoxColumn28.Width = 47;
+            this.dataGridViewTextBoxColumn28.Width = 55;
             // 
             // dataGridViewTextBoxColumn31
             // 
             this.dataGridViewTextBoxColumn31.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn31.HeaderText = "Reference#";
+            this.dataGridViewTextBoxColumn31.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
-            this.dataGridViewTextBoxColumn31.Width = 121;
+            this.dataGridViewTextBoxColumn31.Width = 147;
             // 
             // dataGridViewTextBoxColumn29
             // 
             this.dataGridViewTextBoxColumn29.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn29.HeaderText = "Pcode";
+            this.dataGridViewTextBoxColumn29.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
-            this.dataGridViewTextBoxColumn29.Width = 81;
+            this.dataGridViewTextBoxColumn29.Width = 97;
             // 
             // dataGridViewTextBoxColumn30
             // 
             this.dataGridViewTextBoxColumn30.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dataGridViewTextBoxColumn30.HeaderText = "Description";
+            this.dataGridViewTextBoxColumn30.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
             // 
             // dataGridViewTextBoxColumn32
@@ -1108,8 +1162,9 @@ namespace POSales
             dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dataGridViewTextBoxColumn32.DefaultCellStyle = dataGridViewCellStyle21;
             this.dataGridViewTextBoxColumn32.HeaderText = "Qty";
+            this.dataGridViewTextBoxColumn32.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn32.Name = "dataGridViewTextBoxColumn32";
-            this.dataGridViewTextBoxColumn32.Width = 58;
+            this.dataGridViewTextBoxColumn32.Width = 72;
             // 
             // dataGridViewTextBoxColumn33
             // 
@@ -1117,8 +1172,9 @@ namespace POSales
             dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.dataGridViewTextBoxColumn33.DefaultCellStyle = dataGridViewCellStyle22;
             this.dataGridViewTextBoxColumn33.HeaderText = "Stock In Date";
+            this.dataGridViewTextBoxColumn33.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
-            this.dataGridViewTextBoxColumn33.Width = 130;
+            this.dataGridViewTextBoxColumn33.Width = 160;
             // 
             // dataGridViewTextBoxColumn34
             // 
@@ -1126,22 +1182,25 @@ namespace POSales
             dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.dataGridViewTextBoxColumn34.DefaultCellStyle = dataGridViewCellStyle23;
             this.dataGridViewTextBoxColumn34.HeaderText = "Stock In By";
+            this.dataGridViewTextBoxColumn34.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
-            this.dataGridViewTextBoxColumn34.Width = 111;
+            this.dataGridViewTextBoxColumn34.Width = 136;
             // 
             // Column17
             // 
             this.Column17.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column17.HeaderText = "Status";
+            this.Column17.MinimumWidth = 6;
             this.Column17.Name = "Column17";
-            this.Column17.Width = 74;
+            this.Column17.Width = 92;
             // 
             // Column18
             // 
             this.Column18.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column18.HeaderText = "Supplier";
+            this.Column18.MinimumWidth = 6;
             this.Column18.Name = "Column18";
-            this.Column18.Width = 89;
+            this.Column18.Width = 108;
             // 
             // panel6
             // 
@@ -1193,7 +1252,7 @@ namespace POSales
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(238, 24);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(24, 20);
+            this.label6.Size = new System.Drawing.Size(30, 22);
             this.label6.TabIndex = 2;
             this.label6.Text = "To";
             // 
@@ -1202,7 +1261,7 @@ namespace POSales
             this.dtToStockIn.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtToStockIn.Location = new System.Drawing.Point(267, 21);
             this.dtToStockIn.Name = "dtToStockIn";
-            this.dtToStockIn.Size = new System.Drawing.Size(104, 26);
+            this.dtToStockIn.Size = new System.Drawing.Size(104, 30);
             this.dtToStockIn.TabIndex = 1;
             // 
             // dtFromStockIn
@@ -1210,7 +1269,7 @@ namespace POSales
             this.dtFromStockIn.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtFromStockIn.Location = new System.Drawing.Point(128, 21);
             this.dtFromStockIn.Name = "dtFromStockIn";
-            this.dtFromStockIn.Size = new System.Drawing.Size(104, 26);
+            this.dtFromStockIn.Size = new System.Drawing.Size(104, 30);
             this.dtFromStockIn.TabIndex = 1;
             // 
             // label9
@@ -1218,13 +1277,13 @@ namespace POSales
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(8, 24);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(114, 20);
+            this.label9.Size = new System.Drawing.Size(141, 22);
             this.label9.TabIndex = 0;
             this.label9.Text = "Filter By :  From";
             // 
             // Record
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(984, 561);
