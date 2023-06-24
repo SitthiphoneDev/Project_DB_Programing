@@ -145,5 +145,10 @@ namespace POSales
             if (e.KeyCode == Keys.Escape) this.Dispose();
             else if (e.KeyCode == Keys.Enter) btnEnter.PerformClick();            
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
