@@ -47,7 +47,7 @@ namespace POSales
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(110)))), ((int)(((byte)(4)))));
             this.panel1.Controls.Add(this.picClose);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -74,7 +74,7 @@ namespace POSales
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(3, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 18);
+            this.label1.Size = new System.Drawing.Size(88, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Discount";
             // 
@@ -83,7 +83,7 @@ namespace POSales
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 74);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 20);
+            this.label2.Size = new System.Drawing.Size(112, 22);
             this.label2.TabIndex = 9;
             this.label2.Text = "Total Price :";
             // 
@@ -92,7 +92,7 @@ namespace POSales
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(12, 110);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(106, 20);
+            this.label3.Size = new System.Drawing.Size(133, 22);
             this.label3.TabIndex = 9;
             this.label3.Text = "Discount (%) :";
             // 
@@ -101,7 +101,7 @@ namespace POSales
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(12, 146);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(141, 20);
+            this.label4.Size = new System.Drawing.Size(179, 22);
             this.label4.TabIndex = 9;
             this.label4.Text = "Discount Amount :";
             // 
@@ -110,14 +110,14 @@ namespace POSales
             this.txtTotalPrice.Enabled = false;
             this.txtTotalPrice.Location = new System.Drawing.Point(157, 71);
             this.txtTotalPrice.Name = "txtTotalPrice";
-            this.txtTotalPrice.Size = new System.Drawing.Size(457, 26);
+            this.txtTotalPrice.Size = new System.Drawing.Size(457, 30);
             this.txtTotalPrice.TabIndex = 10;
             // 
             // txtDiscount
             // 
             this.txtDiscount.Location = new System.Drawing.Point(157, 107);
             this.txtDiscount.Name = "txtDiscount";
-            this.txtDiscount.Size = new System.Drawing.Size(457, 26);
+            this.txtDiscount.Size = new System.Drawing.Size(457, 30);
             this.txtDiscount.TabIndex = 10;
             this.txtDiscount.TextChanged += new System.EventHandler(this.txtDiscount_TextChanged);
             // 
@@ -126,7 +126,7 @@ namespace POSales
             this.txtDiscAmount.Enabled = false;
             this.txtDiscAmount.Location = new System.Drawing.Point(157, 143);
             this.txtDiscAmount.Name = "txtDiscAmount";
-            this.txtDiscAmount.Size = new System.Drawing.Size(457, 26);
+            this.txtDiscAmount.Size = new System.Drawing.Size(457, 30);
             this.txtDiscAmount.TabIndex = 10;
             // 
             // lbId
@@ -134,7 +134,7 @@ namespace POSales
             this.lbId.AutoSize = true;
             this.lbId.Location = new System.Drawing.Point(12, 184);
             this.lbId.Name = "lbId";
-            this.lbId.Size = new System.Drawing.Size(22, 20);
+            this.lbId.Size = new System.Drawing.Size(26, 22);
             this.lbId.TabIndex = 9;
             this.lbId.Text = "id";
             this.lbId.Visible = false;
@@ -142,7 +142,7 @@ namespace POSales
             // btnSave
             // 
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(110)))), ((int)(((byte)(4)))));
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.ForeColor = System.Drawing.Color.White;
@@ -156,7 +156,7 @@ namespace POSales
             // 
             // Discount
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(639, 227);
