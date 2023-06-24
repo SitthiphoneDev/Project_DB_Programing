@@ -43,7 +43,7 @@ namespace POSales
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(110)))), ((int)(((byte)(4)))));
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 171);
@@ -70,7 +70,7 @@ namespace POSales
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(50, 38);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 20);
+            this.label2.Size = new System.Drawing.Size(127, 22);
             this.label2.TabIndex = 6;
             this.label2.Text = "Store Name :";
             // 
@@ -79,7 +79,7 @@ namespace POSales
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(50, 77);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 20);
+            this.label3.Size = new System.Drawing.Size(93, 22);
             this.label3.TabIndex = 6;
             this.label3.Text = "Address :";
             // 
@@ -87,20 +87,20 @@ namespace POSales
             // 
             this.txtStName.Location = new System.Drawing.Point(169, 35);
             this.txtStName.Name = "txtStName";
-            this.txtStName.Size = new System.Drawing.Size(473, 26);
+            this.txtStName.Size = new System.Drawing.Size(473, 30);
             this.txtStName.TabIndex = 7;
             // 
             // txtAddress
             // 
             this.txtAddress.Location = new System.Drawing.Point(169, 74);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(473, 26);
+            this.txtAddress.Size = new System.Drawing.Size(473, 30);
             this.txtAddress.TabIndex = 7;
             // 
             // btnSave
             // 
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(110)))), ((int)(((byte)(4)))));
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.ForeColor = System.Drawing.Color.White;
@@ -129,7 +129,7 @@ namespace POSales
             // 
             // Store
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(708, 221);
