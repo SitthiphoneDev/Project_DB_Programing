@@ -97,7 +97,7 @@ namespace POSales
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
             this.panel1.Controls.Add(this.btnLogout);
             this.panel1.Controls.Add(this.btnPass);
             this.panel1.Controls.Add(this.btnDSales);
@@ -132,6 +132,7 @@ namespace POSales
             // 
             // btnPass
             // 
+            this.btnPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
             this.btnPass.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnPass.FlatAppearance.BorderSize = 0;
             this.btnPass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -144,11 +145,12 @@ namespace POSales
             this.btnPass.TabIndex = 10;
             this.btnPass.Text = " Change Password";
             this.btnPass.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPass.UseVisualStyleBackColor = true;
+            this.btnPass.UseVisualStyleBackColor = false;
             this.btnPass.Click += new System.EventHandler(this.btnPass_Click);
             // 
             // btnDSales
             // 
+            this.btnDSales.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
             this.btnDSales.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnDSales.FlatAppearance.BorderSize = 0;
             this.btnDSales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -161,11 +163,12 @@ namespace POSales
             this.btnDSales.TabIndex = 9;
             this.btnDSales.Text = " Daily Sales";
             this.btnDSales.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnDSales.UseVisualStyleBackColor = true;
+            this.btnDSales.UseVisualStyleBackColor = false;
             this.btnDSales.Click += new System.EventHandler(this.btnDSales_Click);
             // 
             // btnClear
             // 
+            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
             this.btnClear.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnClear.Enabled = false;
             this.btnClear.FlatAppearance.BorderSize = 0;
@@ -179,11 +182,12 @@ namespace POSales
             this.btnClear.TabIndex = 8;
             this.btnClear.Text = " Clear Cart";
             this.btnClear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnSettle
             // 
+            this.btnSettle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
             this.btnSettle.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSettle.Enabled = false;
             this.btnSettle.FlatAppearance.BorderSize = 0;
@@ -197,11 +201,12 @@ namespace POSales
             this.btnSettle.TabIndex = 7;
             this.btnSettle.Text = " Settle Payment";
             this.btnSettle.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSettle.UseVisualStyleBackColor = true;
+            this.btnSettle.UseVisualStyleBackColor = false;
             this.btnSettle.Click += new System.EventHandler(this.btnSettle_Click);
             // 
             // btnDiscount
             // 
+            this.btnDiscount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
             this.btnDiscount.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnDiscount.Enabled = false;
             this.btnDiscount.FlatAppearance.BorderSize = 0;
@@ -215,11 +220,12 @@ namespace POSales
             this.btnDiscount.TabIndex = 6;
             this.btnDiscount.Text = " Add Discount";
             this.btnDiscount.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnDiscount.UseVisualStyleBackColor = true;
+            this.btnDiscount.UseVisualStyleBackColor = false;
             this.btnDiscount.Click += new System.EventHandler(this.btnDiscount_Click);
             // 
             // btnSearch
             // 
+            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
             this.btnSearch.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSearch.FlatAppearance.BorderSize = 0;
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -232,11 +238,12 @@ namespace POSales
             this.btnSearch.TabIndex = 5;
             this.btnSearch.Text = " Search Product";
             this.btnSearch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnNTran
             // 
+            this.btnNTran.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
             this.btnNTran.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnNTran.FlatAppearance.BorderSize = 0;
             this.btnNTran.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -249,11 +256,12 @@ namespace POSales
             this.btnNTran.TabIndex = 4;
             this.btnNTran.Text = " New Transaction";
             this.btnNTran.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnNTran.UseVisualStyleBackColor = true;
+            this.btnNTran.UseVisualStyleBackColor = false;
             this.btnNTran.Click += new System.EventHandler(this.btnNTran_Click);
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(110)))), ((int)(((byte)(4)))));
             this.panel2.Controls.Add(this.lblUsername);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -268,7 +276,7 @@ namespace POSales
             this.lblUsername.ForeColor = System.Drawing.Color.White;
             this.lblUsername.Location = new System.Drawing.Point(67, 142);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(83, 20);
+            this.lblUsername.Size = new System.Drawing.Size(101, 22);
             this.lblUsername.TabIndex = 4;
             this.lblUsername.Text = "Username";
             // 
@@ -284,7 +292,7 @@ namespace POSales
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(200, 0);
             this.panel3.Name = "panel3";
@@ -293,7 +301,7 @@ namespace POSales
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(110)))), ((int)(((byte)(4)))));
             this.panel4.Controls.Add(this.picClose);
             this.panel4.Controls.Add(this.pictureBox2);
             this.panel4.Controls.Add(this.lblname);
@@ -330,7 +338,7 @@ namespace POSales
             this.lblname.ForeColor = System.Drawing.Color.White;
             this.lblname.Location = new System.Drawing.Point(56, 13);
             this.lblname.Name = "lblname";
-            this.lblname.Size = new System.Drawing.Size(122, 20);
+            this.lblname.Size = new System.Drawing.Size(153, 22);
             this.lblname.TabIndex = 0;
             this.lblname.Text = "Name and Role";
             // 
@@ -363,7 +371,7 @@ namespace POSales
             // 
             this.txtQty.Location = new System.Drawing.Point(167, 249);
             this.txtQty.Name = "txtQty";
-            this.txtQty.Size = new System.Drawing.Size(39, 26);
+            this.txtQty.Size = new System.Drawing.Size(39, 30);
             this.txtQty.TabIndex = 11;
             this.txtQty.Text = "1";
             this.txtQty.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -422,7 +430,7 @@ namespace POSales
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(6, 444);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(77, 20);
+            this.label10.Size = new System.Drawing.Size(99, 22);
             this.label10.TabIndex = 7;
             this.label10.Text = "VATable :";
             // 
@@ -431,7 +439,7 @@ namespace POSales
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(6, 411);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(44, 20);
+            this.label9.Size = new System.Drawing.Size(58, 22);
             this.label9.TabIndex = 7;
             this.label9.Text = "VAT :";
             // 
@@ -440,7 +448,7 @@ namespace POSales
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(6, 378);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(80, 20);
+            this.label8.Size = new System.Drawing.Size(99, 22);
             this.label8.TabIndex = 7;
             this.label8.Text = "Discount :";
             // 
@@ -449,7 +457,7 @@ namespace POSales
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(6, 345);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(90, 20);
+            this.label7.Size = new System.Drawing.Size(112, 22);
             this.label7.TabIndex = 7;
             this.label7.Text = "Sales Total :";
             // 
@@ -457,7 +465,7 @@ namespace POSales
             // 
             this.txtBarcode.Location = new System.Drawing.Point(13, 249);
             this.txtBarcode.Name = "txtBarcode";
-            this.txtBarcode.Size = new System.Drawing.Size(149, 26);
+            this.txtBarcode.Size = new System.Drawing.Size(149, 30);
             this.txtBarcode.TabIndex = 6;
             this.txtBarcode.TextChanged += new System.EventHandler(this.txtBarcode_TextChanged);
             // 
@@ -467,7 +475,7 @@ namespace POSales
             this.label6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(9, 216);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(73, 20);
+            this.label6.Size = new System.Drawing.Size(89, 22);
             this.label6.TabIndex = 5;
             this.label6.Text = "Barcode";
             // 
@@ -476,7 +484,7 @@ namespace POSales
             this.lblDate.AutoSize = true;
             this.lblDate.Location = new System.Drawing.Point(9, 184);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(89, 20);
+            this.lblDate.Size = new System.Drawing.Size(120, 22);
             this.lblDate.TabIndex = 4;
             this.lblDate.Text = "0000000000";
             // 
@@ -486,7 +494,7 @@ namespace POSales
             this.label5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(9, 152);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(45, 20);
+            this.label5.Size = new System.Drawing.Size(56, 22);
             this.label5.TabIndex = 3;
             this.label5.Text = "Date";
             // 
@@ -495,7 +503,7 @@ namespace POSales
             this.lblTranNo.AutoSize = true;
             this.lblTranNo.Location = new System.Drawing.Point(9, 120);
             this.lblTranNo.Name = "lblTranNo";
-            this.lblTranNo.Size = new System.Drawing.Size(105, 20);
+            this.lblTranNo.Size = new System.Drawing.Size(142, 22);
             this.lblTranNo.TabIndex = 2;
             this.lblTranNo.Text = "000000000000";
             // 
@@ -505,13 +513,13 @@ namespace POSales
             this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(9, 88);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(116, 20);
+            this.label2.Size = new System.Drawing.Size(146, 22);
             this.label2.TabIndex = 1;
             this.label2.Text = "Transaction No";
             // 
             // lblDisplayTotal
             // 
-            this.lblDisplayTotal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.lblDisplayTotal.BackColor = System.Drawing.Color.White;
             this.lblDisplayTotal.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblDisplayTotal.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDisplayTotal.ForeColor = System.Drawing.Color.White;
@@ -561,6 +569,7 @@ namespace POSales
             this.dgvCash.Location = new System.Drawing.Point(208, 50);
             this.dgvCash.Name = "dgvCash";
             this.dgvCash.RowHeadersVisible = false;
+            this.dgvCash.RowHeadersWidth = 51;
             this.dgvCash.Size = new System.Drawing.Size(756, 611);
             this.dgvCash.TabIndex = 4;
             this.dgvCash.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCash_CellContentClick);
@@ -570,28 +579,32 @@ namespace POSales
             // 
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column1.HeaderText = "No";
+            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
-            this.Column1.Width = 53;
+            this.Column1.Width = 63;
             // 
             // Column9
             // 
             this.Column9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column9.HeaderText = "Id";
+            this.Column9.MinimumWidth = 6;
             this.Column9.Name = "Column9";
             this.Column9.Visible = false;
-            this.Column9.Width = 49;
+            this.Column9.Width = 57;
             // 
             // Column2
             // 
             this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column2.HeaderText = "Pcode";
+            this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
-            this.Column2.Width = 81;
+            this.Column2.Width = 97;
             // 
             // Column4
             // 
             this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column4.HeaderText = "Description";
+            this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
             // 
             // Column7
@@ -600,8 +613,9 @@ namespace POSales
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.Column7.DefaultCellStyle = dataGridViewCellStyle2;
             this.Column7.HeaderText = "Price";
+            this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
-            this.Column7.Width = 69;
+            this.Column7.Width = 81;
             // 
             // Column5
             // 
@@ -609,8 +623,9 @@ namespace POSales
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.Column5.DefaultCellStyle = dataGridViewCellStyle3;
             this.Column5.HeaderText = "Qty";
+            this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
-            this.Column5.Width = 58;
+            this.Column5.Width = 72;
             // 
             // Column6
             // 
@@ -618,8 +633,9 @@ namespace POSales
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.Column6.DefaultCellStyle = dataGridViewCellStyle4;
             this.Column6.HeaderText = "Discount";
+            this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
-            this.Column6.Width = 95;
+            this.Column6.Width = 116;
             // 
             // Column8
             // 
@@ -627,32 +643,36 @@ namespace POSales
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.Column8.DefaultCellStyle = dataGridViewCellStyle5;
             this.Column8.HeaderText = "Total";
+            this.Column8.MinimumWidth = 6;
             this.Column8.Name = "Column8";
-            this.Column8.Width = 65;
+            this.Column8.Width = 80;
             // 
             // colAdd
             // 
             this.colAdd.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.colAdd.HeaderText = "";
             this.colAdd.Image = ((System.Drawing.Image)(resources.GetObject("colAdd.Image")));
+            this.colAdd.MinimumWidth = 6;
             this.colAdd.Name = "colAdd";
-            this.colAdd.Width = 5;
+            this.colAdd.Width = 6;
             // 
             // colReduce
             // 
             this.colReduce.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.colReduce.HeaderText = "";
             this.colReduce.Image = ((System.Drawing.Image)(resources.GetObject("colReduce.Image")));
+            this.colReduce.MinimumWidth = 6;
             this.colReduce.Name = "colReduce";
-            this.colReduce.Width = 5;
+            this.colReduce.Width = 6;
             // 
             // Delete
             // 
             this.Delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Delete.HeaderText = "";
             this.Delete.Image = ((System.Drawing.Image)(resources.GetObject("Delete.Image")));
+            this.Delete.MinimumWidth = 6;
             this.Delete.Name = "Delete";
-            this.Delete.Width = 5;
+            this.Delete.Width = 6;
             // 
             // timer1
             // 
@@ -661,7 +681,7 @@ namespace POSales
             // 
             // Cashier
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1184, 661);
