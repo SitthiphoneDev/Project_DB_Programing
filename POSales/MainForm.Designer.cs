@@ -120,7 +120,7 @@ namespace POSales
             // 
             // btnStore
             // 
-            this.btnStore.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
+            this.btnStore.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(28)))));
             this.btnStore.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnStore.FlatAppearance.BorderSize = 0;
             this.btnStore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -137,7 +137,7 @@ namespace POSales
             // 
             // btnUser
             // 
-            this.btnUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
+            this.btnUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(28)))));
             this.btnUser.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnUser.FlatAppearance.BorderSize = 0;
             this.btnUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -154,7 +154,7 @@ namespace POSales
             // 
             // btnSetting
             // 
-            this.btnSetting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(28)))));
+            this.btnSetting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
             this.btnSetting.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSetting.FlatAppearance.BorderSize = 0;
             this.btnSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -182,7 +182,7 @@ namespace POSales
             // 
             // btnPosRecord
             // 
-            this.btnPosRecord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
+            this.btnPosRecord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(28)))));
             this.btnPosRecord.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnPosRecord.FlatAppearance.BorderSize = 0;
             this.btnPosRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -199,7 +199,7 @@ namespace POSales
             // 
             // btnSaleHist
             // 
-            this.btnSaleHist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
+            this.btnSaleHist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(28)))));
             this.btnSaleHist.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSaleHist.FlatAppearance.BorderSize = 0;
             this.btnSaleHist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -216,7 +216,7 @@ namespace POSales
             // 
             // btnRecord
             // 
-            this.btnRecord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(28)))));
+            this.btnRecord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
             this.btnRecord.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnRecord.FlatAppearance.BorderSize = 0;
             this.btnRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -233,7 +233,7 @@ namespace POSales
             // 
             // btnSupplier
             // 
-            this.btnSupplier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(28)))));
+            this.btnSupplier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
             this.btnSupplier.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSupplier.FlatAppearance.BorderSize = 0;
             this.btnSupplier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -261,7 +261,7 @@ namespace POSales
             // 
             // btnStockAdjustment
             // 
-            this.btnStockAdjustment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
+            this.btnStockAdjustment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(28)))));
             this.btnStockAdjustment.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnStockAdjustment.FlatAppearance.BorderSize = 0;
             this.btnStockAdjustment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -278,7 +278,7 @@ namespace POSales
             // 
             // btnStockEntry
             // 
-            this.btnStockEntry.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
+            this.btnStockEntry.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(28)))));
             this.btnStockEntry.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnStockEntry.FlatAppearance.BorderSize = 0;
             this.btnStockEntry.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -295,7 +295,7 @@ namespace POSales
             // 
             // btnInStock
             // 
-            this.btnInStock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(28)))));
+            this.btnInStock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
             this.btnInStock.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnInStock.FlatAppearance.BorderSize = 0;
             this.btnInStock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -324,7 +324,7 @@ namespace POSales
             // 
             // btnBrand
             // 
-            this.btnBrand.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
+            this.btnBrand.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(28)))));
             this.btnBrand.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnBrand.FlatAppearance.BorderSize = 0;
             this.btnBrand.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -341,7 +341,7 @@ namespace POSales
             // 
             // btnCategory
             // 
-            this.btnCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
+            this.btnCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(28)))));
             this.btnCategory.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnCategory.FlatAppearance.BorderSize = 0;
             this.btnCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -358,7 +358,7 @@ namespace POSales
             // 
             // btnProductList
             // 
-            this.btnProductList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
+            this.btnProductList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(28)))));
             this.btnProductList.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnProductList.FlatAppearance.BorderSize = 0;
             this.btnProductList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -375,7 +375,7 @@ namespace POSales
             // 
             // btnProduct
             // 
-            this.btnProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(28)))));
+            this.btnProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
             this.btnProduct.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnProduct.FlatAppearance.BorderSize = 0;
             this.btnProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -392,7 +392,7 @@ namespace POSales
             // 
             // btnDashboard
             // 
-            this.btnDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(28)))));
+            this.btnDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
             this.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnDashboard.FlatAppearance.BorderSize = 0;
             this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -496,7 +496,7 @@ namespace POSales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(28)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
             this.ClientSize = new System.Drawing.Size(1184, 661);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panelTitle);

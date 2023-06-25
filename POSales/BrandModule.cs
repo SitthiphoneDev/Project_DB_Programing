@@ -16,8 +16,8 @@ namespace POSales
         SqlConnection cn = new SqlConnection();
         SqlCommand cm = new SqlCommand();
         DBConnect dbcon = new DBConnect();
-        Brand brand;
-        public BrandModule(Brand br)
+        Unit brand;
+        public BrandModule(Unit br)
         {
             InitializeComponent();
             cn = new SqlConnection(dbcon.myConnection());
@@ -31,14 +31,14 @@ namespace POSales
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            // To insert brand name to brand table 
+            // To insert unit name to unit table 
             try
             {
                 if (MessageBox.Show("Are you sure you want to save this brand?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     cn.Open();
-                    cm = new SqlCommand("INSERT INTO tbBrand(brand)VALUES(@brand)", cn);
-                    cm.Parameters.AddWithValue("@brand", txtBrand.Text);
+                    cm = new SqlCommand("INSERT INTO tbUnit(unit)VALUES(@unit)", cn);
+                    cm.Parameters.AddWithValue("@unit", txtBrand.Text);
                     cm.ExecuteNonQuery();
                     cn.Close();
                     MessageBox.Show("Record has been successful saved.", "POS");
@@ -74,8 +74,8 @@ namespace POSales
             if (MessageBox.Show("Are you sure you want to update this brand?", "Update Record!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 cn.Open();
-                cm = new SqlCommand("UPDATE tbBrand SET brand = @brand WHERE id LIKE'" + lblId.Text + "'", cn);
-                cm.Parameters.AddWithValue("@brand", txtBrand.Text);
+                cm = new SqlCommand("UPDATE tbUnit SET Unit = @unit WHERE id LIKE'" + lblId.Text + "'", cn);
+                cm.Parameters.AddWithValue("@unit", txtBrand.Text);
                 cm.ExecuteNonQuery();
                 cn.Close();
                 MessageBox.Show("Brand has been successfully updated.", "POS");

@@ -17,7 +17,7 @@ namespace POSales
         private string con;
         public string myConnection()
         {
-            con = @"Data Source=Sitthiphone\sqlexpress;Initial Catalog=MdemyPOS;Integrated Security=True";
+            con = @"Data Source=Sitthiphone\sqlexpress;Initial Catalog=POSSale;Integrated Security=True";
             return con;
         }
 

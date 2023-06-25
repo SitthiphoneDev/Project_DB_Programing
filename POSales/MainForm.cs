@@ -98,7 +98,7 @@ namespace POSales
 
         private void btnBrand_Click(object sender, EventArgs e)
         {
-            openChildForm(new Brand());
+            openChildForm(new Unit());
             hideSubmenu();
         }
 

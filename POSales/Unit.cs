@@ -11,14 +11,14 @@ using System.Windows.Forms;
 
 namespace POSales
 {
-    public partial class Brand : Form
+    public partial class Unit : Form
     {
         SqlConnection cn = new SqlConnection();
         SqlCommand cm = new SqlCommand();
         DBConnect dbcon = new DBConnect();
         SqlDataReader dr;
 
-        public Brand()
+        public Unit()
         {
             InitializeComponent();
             cn = new SqlConnection(dbcon.myConnection());
@@ -31,12 +31,12 @@ namespace POSales
             int i = 0;
             dgvBrand.Rows.Clear();
             cn.Open();
-            cm = new SqlCommand("SELECT * FROM tbBrand ORDER BY brand", cn);
+            cm = new SqlCommand("SELECT * FROM tbUnit ORDER BY unit", cn);
             dr = cm.ExecuteReader();
             while (dr.Read())
             {
                 i++;
-                dgvBrand.Rows.Add(i, dr["id"].ToString(), dr["brand"].ToString());
+                dgvBrand.Rows.Add(i, dr["id"].ToString(), dr["unit"].ToString());
             }
             dr.Close();
             cn.Close();
