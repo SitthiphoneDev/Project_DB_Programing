@@ -86,11 +86,12 @@ namespace POSales
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(31, 85);
+            this.label2.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(57, 84);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(147, 22);
+            this.label2.Size = new System.Drawing.Size(101, 33);
             this.label2.TabIndex = 23;
-            this.label2.Text = "Supplier Name:";
+            this.label2.Text = "ຊື່ຜູ້ຈຳໜ່າຍ:";
             // 
             // panel1
             // 
@@ -150,47 +151,53 @@ namespace POSales
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(31, 130);
+            this.label3.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(111, 124);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 22);
+            this.label3.Size = new System.Drawing.Size(47, 33);
             this.label3.TabIndex = 23;
-            this.label3.Text = "Address :";
+            this.label3.Text = "ທີ່ຢູ່:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(31, 181);
+            this.label4.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(71, 175);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(163, 22);
+            this.label4.Size = new System.Drawing.Size(87, 33);
             this.label4.TabIndex = 23;
-            this.label4.Text = "Contact Person :";
+            this.label4.Text = "ເລກບັນຊີ:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(31, 229);
+            this.label5.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(99, 223);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(110, 22);
+            this.label5.Size = new System.Drawing.Size(59, 33);
             this.label5.TabIndex = 23;
-            this.label5.Text = "Phone No :";
+            this.label5.Text = "ເບີໂທ:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(31, 279);
+            this.label6.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(81, 279);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(150, 22);
+            this.label6.Size = new System.Drawing.Size(77, 33);
             this.label6.TabIndex = 23;
-            this.label6.Text = "E-mail Address :";
+            this.label6.Text = "E-mail:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(431, 232);
+            this.label7.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(412, 226);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(82, 22);
+            this.label7.Size = new System.Drawing.Size(129, 33);
             this.label7.TabIndex = 23;
-            this.label7.Text = "Fax No :";
+            this.label7.Text = "description: ";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // txtAddress
             // 

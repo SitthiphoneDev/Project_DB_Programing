@@ -48,21 +48,22 @@ namespace POSales
         {
             try
             {
-                if (MessageBox.Show("Save this record? click yes to confirm.", "CONFIRM", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("ທ່ານຕ້ອງການບັນທຶກນີ້ບໍ? ຄລິກ Yes ເພື່ອຢືນຢັນ.", "CONFIRM", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     cn.Open();
-                    cm = new SqlCommand("Insert into tbSupplier (supplier, address, contactperson, phone, email, fax) values (@supplier, @address, @contactperson, @phone, @email, @fax) ", cn);
+                    cm = new SqlCommand("Insert into tbSupplier (supplier, address, Acount, phone, email, description) values (@supplier, @address, @Acount, @phone, @email, @description) ", cn);
                     cm.Parameters.AddWithValue("@supplier", txtSupplier.Text);
                     cm.Parameters.AddWithValue("@address", txtAddress.Text);
-                    cm.Parameters.AddWithValue("@contactperson", txtConPerson.Text);
+                    cm.Parameters.AddWithValue("@Acount", txtConPerson.Text);
                     cm.Parameters.AddWithValue("@phone", txtPhone.Text);
                     cm.Parameters.AddWithValue("@email", txtEmail.Text);
-                    cm.Parameters.AddWithValue("@fax", txtFaxNo.Text);
+                    cm.Parameters.AddWithValue("@description", txtFaxNo.Text);
                     cm.ExecuteNonQuery();
                     cn.Close();
-                    MessageBox.Show("Record has been successfully saved!", "Save Record", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("ບັນທຶກສຳເລັດແລ້ວ!", "Save Record", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Clear();
                     supplier.LoadSupplier();
+                    cn.Close();
                 }
             }
             catch (Exception ex)
@@ -81,21 +82,21 @@ namespace POSales
         {
             try
             {
-                if (MessageBox.Show("Update this record? click yes to confirm.", "CONFIRM", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("ອັບເດດບັນທຶກນີ້ບໍ? ຄລິກ Yes ເພື່ອຢືນຢັນ.", "CONFIRM", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     cn.Open();
-                    cm = new SqlCommand("Update tbSupplier set supplier=@supplier, address=@address, contactperson=@contactperson, phone=@phone, email=@email, fax=@fax where id=@id ", cn);
-                    cm.Parameters.AddWithValue("@id", lblId.Text);
+                    cm = new SqlCommand("Insert into tbSupplier (supplier, address, Acount, phone, email, description) values (@supplier, @address, @Acount, @phone, @email, @description) ", cn);
                     cm.Parameters.AddWithValue("@supplier", txtSupplier.Text);
                     cm.Parameters.AddWithValue("@address", txtAddress.Text);
-                    cm.Parameters.AddWithValue("@contactperson", txtConPerson.Text);
+                    cm.Parameters.AddWithValue("@Acount", txtConPerson.Text);
                     cm.Parameters.AddWithValue("@phone", txtPhone.Text);
                     cm.Parameters.AddWithValue("@email", txtEmail.Text);
-                    cm.Parameters.AddWithValue("@fax", txtFaxNo.Text);
+                    cm.Parameters.AddWithValue("@description", txtFaxNo.Text);
                     cm.ExecuteNonQuery();
                     cn.Close();
-                    MessageBox.Show("Record has been successfully updated!", "Update Record", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("ອັບເດດສຳເລັດແລ້ວ!", "Update Record", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Dispose();
+                    cn.Close();
                 }
             }
             catch (Exception ex)
@@ -112,5 +113,11 @@ namespace POSales
                 this.Dispose();
             }
         }
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }
