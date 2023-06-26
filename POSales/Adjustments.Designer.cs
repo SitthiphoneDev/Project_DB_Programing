@@ -373,10 +373,10 @@ namespace POSales
             // Column5
             // 
             this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column5.HeaderText = "Brand";
+            this.Column5.HeaderText = "Unit";
             this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
-            this.Column5.Width = 92;
+            this.Column5.Width = 71;
             // 
             // Column6
             // 

@@ -236,6 +236,7 @@ namespace POSales
             this.label4.Size = new System.Drawing.Size(159, 45);
             this.label4.TabIndex = 1;
             this.label4.Text = "Total product recorded in the inventory";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 

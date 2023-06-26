@@ -117,6 +117,7 @@ namespace POSales
 
         private void btnPrint_Click(object sender, EventArgs e)
         {
+
             POSReport report = new POSReport();
             string param = "Date From: " + dtFrom.Value.ToShortDateString() + " To: " + dtTo.Value.ToShortDateString();
                

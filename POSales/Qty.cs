@@ -118,5 +118,10 @@ namespace POSales
                 this.Dispose();
             }
         }
+
+        private void txtQty_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

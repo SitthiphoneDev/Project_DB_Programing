@@ -11,13 +11,13 @@ using System.Windows.Forms;
 
 namespace POSales
 {
-    public partial class BrandModule : Form
+    public partial class UnitModule : Form
     {
         SqlConnection cn = new SqlConnection();
         SqlCommand cm = new SqlCommand();
         DBConnect dbcon = new DBConnect();
         Unit brand;
-        public BrandModule(Unit br)
+        public UnitModule(Unit br)
         {
             InitializeComponent();
             cn = new SqlConnection(dbcon.myConnection());

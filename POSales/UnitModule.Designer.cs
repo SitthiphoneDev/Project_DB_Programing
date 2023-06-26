@@ -1,7 +1,7 @@
 ﻿
 namespace POSales
 {
-    partial class BrandModule
+    partial class UnitModule
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace POSales
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BrandModule));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UnitModule));
             this.panel1 = new System.Windows.Forms.Panel();
             this.picClose = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();

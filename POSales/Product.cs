@@ -28,7 +28,8 @@ namespace POSales
         {
             int i = 0;
             dgvProduct.Rows.Clear();
-            cm = new SqlCommand("SELECT p.pcode, p.barcode, p.pdesc, b.brand, c.category, p.price, p.reorder FROM tbProduct AS p INNER JOIN tbBrand AS b ON b.id = p.bid INNER JOIN tbCategory AS c on c.id = p.cid WHERE CONCAT(p.pdesc, b.brand, c.category) LIKE '%" +txtSearch.Text+ "%'",cn);
+            cm = new SqlCommand("SELECT p.pcode, p.barcode, p.pdesc, b.unit, c.category, p.price, p.reorder FROM tbProduct AS p INNER JOIN tbUnit AS b ON b.id = p.bid INNER JOIN tbCategory AS c on c.id = p.cid WHERE CONCAT(p.pdesc, b.unit" +
+                ", c.category) LIKE '%" +txtSearch.Text+ "%'",cn);
             cn.Open();
             dr = cm.ExecuteReader();
             while (dr.Read())

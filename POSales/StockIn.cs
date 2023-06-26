@@ -162,12 +162,20 @@ namespace POSales
                 int i = 0;
                 dgvInStockHistory.Rows.Clear();
                 cn.Open();
-                cm = new SqlCommand("SELECT * FROM vwStockIn WHERE CAST(sdate as date) BETWEEN '"+dtFrom.Value.ToShortDateString()+ "' AND '" + dtTo.Value.ToShortDateString() + "' AND status LIKE 'Done'", cn);
+                cm = new SqlCommand("SELECT * FROM vwStockIn WHERE CAST(sdate as date) BETWEEN @fromDate AND @toDate AND status LIKE 'Done'", cn);
+                cm.Parameters.AddWithValue("@fromDate", dtFrom.Value);
+                cm.Parameters.AddWithValue("@toDate", dtTo.Value);
                 dr = cm.ExecuteReader();
                 while (dr.Read())
                 {
                     i++;
-                    dgvInStockHistory.Rows.Add(i, dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString(), dr[4].ToString(), DateTime.Parse(dr[5].ToString()).ToShortDateString(), dr[6].ToString(), dr["supplier"].ToString());
+                    string date = "";
+                    if (!string.IsNullOrEmpty(dr[5].ToString()))
+                    {
+                        DateTime.TryParse(dr[5].ToString(), out DateTime stockDate);
+                        date = stockDate.ToShortDateString();
+                    }
+                    dgvInStockHistory.Rows.Add(i, dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString(), dr[4].ToString(), date, dr[6].ToString(), dr["supplier"].ToString());
 
                 }
                 dr.Close();
@@ -175,8 +183,7 @@ namespace POSales
             }
             catch (Exception ex)
             {
-
-                MessageBox.Show(ex.Message,"Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

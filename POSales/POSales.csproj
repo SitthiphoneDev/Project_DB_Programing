@@ -94,11 +94,11 @@
     <Compile Include="Unit.Designer.cs">
       <DependentUpon>Unit.cs</DependentUpon>
     </Compile>
-    <Compile Include="BrandModule.cs">
+    <Compile Include="UnitModule.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BrandModule.Designer.cs">
-      <DependentUpon>BrandModule.cs</DependentUpon>
+    <Compile Include="UnitModule.Designer.cs">
+      <DependentUpon>UnitModule.cs</DependentUpon>
     </Compile>
     <Compile Include="CancelOrder.cs">
       <SubType>Form</SubType>
@@ -284,8 +284,8 @@
     <EmbeddedResource Include="Unit.resx">
       <DependentUpon>Unit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BrandModule.resx">
-      <DependentUpon>BrandModule.cs</DependentUpon>
+    <EmbeddedResource Include="UnitModule.resx">
+      <DependentUpon>UnitModule.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CancelOrder.resx">
       <DependentUpon>CancelOrder.cs</DependentUpon>

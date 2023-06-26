@@ -44,7 +44,7 @@ namespace POSales
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            BrandModule moduleForm = new BrandModule(this);
+            UnitModule moduleForm = new UnitModule(this);
             moduleForm.ShowDialog();
         }
 
@@ -66,7 +66,7 @@ namespace POSales
             }
             else if (colName == "Edit")
             {
-                BrandModule brandModule = new BrandModule(this);
+                UnitModule brandModule = new UnitModule(this);
                 brandModule.lblId.Text = dgvBrand[1, e.RowIndex].Value.ToString();
                 brandModule.txtBrand.Text = dgvBrand[2, e.RowIndex].Value.ToString();
                 brandModule.btnSave.Enabled = false;
