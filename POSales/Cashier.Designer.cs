@@ -36,6 +36,9 @@ namespace POSales
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnPass = new System.Windows.Forms.Button();
@@ -73,6 +76,7 @@ namespace POSales
             this.lblDisplayTotal = new System.Windows.Forms.Label();
             this.panelSlide = new System.Windows.Forms.Panel();
             this.dgvCash = new System.Windows.Forms.DataGridView();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -84,7 +88,6 @@ namespace POSales
             this.colAdd = new System.Windows.Forms.DataGridViewImageColumn();
             this.colReduce = new System.Windows.Forms.DataGridViewImageColumn();
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -118,6 +121,7 @@ namespace POSales
             this.btnLogout.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnLogout.FlatAppearance.BorderSize = 0;
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.White;
             this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
             this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -125,7 +129,7 @@ namespace POSales
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(200, 50);
             this.btnLogout.TabIndex = 11;
-            this.btnLogout.Text = " Logout";
+            this.btnLogout.Text = "ອອກຈາກລະບົບ";
             this.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLogout.UseVisualStyleBackColor = true;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
@@ -136,6 +140,7 @@ namespace POSales
             this.btnPass.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnPass.FlatAppearance.BorderSize = 0;
             this.btnPass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPass.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPass.ForeColor = System.Drawing.Color.White;
             this.btnPass.Image = ((System.Drawing.Image)(resources.GetObject("btnPass.Image")));
             this.btnPass.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -143,7 +148,7 @@ namespace POSales
             this.btnPass.Name = "btnPass";
             this.btnPass.Size = new System.Drawing.Size(200, 50);
             this.btnPass.TabIndex = 10;
-            this.btnPass.Text = " Change Password";
+            this.btnPass.Text = "ປ່ຽນລະຫັດຜ່ານ";
             this.btnPass.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPass.UseVisualStyleBackColor = false;
             this.btnPass.Click += new System.EventHandler(this.btnPass_Click);
@@ -154,6 +159,7 @@ namespace POSales
             this.btnDSales.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnDSales.FlatAppearance.BorderSize = 0;
             this.btnDSales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDSales.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDSales.ForeColor = System.Drawing.Color.White;
             this.btnDSales.Image = ((System.Drawing.Image)(resources.GetObject("btnDSales.Image")));
             this.btnDSales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -161,7 +167,7 @@ namespace POSales
             this.btnDSales.Name = "btnDSales";
             this.btnDSales.Size = new System.Drawing.Size(200, 50);
             this.btnDSales.TabIndex = 9;
-            this.btnDSales.Text = " Daily Sales";
+            this.btnDSales.Text = "ຍອດຂາາຍປະຈຳວັນ";
             this.btnDSales.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDSales.UseVisualStyleBackColor = false;
             this.btnDSales.Click += new System.EventHandler(this.btnDSales_Click);
@@ -173,6 +179,7 @@ namespace POSales
             this.btnClear.Enabled = false;
             this.btnClear.FlatAppearance.BorderSize = 0;
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClear.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.White;
             this.btnClear.Image = ((System.Drawing.Image)(resources.GetObject("btnClear.Image")));
             this.btnClear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -180,7 +187,7 @@ namespace POSales
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(200, 50);
             this.btnClear.TabIndex = 8;
-            this.btnClear.Text = " Clear Cart";
+            this.btnClear.Text = "ຍົກເລີກການຂາຍ";
             this.btnClear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
@@ -192,6 +199,7 @@ namespace POSales
             this.btnSettle.Enabled = false;
             this.btnSettle.FlatAppearance.BorderSize = 0;
             this.btnSettle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSettle.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSettle.ForeColor = System.Drawing.Color.White;
             this.btnSettle.Image = ((System.Drawing.Image)(resources.GetObject("btnSettle.Image")));
             this.btnSettle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -199,7 +207,7 @@ namespace POSales
             this.btnSettle.Name = "btnSettle";
             this.btnSettle.Size = new System.Drawing.Size(200, 50);
             this.btnSettle.TabIndex = 7;
-            this.btnSettle.Text = " Settle Payment";
+            this.btnSettle.Text = "ຄິດເງິນ";
             this.btnSettle.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSettle.UseVisualStyleBackColor = false;
             this.btnSettle.Click += new System.EventHandler(this.btnSettle_Click);
@@ -211,6 +219,7 @@ namespace POSales
             this.btnDiscount.Enabled = false;
             this.btnDiscount.FlatAppearance.BorderSize = 0;
             this.btnDiscount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDiscount.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDiscount.ForeColor = System.Drawing.Color.White;
             this.btnDiscount.Image = ((System.Drawing.Image)(resources.GetObject("btnDiscount.Image")));
             this.btnDiscount.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -218,7 +227,7 @@ namespace POSales
             this.btnDiscount.Name = "btnDiscount";
             this.btnDiscount.Size = new System.Drawing.Size(200, 50);
             this.btnDiscount.TabIndex = 6;
-            this.btnDiscount.Text = " Add Discount";
+            this.btnDiscount.Text = "ເພີ່ມສ່ວນຫຼຸດ";
             this.btnDiscount.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDiscount.UseVisualStyleBackColor = false;
             this.btnDiscount.Click += new System.EventHandler(this.btnDiscount_Click);
@@ -229,6 +238,7 @@ namespace POSales
             this.btnSearch.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSearch.FlatAppearance.BorderSize = 0;
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.Color.White;
             this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
             this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -236,7 +246,7 @@ namespace POSales
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(200, 50);
             this.btnSearch.TabIndex = 5;
-            this.btnSearch.Text = " Search Product";
+            this.btnSearch.Text = "ຄົ້ນຫາສິນຄ້າ";
             this.btnSearch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
@@ -386,7 +396,7 @@ namespace POSales
             this.lblTimer.Name = "lblTimer";
             this.lblTimer.Size = new System.Drawing.Size(220, 50);
             this.lblTimer.TabIndex = 10;
-            this.lblTimer.Text = "00:00:00";
+            this.lblTimer.Text = "ເພີ່ມສ່ວນຫຼູດ";
             this.lblTimer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblVatable
@@ -575,9 +585,16 @@ namespace POSales
             this.dgvCash.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCash_CellContentClick);
             this.dgvCash.SelectionChanged += new System.EventHandler(this.dgvCash_SelectionChanged);
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Column1
             // 
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Noto Sans Lao", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle2;
             this.Column1.HeaderText = "No";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
@@ -590,62 +607,66 @@ namespace POSales
             this.Column9.MinimumWidth = 6;
             this.Column9.Name = "Column9";
             this.Column9.Visible = false;
-            this.Column9.Width = 57;
+            this.Column9.Width = 55;
             // 
             // Column2
             // 
             this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column2.HeaderText = "Pcode";
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Noto Sans Lao", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Column2.HeaderText = "ລະຫັດ";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
-            this.Column2.Width = 97;
+            this.Column2.Width = 74;
             // 
             // Column4
             // 
             this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column4.HeaderText = "Description";
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Noto Sans Lao", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column4.DefaultCellStyle = dataGridViewCellStyle4;
+            this.Column4.HeaderText = "ຊື່ສິນຄ້າ";
             this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
             // 
             // Column7
             // 
             this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.Column7.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Column7.HeaderText = "Price";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.Column7.DefaultCellStyle = dataGridViewCellStyle5;
+            this.Column7.HeaderText = "ລາຄາ";
             this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
-            this.Column7.Width = 81;
+            this.Column7.Width = 71;
             // 
             // Column5
             // 
             this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Column5.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Column5.HeaderText = "Qty";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Column5.DefaultCellStyle = dataGridViewCellStyle6;
+            this.Column5.HeaderText = "ຈຳນວນ";
             this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
-            this.Column5.Width = 72;
+            this.Column5.Width = 86;
             // 
             // Column6
             // 
             this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.Column6.DefaultCellStyle = dataGridViewCellStyle4;
-            this.Column6.HeaderText = "Discount";
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.Column6.DefaultCellStyle = dataGridViewCellStyle7;
+            this.Column6.HeaderText = "ສ່ວນຫຼູດ";
             this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
-            this.Column6.Width = 116;
+            this.Column6.Width = 89;
             // 
             // Column8
             // 
             this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.Column8.DefaultCellStyle = dataGridViewCellStyle5;
-            this.Column8.HeaderText = "Total";
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.Column8.DefaultCellStyle = dataGridViewCellStyle8;
+            this.Column8.HeaderText = "ລວມ";
             this.Column8.MinimumWidth = 6;
             this.Column8.Name = "Column8";
-            this.Column8.Width = 80;
+            this.Column8.Width = 68;
             // 
             // colAdd
             // 
@@ -673,11 +694,6 @@ namespace POSales
             this.Delete.MinimumWidth = 6;
             this.Delete.Name = "Delete";
             this.Delete.Width = 6;
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Cashier
             // 
@@ -749,6 +765,10 @@ namespace POSales
         public System.Windows.Forms.DataGridView dgvCash;
         public System.Windows.Forms.Label lblDisplayTotal;
         public System.Windows.Forms.Label lblname;
+        public System.Windows.Forms.Label lblVatable;
+        public System.Windows.Forms.Label lblVat;
+        public System.Windows.Forms.Label lblDiscount;
+        public System.Windows.Forms.Label lblSaleTotal;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
@@ -760,9 +780,5 @@ namespace POSales
         private System.Windows.Forms.DataGridViewImageColumn colAdd;
         private System.Windows.Forms.DataGridViewImageColumn colReduce;
         private System.Windows.Forms.DataGridViewImageColumn Delete;
-        public System.Windows.Forms.Label lblVatable;
-        public System.Windows.Forms.Label lblVat;
-        public System.Windows.Forms.Label lblDiscount;
-        public System.Windows.Forms.Label lblSaleTotal;
     }
 }
