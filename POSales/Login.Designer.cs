@@ -93,7 +93,7 @@ namespace POSales
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(425, 151);
+            this.pictureBox2.Location = new System.Drawing.Point(425, 130);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(100, 100);
             this.pictureBox2.TabIndex = 9;
@@ -138,12 +138,13 @@ namespace POSales
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Schoolbook", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(369, 265);
+            this.label2.Font = new System.Drawing.Font("Noto Sans Lao", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Blue;
+            this.label2.Location = new System.Drawing.Point(355, 243);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(277, 32);
+            this.label2.Size = new System.Drawing.Size(254, 56);
             this.label2.TabIndex = 11;
-            this.label2.Text = "Please Login First";
+            this.label2.Text = "ກະລຸນາເຂົ້າສູ່ລະບົບ";
             // 
             // txtPass
             // 

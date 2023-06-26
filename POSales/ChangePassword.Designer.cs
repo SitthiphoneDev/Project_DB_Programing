@@ -108,17 +108,18 @@ namespace POSales
             this.txtPass.MaxLength = 32767;
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '●';
-            this.txtPass.PromptText = "Current Password";
+            this.txtPass.PromptText = "ລະ​ຫັດ​ປັດ​ຈຸ​ບັນ";
             this.txtPass.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtPass.SelectedText = "";
             this.txtPass.SelectionLength = 0;
             this.txtPass.SelectionStart = 0;
             this.txtPass.ShortcutsEnabled = true;
             this.txtPass.Size = new System.Drawing.Size(361, 31);
+            this.txtPass.Style = MetroFramework.MetroColorStyle.Black;
             this.txtPass.TabIndex = 11;
             this.txtPass.UseSelectable = true;
             this.txtPass.UseSystemPasswordChar = true;
-            this.txtPass.WaterMark = "Current Password";
+            this.txtPass.WaterMark = "ລະ​ຫັດ​ປັດ​ຈຸ​ບັນ";
             this.txtPass.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtPass.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
@@ -205,7 +206,7 @@ namespace POSales
             this.txtComPass.MaxLength = 32767;
             this.txtComPass.Name = "txtComPass";
             this.txtComPass.PasswordChar = '●';
-            this.txtComPass.PromptText = "Confirm Password";
+            this.txtComPass.PromptText = "ຢືນ​ຢັນ​ລະ​ຫັດ";
             this.txtComPass.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtComPass.SelectedText = "";
             this.txtComPass.SelectionLength = 0;
@@ -216,7 +217,7 @@ namespace POSales
             this.txtComPass.UseSelectable = true;
             this.txtComPass.UseSystemPasswordChar = true;
             this.txtComPass.Visible = false;
-            this.txtComPass.WaterMark = "Confirm Password";
+            this.txtComPass.WaterMark = "ຢືນ​ຢັນ​ລະ​ຫັດ";
             this.txtComPass.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtComPass.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 

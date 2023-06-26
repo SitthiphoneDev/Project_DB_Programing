@@ -57,7 +57,7 @@ namespace POSales
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            Clear();
+            Close();
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)

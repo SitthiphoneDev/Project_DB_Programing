@@ -52,7 +52,8 @@ namespace POSales
             double total = 0;
             dgvSold.Rows.Clear();
             cn.Open();
-            if(cboCashier.Text=="All Cashier")
+
+            if (cboCashier.Text=="All Cashier")
             {
                 cm = new SqlCommand("select c.id, c.transno, c.pcode, p.pdesc, c.price, c.qty, c.disc, c.total from tbCart as c inner join tbProduct as p on c.pcode = p.pcode where status like 'Sold' and sdate between '" + dtFrom.Value + "' and '" + dtTo.Value + "'", cn);
             }
