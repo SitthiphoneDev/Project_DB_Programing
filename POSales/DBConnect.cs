@@ -17,7 +17,7 @@ namespace POSales
         private string con;
         public string myConnection()
         {
-            con = @"Data Source=Sitthiphone\sqlexpress;Initial Catalog=POSSale;Integrated Security=True";
+            con = @"Data Source=LAPTOP-85PSEHN3\SQL2019;Initial Catalog=POSSale;Integrated Security=True";
             return con;
         }
 
