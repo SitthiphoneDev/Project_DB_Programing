@@ -32,6 +32,7 @@ namespace POSales
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Adjustments));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSave = new System.Windows.Forms.Button();
             this.txtSearch = new MetroFramework.Controls.MetroTextBox();
@@ -147,7 +148,7 @@ namespace POSales
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(110)))), ((int)(((byte)(4)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(130)))), ((int)(((byte)(4)))));
             this.panel2.Controls.Add(this.txtRemark);
             this.panel2.Controls.Add(this.txtQty);
             this.panel2.Controls.Add(this.cbAction);
@@ -199,6 +200,7 @@ namespace POSales
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(12, 106);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(121, 22);
@@ -209,6 +211,7 @@ namespace POSales
             // 
             this.lblDesc.AutoSize = true;
             this.lblDesc.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDesc.ForeColor = System.Drawing.Color.White;
             this.lblDesc.Location = new System.Drawing.Point(138, 106);
             this.lblDesc.Name = "lblDesc";
             this.lblDesc.Size = new System.Drawing.Size(139, 22);
@@ -219,6 +222,7 @@ namespace POSales
             // 
             this.lblPcode.AutoSize = true;
             this.lblPcode.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPcode.ForeColor = System.Drawing.Color.White;
             this.lblPcode.Location = new System.Drawing.Point(357, 66);
             this.lblPcode.Name = "lblPcode";
             this.lblPcode.Size = new System.Drawing.Size(137, 22);
@@ -229,7 +233,8 @@ namespace POSales
             // 
             this.lblRefNo.AutoSize = true;
             this.lblRefNo.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRefNo.Location = new System.Drawing.Point(138, 66);
+            this.lblRefNo.ForeColor = System.Drawing.Color.White;
+            this.lblRefNo.Location = new System.Drawing.Point(165, 66);
             this.lblRefNo.Name = "lblRefNo";
             this.lblRefNo.Size = new System.Drawing.Size(66, 22);
             this.lblRefNo.TabIndex = 2;
@@ -239,6 +244,7 @@ namespace POSales
             // 
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(616, 109);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(97, 22);
@@ -249,6 +255,7 @@ namespace POSales
             // 
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(616, 69);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(55, 22);
@@ -260,6 +267,7 @@ namespace POSales
             // 
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(616, 29);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(81, 22);
@@ -269,6 +277,7 @@ namespace POSales
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(285, 66);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(80, 22);
@@ -278,6 +287,7 @@ namespace POSales
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(12, 66);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(147, 22);
@@ -287,6 +297,7 @@ namespace POSales
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
+            this.lblUsername.ForeColor = System.Drawing.Color.White;
             this.lblUsername.Location = new System.Drawing.Point(56, 26);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(103, 22);
@@ -311,8 +322,8 @@ namespace POSales
             this.dgvAdjustment.BackgroundColor = System.Drawing.Color.White;
             this.dgvAdjustment.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(138)))), ((int)(((byte)(82)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -331,7 +342,7 @@ namespace POSales
             this.Column8,
             this.Select});
             this.dgvAdjustment.EnableHeadersVisualStyles = false;
-            this.dgvAdjustment.Location = new System.Drawing.Point(0, 145);
+            this.dgvAdjustment.Location = new System.Drawing.Point(-12, 142);
             this.dgvAdjustment.Name = "dgvAdjustment";
             this.dgvAdjustment.RowHeadersVisible = false;
             this.dgvAdjustment.RowHeadersWidth = 51;
@@ -342,18 +353,20 @@ namespace POSales
             // Column1
             // 
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Noto Sans Lao", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle3;
             this.Column1.HeaderText = "No";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
-            this.Column1.Width = 63;
+            this.Column1.Width = 66;
             // 
             // Column2
             // 
             this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column2.HeaderText = "Pcode";
+            this.Column2.HeaderText = "ລະຫັດ";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
-            this.Column2.Width = 97;
+            this.Column2.Width = 86;
             // 
             // Column3
             // 
@@ -361,38 +374,38 @@ namespace POSales
             this.Column3.HeaderText = "Barcode";
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
-            this.Column3.Width = 116;
+            this.Column3.Width = 115;
             // 
             // Column4
             // 
             this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column4.HeaderText = "Description";
+            this.Column4.HeaderText = "ຊື່ສິນຄ້າ";
             this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
             // 
             // Column5
             // 
             this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column5.HeaderText = "Unit";
+            this.Column5.HeaderText = "ໜ່ວຍ";
             this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
-            this.Column5.Width = 71;
+            this.Column5.Width = 82;
             // 
             // Column6
             // 
             this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column6.HeaderText = "Category";
+            this.Column6.HeaderText = "ໝວດໝູ່";
             this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
-            this.Column6.Width = 126;
+            this.Column6.Width = 102;
             // 
             // Column7
             // 
             this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column7.HeaderText = "Price";
+            this.Column7.HeaderText = "ລາຄາ";
             this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
-            this.Column7.Width = 81;
+            this.Column7.Width = 77;
             // 
             // Column8
             // 
@@ -400,7 +413,7 @@ namespace POSales
             this.Column8.HeaderText = "Stock On Hand";
             this.Column8.MinimumWidth = 6;
             this.Column8.Name = "Column8";
-            this.Column8.Width = 177;
+            this.Column8.Width = 174;
             // 
             // Select
             // 

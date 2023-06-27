@@ -229,24 +229,25 @@ namespace POSales
             // 
             // label4
             // 
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Phetsarath OT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(68, 64);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(159, 45);
+            this.label4.Size = new System.Drawing.Size(159, 54);
             this.label4.TabIndex = 1;
-            this.label4.Text = "Total product recorded in the inventory";
+            this.label4.Text = "ສິນຄ້າທັງໝົດທີ່\r\nບັນທຶກໄວ້ໃນຄັງ\r\n";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(68, 37);
+            this.label5.Location = new System.Drawing.Point(71, 29);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(131, 22);
+            this.label5.Size = new System.Drawing.Size(114, 33);
             this.label5.TabIndex = 1;
-            this.label5.Text = "Total Product";
+            this.label5.Text = "ສິນຄ້າທັງໝົດ";
             // 
             // pictureBox2
             // 
@@ -291,24 +292,25 @@ namespace POSales
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Phetsarath OT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(68, 64);
+            this.label2.Location = new System.Drawing.Point(71, 62);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(159, 45);
+            this.label2.Size = new System.Drawing.Size(159, 54);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Total daily sales recorded in the inventory";
+            this.label2.Text = "ຍອດຂາຍປະຈໍາວັນ\r\nທີ່ບັນທຶກໄວ້ໃນຄັງ";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(68, 37);
+            this.label1.Location = new System.Drawing.Point(67, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 22);
+            this.label1.Size = new System.Drawing.Size(144, 33);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Daily Sales";
+            this.label1.Text = "ຍອດຂາຍປະຈຳວັນ";
             // 
             // pictureBox1
             // 

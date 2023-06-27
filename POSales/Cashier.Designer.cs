@@ -258,6 +258,7 @@ namespace POSales
             this.btnNTran.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnNTran.FlatAppearance.BorderSize = 0;
             this.btnNTran.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNTran.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNTran.ForeColor = System.Drawing.Color.White;
             this.btnNTran.Image = ((System.Drawing.Image)(resources.GetObject("btnNTran.Image")));
             this.btnNTran.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -605,7 +606,7 @@ namespace POSales
             this.Column9.MinimumWidth = 6;
             this.Column9.Name = "Column9";
             this.Column9.Visible = false;
-            this.Column9.Width = 57;
+            this.Column9.Width = 61;
             // 
             // Column2
             // 

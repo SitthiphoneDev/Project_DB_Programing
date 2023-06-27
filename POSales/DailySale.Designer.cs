@@ -102,9 +102,9 @@ namespace POSales
             // 
             this.dtFrom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.dtFrom.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtFrom.Location = new System.Drawing.Point(155, 15);
+            this.dtFrom.Location = new System.Drawing.Point(195, 14);
             this.dtFrom.Name = "dtFrom";
-            this.dtFrom.Size = new System.Drawing.Size(125, 30);
+            this.dtFrom.Size = new System.Drawing.Size(151, 30);
             this.dtFrom.TabIndex = 10;
             this.dtFrom.ValueChanged += new System.EventHandler(this.dtFrom_ValueChanged);
             // 
@@ -112,9 +112,9 @@ namespace POSales
             // 
             this.dtTo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.dtTo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtTo.Location = new System.Drawing.Point(313, 15);
+            this.dtTo.Location = new System.Drawing.Point(388, 14);
             this.dtTo.Name = "dtTo";
-            this.dtTo.Size = new System.Drawing.Size(125, 30);
+            this.dtTo.Size = new System.Drawing.Size(150, 30);
             this.dtTo.TabIndex = 10;
             this.dtTo.ValueChanged += new System.EventHandler(this.dtTo_ValueChanged);
             // 
@@ -132,7 +132,7 @@ namespace POSales
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(285, 18);
+            this.label3.Location = new System.Drawing.Point(352, 20);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(30, 22);
             this.label3.TabIndex = 11;
@@ -154,9 +154,9 @@ namespace POSales
             // 
             this.cboCashier.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.cboCashier.FormattingEnabled = true;
-            this.cboCashier.Location = new System.Drawing.Point(452, 14);
+            this.cboCashier.Location = new System.Drawing.Point(554, 15);
             this.cboCashier.Name = "cboCashier";
-            this.cboCashier.Size = new System.Drawing.Size(131, 30);
+            this.cboCashier.Size = new System.Drawing.Size(157, 30);
             this.cboCashier.TabIndex = 13;
             this.cboCashier.Text = "Select Cashier";
             this.cboCashier.SelectedIndexChanged += new System.EventHandler(this.cboCashier_SelectedIndexChanged);
@@ -167,7 +167,7 @@ namespace POSales
             this.btnPrint.FlatAppearance.BorderSize = 0;
             this.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPrint.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.Image")));
-            this.btnPrint.Location = new System.Drawing.Point(618, 10);
+            this.btnPrint.Location = new System.Drawing.Point(762, 13);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(42, 36);
             this.btnPrint.TabIndex = 14;
@@ -196,7 +196,7 @@ namespace POSales
             this.dgvSold.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -231,7 +231,7 @@ namespace POSales
             this.Column1.HeaderText = "No";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
-            this.Column1.Width = 63;
+            this.Column1.Width = 66;
             // 
             // Column9
             // 
@@ -240,7 +240,7 @@ namespace POSales
             this.Column9.MinimumWidth = 6;
             this.Column9.Name = "Column9";
             this.Column9.Visible = false;
-            this.Column9.Width = 57;
+            this.Column9.Width = 55;
             // 
             // Column3
             // 
@@ -248,20 +248,20 @@ namespace POSales
             this.Column3.HeaderText = "Invoice#";
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
-            this.Column3.Width = 120;
+            this.Column3.Width = 117;
             // 
             // Column2
             // 
             this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column2.HeaderText = "Pcode";
+            this.Column2.HeaderText = "ລະຫັດ";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
-            this.Column2.Width = 97;
+            this.Column2.Width = 86;
             // 
             // Column4
             // 
             this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column4.HeaderText = "Description";
+            this.Column4.HeaderText = "ຊື່ສິນຄ້າ";
             this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
             // 
@@ -270,40 +270,41 @@ namespace POSales
             this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.Column7.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Column7.HeaderText = "Price";
+            this.Column7.HeaderText = "ລາຄາ";
             this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
-            this.Column7.Width = 81;
+            this.Column7.Width = 77;
             // 
             // Column5
             // 
             this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.Column5.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Column5.HeaderText = "Qty";
+            this.Column5.HeaderText = "ຈຳນວນ";
             this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
-            this.Column5.Width = 72;
+            this.Column5.Width = 93;
             // 
             // Column6
             // 
             this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.Column6.DefaultCellStyle = dataGridViewCellStyle4;
-            this.Column6.HeaderText = "Discount";
+            this.Column6.HeaderText = "ສ່ວນຫຼຸດ";
             this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
-            this.Column6.Width = 116;
+            this.Column6.Width = 102;
             // 
             // Column8
             // 
             this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Noto Sans Lao", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Column8.DefaultCellStyle = dataGridViewCellStyle5;
-            this.Column8.HeaderText = "Total";
+            this.Column8.HeaderText = "ລວມ";
             this.Column8.MinimumWidth = 6;
             this.Column8.Name = "Column8";
-            this.Column8.Width = 80;
+            this.Column8.Width = 76;
             // 
             // Cancel
             // 
