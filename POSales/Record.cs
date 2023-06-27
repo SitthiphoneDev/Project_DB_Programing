@@ -238,5 +238,10 @@ namespace POSales
         {
 
         }
+
+        private void dgvTopSelling_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

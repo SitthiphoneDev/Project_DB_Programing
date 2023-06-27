@@ -68,20 +68,22 @@ namespace POSales
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(50, 38);
+            this.label2.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(67, 35);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(127, 22);
+            this.label2.Size = new System.Drawing.Size(80, 33);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Store Name :";
+            this.label2.Text = "ຊື່ຮ້ານຄ້າ:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(50, 77);
+            this.label3.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(67, 74);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 22);
+            this.label3.Size = new System.Drawing.Size(47, 33);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Address :";
+            this.label3.Text = "ທີ່ຢູ່:";
             // 
             // txtStName
             // 
@@ -103,12 +105,13 @@ namespace POSales
             this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(110)))), ((int)(((byte)(4)))));
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.Location = new System.Drawing.Point(437, 116);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(94, 35);
             this.btnSave.TabIndex = 31;
-            this.btnSave.Text = "Save";
+            this.btnSave.Text = "ບັນທຶກ";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -118,12 +121,13 @@ namespace POSales
             this.btnCancel.BackColor = System.Drawing.Color.Gainsboro;
             this.btnCancel.FlatAppearance.BorderSize = 0;
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.Color.Black;
             this.btnCancel.Location = new System.Drawing.Point(548, 116);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(94, 35);
             this.btnCancel.TabIndex = 32;
-            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Text = "ຍົກເລີກ";
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
