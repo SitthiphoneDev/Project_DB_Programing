@@ -273,7 +273,7 @@ namespace POSales
             this.btnStockAdjustment.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnStockAdjustment.FlatAppearance.BorderSize = 0;
             this.btnStockAdjustment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStockAdjustment.Font = new System.Drawing.Font("Noto Sans Lao", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStockAdjustment.Font = new System.Drawing.Font("Noto Sans Lao", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStockAdjustment.ForeColor = System.Drawing.Color.White;
             this.btnStockAdjustment.Location = new System.Drawing.Point(0, 45);
             this.btnStockAdjustment.Name = "btnStockAdjustment";
@@ -316,7 +316,7 @@ namespace POSales
             this.btnInStock.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnInStock.Size = new System.Drawing.Size(179, 45);
             this.btnInStock.TabIndex = 3;
-            this.btnInStock.Text = "In Stock";
+            this.btnInStock.Text = "ຄັງສິນຄ້າ";
             this.btnInStock.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnInStock.UseVisualStyleBackColor = false;
             this.btnInStock.Click += new System.EventHandler(this.btnInStock_Click);
