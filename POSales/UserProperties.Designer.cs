@@ -42,35 +42,42 @@ namespace POSales
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(22, 24);
+            this.label1.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(20, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 20);
+            this.label1.Size = new System.Drawing.Size(143, 31);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Full name:";
+            this.label1.Text = "ຊື່ ແລະ ນາມສະກຸນ:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(22, 70);
+            this.label2.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(20, 92);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 20);
+            this.label2.Size = new System.Drawing.Size(73, 31);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Role:";
+            this.label2.Text = "ບົດບາດ:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(22, 116);
+            this.label3.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(20, 153);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 20);
+            this.label3.Size = new System.Drawing.Size(75, 31);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Activate:";
+            this.label3.Text = "ສະຖານະ:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(130, 21);
+            this.txtName.Location = new System.Drawing.Point(159, 29);
+            this.txtName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(342, 26);
+            this.txtName.Size = new System.Drawing.Size(311, 37);
             this.txtName.TabIndex = 4;
             // 
             // cbActivate
@@ -79,9 +86,10 @@ namespace POSales
             this.cbActivate.Items.AddRange(new object[] {
             "True",
             "False"});
-            this.cbActivate.Location = new System.Drawing.Point(130, 113);
+            this.cbActivate.Location = new System.Drawing.Point(159, 150);
+            this.cbActivate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbActivate.Name = "cbActivate";
-            this.cbActivate.Size = new System.Drawing.Size(342, 28);
+            this.cbActivate.Size = new System.Drawing.Size(311, 37);
             this.cbActivate.TabIndex = 7;
             // 
             // cbRole
@@ -90,9 +98,10 @@ namespace POSales
             this.cbRole.Items.AddRange(new object[] {
             "Administrator",
             "Cashier"});
-            this.cbRole.Location = new System.Drawing.Point(130, 67);
+            this.cbRole.Location = new System.Drawing.Point(159, 89);
+            this.cbRole.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbRole.Name = "cbRole";
-            this.cbRole.Size = new System.Drawing.Size(342, 28);
+            this.cbRole.Size = new System.Drawing.Size(311, 37);
             this.cbRole.TabIndex = 6;
             // 
             // btnCancel
@@ -100,35 +109,39 @@ namespace POSales
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnCancel.FlatAppearance.BorderSize = 0;
+            this.btnCancel.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.Color.Black;
-            this.btnCancel.Location = new System.Drawing.Point(383, 465);
+            this.btnCancel.Location = new System.Drawing.Point(389, 390);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(89, 30);
+            this.btnCancel.Size = new System.Drawing.Size(81, 40);
             this.btnCancel.TabIndex = 26;
-            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Text = "ຍົກເລີກ";
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnApply
             // 
             this.btnApply.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnApply.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnApply.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(120)))), ((int)(((byte)(4)))));
             this.btnApply.FlatAppearance.BorderSize = 0;
+            this.btnApply.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnApply.ForeColor = System.Drawing.Color.Black;
-            this.btnApply.Location = new System.Drawing.Point(283, 465);
+            this.btnApply.Location = new System.Drawing.Point(298, 390);
+            this.btnApply.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnApply.Name = "btnApply";
-            this.btnApply.Size = new System.Drawing.Size(89, 30);
+            this.btnApply.Size = new System.Drawing.Size(81, 40);
             this.btnApply.TabIndex = 25;
-            this.btnApply.Text = "Apply";
+            this.btnApply.Text = "ຍົກເລີກ";
             this.btnApply.UseVisualStyleBackColor = false;
             this.btnApply.Click += new System.EventHandler(this.btnApply_Click);
             // 
             // UserProperties
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(502, 507);
+            this.ClientSize = new System.Drawing.Size(509, 452);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnApply);
             this.Controls.Add(this.cbActivate);
@@ -137,13 +150,14 @@ namespace POSales
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(4, 7, 4, 7);
             this.Name = "UserProperties";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Properties";
+            this.Load += new System.EventHandler(this.UserProperties_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.UserProperties_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
