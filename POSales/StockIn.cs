@@ -196,7 +196,7 @@ namespace POSales
             if (dr.HasRows)
             {
                 lblId.Text = dr["id"].ToString();
-                txtConPerson.Text = dr["contactperson"].ToString();
+                txtConPerson.Text = dr["Acount"].ToString();
                 txtAddress.Text = dr["address"].ToString();
 
             }

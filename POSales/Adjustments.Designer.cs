@@ -199,7 +199,8 @@ namespace POSales
             this.cbAction.FormattingEnabled = true;
             this.cbAction.Items.AddRange(new object[] {
             "ລົບອອກຈາງຄັງສິນຄ້າ",
-            "ເພີ່ມເຂົ້າສາງສິນຄ້າ"});
+            "ເພີ່ມເຂົ້າສາງສິນຄ້າ",
+            "Add Inventory"});
             this.cbAction.Location = new System.Drawing.Point(643, 12);
             this.cbAction.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbAction.Name = "cbAction";

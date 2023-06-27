@@ -399,5 +399,15 @@ namespace POSales
         {
             Noti();
         }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelSlide_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

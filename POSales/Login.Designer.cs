@@ -86,7 +86,7 @@ namespace POSales
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(67, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(350, 44);
+            this.label1.Size = new System.Drawing.Size(349, 44);
             this.label1.TabIndex = 0;
             this.label1.Text = "ESSA Super Market";
             // 
@@ -140,7 +140,7 @@ namespace POSales
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Noto Sans Lao", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Blue;
-            this.label2.Location = new System.Drawing.Point(352, 242);
+            this.label2.Location = new System.Drawing.Point(364, 244);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(245, 54);
             this.label2.TabIndex = 11;

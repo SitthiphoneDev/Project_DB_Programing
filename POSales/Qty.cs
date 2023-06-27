@@ -40,10 +40,17 @@ namespace POSales
             this.qty = qty;
         }
 
+
         private void txtQty_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if ((e.KeyChar == 13) && (txtQty.Text != string.Empty))
+            if (e.KeyChar == 13 && !string.IsNullOrEmpty(txtQty.Text))
             {
+                if (!int.TryParse(txtQty.Text, out int qty))
+                {
+                    MessageBox.Show("Please enter a valid quantity", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
                 try
                 {
                     string id = "";
@@ -67,13 +74,15 @@ namespace POSales
 
                     if (found)
                     {
-                        if (qty < (int.Parse(txtQty.Text) + cart_qty))
+                        if (qty < (qty + cart_qty))
                         {
-                            MessageBox.Show("Unable to procced. Remaining qty on hand is" + qty, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show("Unable to procced. Remaining qty on hand is " + qty, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             return;
                         }
                         cn.Open();
-                        cm = new SqlCommand("Update tbCart set qty = (qty + " + int.Parse(txtQty.Text) + ")Where id= '" + id + "'", cn);
+                        cm = new SqlCommand("Update tbCart set qty = (qty + @qty) Where id= @id", cn);
+                        cm.Parameters.AddWithValue("@qty", qty);
+                        cm.Parameters.AddWithValue("@id", id);
                         cm.ExecuteReader();
                         cn.Close();
                         cashier.txtBarcode.Clear();
@@ -83,9 +92,9 @@ namespace POSales
                     }
                     else
                     {
-                        if (qty < (int.Parse(txtQty.Text) + cart_qty))
+                        if (qty > qty)
                         {
-                            MessageBox.Show("Unable to procced. Remaining qty on hand is" + qty, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show("Unable to procced. Remaining qty on hand is " + qty, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             return;
                         }
                         cn.Open();
@@ -93,7 +102,7 @@ namespace POSales
                         cm.Parameters.AddWithValue("@transno", transno);
                         cm.Parameters.AddWithValue("@pcode", pcode);
                         cm.Parameters.AddWithValue("@price", price);
-                        cm.Parameters.AddWithValue("@qty", int.Parse(txtQty.Text));
+                        cm.Parameters.AddWithValue("@qty", qty);
                         cm.Parameters.AddWithValue("@sdate", DateTime.Now);
                         cm.Parameters.AddWithValue("@cashier", cashier.lblUsername.Text);
                         cm.ExecuteNonQuery();
@@ -111,6 +120,9 @@ namespace POSales
             }
         }
 
+
+
+
         private void Qty_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Escape)
@@ -120,6 +132,11 @@ namespace POSales
         }
 
         private void txtQty_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Qty_Load(object sender, EventArgs e)
         {
 
         }

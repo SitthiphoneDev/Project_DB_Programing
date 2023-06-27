@@ -61,6 +61,7 @@ namespace POSales
             this.Name = "Qty";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Qty";
+            this.Load += new System.EventHandler(this.Qty_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Qty_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();

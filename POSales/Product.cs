@@ -94,5 +94,10 @@ namespace POSales
         {
 
         }
+
+        private void txtSearch_Click(object sender, EventArgs e)
+        {
+            LoadProduct();
+        }
     }
 }
