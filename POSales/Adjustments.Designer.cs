@@ -75,9 +75,10 @@ namespace POSales
             this.panel1.Controls.Add(this.txtSearch);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 512);
+            this.panel1.Location = new System.Drawing.Point(0, 555);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1035, 57);
+            this.panel1.Size = new System.Drawing.Size(941, 68);
             this.panel1.TabIndex = 4;
             // 
             // btnSave
@@ -86,13 +87,14 @@ namespace POSales
             this.btnSave.Enabled = false;
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(954, 10);
+            this.btnSave.Location = new System.Drawing.Point(839, 13);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 32);
+            this.btnSave.Size = new System.Drawing.Size(83, 42);
             this.btnSave.TabIndex = 4;
-            this.btnSave.Text = "Save";
+            this.btnSave.Text = "ບັນທຶກ";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -103,9 +105,10 @@ namespace POSales
             // 
             // 
             this.txtSearch.CustomButton.Image = null;
-            this.txtSearch.CustomButton.Location = new System.Drawing.Point(350, 1);
+            this.txtSearch.CustomButton.Location = new System.Drawing.Point(371, 2);
+            this.txtSearch.CustomButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSearch.CustomButton.Name = "";
-            this.txtSearch.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.txtSearch.CustomButton.Size = new System.Drawing.Size(31, 31);
             this.txtSearch.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtSearch.CustomButton.TabIndex = 1;
             this.txtSearch.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -114,7 +117,8 @@ namespace POSales
             this.txtSearch.DisplayIcon = true;
             this.txtSearch.Icon = ((System.Drawing.Image)(resources.GetObject("txtSearch.Icon")));
             this.txtSearch.Lines = new string[0];
-            this.txtSearch.Location = new System.Drawing.Point(329, 15);
+            this.txtSearch.Location = new System.Drawing.Point(262, 19);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSearch.MaxLength = 32767;
             this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
@@ -125,7 +129,7 @@ namespace POSales
             this.txtSearch.SelectionLength = 0;
             this.txtSearch.SelectionStart = 0;
             this.txtSearch.ShortcutsEnabled = true;
-            this.txtSearch.Size = new System.Drawing.Size(376, 27);
+            this.txtSearch.Size = new System.Drawing.Size(405, 36);
             this.txtSearch.TabIndex = 3;
             this.txtSearch.UseSelectable = true;
             this.txtSearch.WaterMark = "Search here";
@@ -139,9 +143,9 @@ namespace POSales
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Location = new System.Drawing.Point(7, 10);
+            this.label1.Location = new System.Drawing.Point(6, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(127, 43);
+            this.label1.Size = new System.Drawing.Size(115, 57);
             this.label1.TabIndex = 0;
             this.label1.Text = "Stock Adjustment";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -165,24 +169,27 @@ namespace POSales
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1035, 145);
+            this.panel2.Size = new System.Drawing.Size(941, 159);
             this.panel2.TabIndex = 5;
             // 
             // txtRemark
             // 
             this.txtRemark.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtRemark.Location = new System.Drawing.Point(716, 106);
+            this.txtRemark.Location = new System.Drawing.Point(643, 108);
+            this.txtRemark.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtRemark.Name = "txtRemark";
-            this.txtRemark.Size = new System.Drawing.Size(307, 30);
+            this.txtRemark.Size = new System.Drawing.Size(279, 37);
             this.txtRemark.TabIndex = 5;
             // 
             // txtQty
             // 
             this.txtQty.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtQty.Location = new System.Drawing.Point(716, 66);
+            this.txtQty.Location = new System.Drawing.Point(643, 60);
+            this.txtQty.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtQty.Name = "txtQty";
-            this.txtQty.Size = new System.Drawing.Size(307, 30);
+            this.txtQty.Size = new System.Drawing.Size(279, 37);
             this.txtQty.TabIndex = 4;
             // 
             // cbAction
@@ -190,29 +197,30 @@ namespace POSales
             this.cbAction.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cbAction.FormattingEnabled = true;
             this.cbAction.Items.AddRange(new object[] {
-            "Remove From Inventory",
-            "Add To Inventory"});
-            this.cbAction.Location = new System.Drawing.Point(716, 26);
+            "ລົບອອກຈາງຄັງສິນຄ້າ",
+            "ເພີ່ມເຂົ້າສາງສິນຄ້າ"});
+            this.cbAction.Location = new System.Drawing.Point(643, 12);
+            this.cbAction.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbAction.Name = "cbAction";
-            this.cbAction.Size = new System.Drawing.Size(307, 30);
+            this.cbAction.Size = new System.Drawing.Size(279, 37);
             this.cbAction.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(12, 106);
+            this.label3.Location = new System.Drawing.Point(81, 116);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(121, 22);
+            this.label3.Size = new System.Drawing.Size(68, 29);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Description :";
+            this.label3.Text = "ຊື່ສິນຄ້າ:";
             // 
             // lblDesc
             // 
             this.lblDesc.AutoSize = true;
             this.lblDesc.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDesc.ForeColor = System.Drawing.Color.White;
-            this.lblDesc.Location = new System.Drawing.Point(138, 106);
+            this.lblDesc.Location = new System.Drawing.Point(155, 119);
             this.lblDesc.Name = "lblDesc";
             this.lblDesc.Size = new System.Drawing.Size(139, 22);
             this.lblDesc.TabIndex = 2;
@@ -223,7 +231,7 @@ namespace POSales
             this.lblPcode.AutoSize = true;
             this.lblPcode.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPcode.ForeColor = System.Drawing.Color.White;
-            this.lblPcode.Location = new System.Drawing.Point(357, 66);
+            this.lblPcode.Location = new System.Drawing.Point(312, 83);
             this.lblPcode.Name = "lblPcode";
             this.lblPcode.Size = new System.Drawing.Size(137, 22);
             this.lblPcode.TabIndex = 2;
@@ -234,7 +242,7 @@ namespace POSales
             this.lblRefNo.AutoSize = true;
             this.lblRefNo.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRefNo.ForeColor = System.Drawing.Color.White;
-            this.lblRefNo.Location = new System.Drawing.Point(165, 66);
+            this.lblRefNo.Location = new System.Drawing.Point(155, 83);
             this.lblRefNo.Name = "lblRefNo";
             this.lblRefNo.Size = new System.Drawing.Size(66, 22);
             this.lblRefNo.TabIndex = 2;
@@ -245,9 +253,9 @@ namespace POSales
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(616, 109);
+            this.label7.Location = new System.Drawing.Point(530, 104);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(97, 22);
+            this.label7.Size = new System.Drawing.Size(97, 29);
             this.label7.TabIndex = 2;
             this.label7.Text = "Remarks :";
             // 
@@ -256,11 +264,11 @@ namespace POSales
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(616, 69);
+            this.label6.Location = new System.Drawing.Point(560, 60);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(55, 22);
+            this.label6.Size = new System.Drawing.Size(67, 29);
             this.label6.TabIndex = 2;
-            this.label6.Text = "Qty :";
+            this.label6.Text = "ຈຳນວນ:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label5
@@ -268,9 +276,9 @@ namespace POSales
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(616, 29);
+            this.label5.Location = new System.Drawing.Point(560, 15);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(81, 22);
+            this.label5.Size = new System.Drawing.Size(77, 29);
             this.label5.TabIndex = 2;
             this.label5.Text = "Action :";
             // 
@@ -278,19 +286,19 @@ namespace POSales
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(285, 66);
+            this.label4.Location = new System.Drawing.Point(257, 80);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 22);
+            this.label4.Size = new System.Drawing.Size(60, 29);
             this.label4.TabIndex = 2;
-            this.label4.Text = "Pcode :";
+            this.label4.Text = "ລະຫັດ:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(12, 66);
+            this.label2.Location = new System.Drawing.Point(12, 80);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(147, 22);
+            this.label2.Size = new System.Drawing.Size(137, 29);
             this.label2.TabIndex = 2;
             this.label2.Text = "Reference No :";
             // 
@@ -298,18 +306,19 @@ namespace POSales
             // 
             this.lblUsername.AutoSize = true;
             this.lblUsername.ForeColor = System.Drawing.Color.White;
-            this.lblUsername.Location = new System.Drawing.Point(56, 26);
+            this.lblUsername.Location = new System.Drawing.Point(51, 34);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(103, 22);
+            this.lblUsername.Size = new System.Drawing.Size(103, 29);
             this.lblUsername.TabIndex = 1;
             this.lblUsername.Text = "UserName";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(15, 11);
+            this.pictureBox1.Location = new System.Drawing.Point(14, 15);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox1.Size = new System.Drawing.Size(32, 46);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -318,6 +327,7 @@ namespace POSales
             // 
             this.dgvAdjustment.AllowUserToAddRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Noto Sans Lao", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvAdjustment.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvAdjustment.BackgroundColor = System.Drawing.Color.White;
             this.dgvAdjustment.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -341,12 +351,14 @@ namespace POSales
             this.Column7,
             this.Column8,
             this.Select});
+            this.dgvAdjustment.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvAdjustment.EnableHeadersVisualStyles = false;
-            this.dgvAdjustment.Location = new System.Drawing.Point(-12, 142);
+            this.dgvAdjustment.Location = new System.Drawing.Point(0, 159);
+            this.dgvAdjustment.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvAdjustment.Name = "dgvAdjustment";
             this.dgvAdjustment.RowHeadersVisible = false;
             this.dgvAdjustment.RowHeadersWidth = 51;
-            this.dgvAdjustment.Size = new System.Drawing.Size(1035, 367);
+            this.dgvAdjustment.Size = new System.Drawing.Size(941, 396);
             this.dgvAdjustment.TabIndex = 6;
             this.dgvAdjustment.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAdjustment_CellContentClick);
             // 
@@ -358,7 +370,7 @@ namespace POSales
             this.Column1.HeaderText = "No";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
-            this.Column1.Width = 66;
+            this.Column1.Width = 65;
             // 
             // Column2
             // 
@@ -366,7 +378,7 @@ namespace POSales
             this.Column2.HeaderText = "ລະຫັດ";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
-            this.Column2.Width = 86;
+            this.Column2.Width = 82;
             // 
             // Column3
             // 
@@ -374,7 +386,7 @@ namespace POSales
             this.Column3.HeaderText = "Barcode";
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
-            this.Column3.Width = 115;
+            this.Column3.Width = 110;
             // 
             // Column4
             // 
@@ -389,7 +401,7 @@ namespace POSales
             this.Column5.HeaderText = "ໜ່ວຍ";
             this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
-            this.Column5.Width = 82;
+            this.Column5.Width = 79;
             // 
             // Column6
             // 
@@ -397,7 +409,7 @@ namespace POSales
             this.Column6.HeaderText = "ໝວດໝູ່";
             this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
-            this.Column6.Width = 102;
+            this.Column6.Width = 98;
             // 
             // Column7
             // 
@@ -405,7 +417,7 @@ namespace POSales
             this.Column7.HeaderText = "ລາຄາ";
             this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
-            this.Column7.Width = 77;
+            this.Column7.Width = 74;
             // 
             // Column8
             // 
@@ -413,7 +425,7 @@ namespace POSales
             this.Column8.HeaderText = "Stock On Hand";
             this.Column8.MinimumWidth = 6;
             this.Column8.Name = "Column8";
-            this.Column8.Width = 174;
+            this.Column8.Width = 166;
             // 
             // Select
             // 
@@ -426,16 +438,16 @@ namespace POSales
             // 
             // Adjustments
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1035, 569);
+            this.ClientSize = new System.Drawing.Size(941, 623);
             this.Controls.Add(this.dgvAdjustment);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(4, 7, 4, 7);
             this.Name = "Adjustments";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Adjustments";

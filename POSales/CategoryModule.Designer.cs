@@ -146,9 +146,10 @@ namespace POSales
             // 
             // txtCategory
             // 
-            this.txtCategory.Location = new System.Drawing.Point(159, 95);
+            this.txtCategory.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCategory.Location = new System.Drawing.Point(159, 91);
             this.txtCategory.Name = "txtCategory";
-            this.txtCategory.Size = new System.Drawing.Size(531, 30);
+            this.txtCategory.Size = new System.Drawing.Size(531, 37);
             this.txtCategory.TabIndex = 8;
             // 
             // CategoryModule

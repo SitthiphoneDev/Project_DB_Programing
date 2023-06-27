@@ -90,7 +90,7 @@ namespace POSales
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(3, 5);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 39);
+            this.label1.Size = new System.Drawing.Size(106, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "ເພີ່ມສິນຄ້າ";
             // 
@@ -141,9 +141,10 @@ namespace POSales
             // 
             // txtPcode
             // 
+            this.txtPcode.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPcode.Location = new System.Drawing.Point(163, 86);
             this.txtPcode.Name = "txtPcode";
-            this.txtPcode.Size = new System.Drawing.Size(194, 30);
+            this.txtPcode.Size = new System.Drawing.Size(194, 32);
             this.txtPcode.TabIndex = 8;
             // 
             // panel1
@@ -218,43 +219,49 @@ namespace POSales
             // 
             // txtBarcode
             // 
+            this.txtBarcode.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBarcode.Location = new System.Drawing.Point(510, 86);
             this.txtBarcode.Name = "txtBarcode";
-            this.txtBarcode.Size = new System.Drawing.Size(184, 30);
+            this.txtBarcode.Size = new System.Drawing.Size(184, 32);
             this.txtBarcode.TabIndex = 8;
             // 
             // txtPdesc
             // 
+            this.txtPdesc.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPdesc.Location = new System.Drawing.Point(163, 130);
             this.txtPdesc.Name = "txtPdesc";
-            this.txtPdesc.Size = new System.Drawing.Size(531, 30);
+            this.txtPdesc.Size = new System.Drawing.Size(531, 37);
             this.txtPdesc.TabIndex = 8;
             // 
             // cboBrand
             // 
+            this.cboBrand.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboBrand.FormattingEnabled = true;
             this.cboBrand.Location = new System.Drawing.Point(163, 174);
             this.cboBrand.Name = "cboBrand";
-            this.cboBrand.Size = new System.Drawing.Size(531, 30);
+            this.cboBrand.Size = new System.Drawing.Size(531, 37);
             this.cboBrand.TabIndex = 14;
             // 
             // cboCategory
             // 
+            this.cboCategory.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCategory.FormattingEnabled = true;
             this.cboCategory.Location = new System.Drawing.Point(163, 220);
             this.cboCategory.Name = "cboCategory";
-            this.cboCategory.Size = new System.Drawing.Size(531, 30);
+            this.cboCategory.Size = new System.Drawing.Size(531, 37);
             this.cboCategory.TabIndex = 14;
             // 
             // txtPrice
             // 
+            this.txtPrice.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrice.Location = new System.Drawing.Point(163, 266);
             this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(194, 30);
+            this.txtPrice.Size = new System.Drawing.Size(194, 32);
             this.txtPrice.TabIndex = 15;
             // 
             // UDReOrder
             // 
+            this.UDReOrder.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UDReOrder.Location = new System.Drawing.Point(510, 266);
             this.UDReOrder.Maximum = new decimal(new int[] {
             1000,
@@ -267,7 +274,7 @@ namespace POSales
             0,
             0});
             this.UDReOrder.Name = "UDReOrder";
-            this.UDReOrder.Size = new System.Drawing.Size(184, 30);
+            this.UDReOrder.Size = new System.Drawing.Size(184, 32);
             this.UDReOrder.TabIndex = 16;
             this.UDReOrder.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.UDReOrder.Value = new decimal(new int[] {
