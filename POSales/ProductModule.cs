@@ -67,7 +67,7 @@ namespace POSales
         {
             try
             {
-                if (MessageBox.Show("Are you sure want to save this product?", "Save Product", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("ທ່ານແນ່ໃຈບໍ່ວ່າຕ້ອງການບັນທຶກສິນຄ້າ?", "Save Product", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     cm = new SqlCommand("INSERT INTO tbProduct(pcode, barcode, pdesc, bid, cid, price, reorder)VALUES (@pcode,@barcode,@pdesc,@bid,@cid,@price, @reorder)", cn);
                     cm.Parameters.AddWithValue("@pcode", txtPcode.Text);
@@ -80,7 +80,7 @@ namespace POSales
                     cn.Open();
                     cm.ExecuteNonQuery();
                     cn.Close();
-                    MessageBox.Show("Product has been successfully saved.", stitle);
+                    MessageBox.Show("ສິນຄ້າບັນທຶກຮຽບຮ້ອຍແລ້ວ.", stitle);
                     Clear();
                     product.LoadProduct();
                 }
@@ -95,14 +95,14 @@ namespace POSales
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            Clear();
+            Close();
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             try
             {
-                if (MessageBox.Show("Are you sure want to update this product?", "Update Product", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("ທ່ານແນ່ໃຈບໍ່ວ່າຕ້ອງການອັບເດດສິນຄ້າ?", "Update Product", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     cm = new SqlCommand("UPDATE tbProduct SET barcode=@barcode,pdesc=@pdesc,bid=@bid,cid=@cid,price=@price, reorder=@reorder WHERE pcode LIKE @pcode", cn);
                     cm.Parameters.AddWithValue("@pcode", txtPcode.Text);
@@ -115,7 +115,7 @@ namespace POSales
                     cn.Open();
                     cm.ExecuteNonQuery();
                     cn.Close();
-                    MessageBox.Show("Product has been successfully updated.", stitle);
+                    MessageBox.Show("ສິນຄ້າອັບເດດຮຽບຮ້ອຍແລ້ວ.", stitle);
                     Clear();
                     this.Dispose();
                 }

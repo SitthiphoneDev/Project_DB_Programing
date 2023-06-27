@@ -56,7 +56,7 @@ namespace POSales
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            Clear();
+            Close();
             
         }
 
@@ -82,6 +82,11 @@ namespace POSales
                 Clear();
                 this.Dispose();// To close this form after update data
             }
+        }
+
+        private void UnitModule_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
