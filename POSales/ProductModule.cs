@@ -135,5 +135,10 @@ namespace POSales
                 this.Dispose();
             }
         }
+
+        private void txtPrice_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

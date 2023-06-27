@@ -258,6 +258,7 @@ namespace POSales
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(194, 32);
             this.txtPrice.TabIndex = 15;
+            this.txtPrice.TextChanged += new System.EventHandler(this.txtPrice_TextChanged);
             // 
             // UDReOrder
             // 
