@@ -31,7 +31,6 @@ namespace POSales
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserAccount));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -92,7 +91,7 @@ namespace POSales
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 481);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(984, 80);
+            this.panel1.Size = new System.Drawing.Size(985, 80);
             this.panel1.TabIndex = 3;
             // 
             // label1
@@ -171,7 +170,7 @@ namespace POSales
             this.btnAccCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAccCancel.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAccCancel.ForeColor = System.Drawing.Color.Black;
-            this.btnAccCancel.Location = new System.Drawing.Point(698, 344);
+            this.btnAccCancel.Location = new System.Drawing.Point(699, 344);
             this.btnAccCancel.Name = "btnAccCancel";
             this.btnAccCancel.Size = new System.Drawing.Size(94, 35);
             this.btnAccCancel.TabIndex = 32;
@@ -181,20 +180,22 @@ namespace POSales
             // 
             // txtName
             // 
+            this.txtName.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.Location = new System.Drawing.Point(265, 273);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(527, 30);
+            this.txtName.Size = new System.Drawing.Size(527, 37);
             this.txtName.TabIndex = 5;
             // 
             // cbRole
             // 
+            this.cbRole.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbRole.FormattingEnabled = true;
             this.cbRole.Items.AddRange(new object[] {
             "Administrator",
             "Cashier"});
             this.cbRole.Location = new System.Drawing.Point(265, 220);
             this.cbRole.Name = "cbRole";
-            this.cbRole.Size = new System.Drawing.Size(527, 30);
+            this.cbRole.Size = new System.Drawing.Size(527, 28);
             this.cbRole.TabIndex = 4;
             // 
             // txtRePass
@@ -215,9 +216,10 @@ namespace POSales
             // 
             // txtUsername
             // 
+            this.txtUsername.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.Location = new System.Drawing.Point(265, 67);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(527, 30);
+            this.txtUsername.Size = new System.Drawing.Size(527, 37);
             this.txtUsername.TabIndex = 3;
             // 
             // label6
@@ -295,6 +297,7 @@ namespace POSales
             this.metroTabPage2.VerticalScrollbarBarColor = true;
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage2.VerticalScrollbarSize = 3;
+            this.metroTabPage2.Click += new System.EventHandler(this.metroTabPage2_Click);
             // 
             // lblUsername
             // 
@@ -323,7 +326,7 @@ namespace POSales
             this.btnPassSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPassSave.Font = new System.Drawing.Font("Phetsarath OT", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPassSave.ForeColor = System.Drawing.Color.White;
-            this.btnPassSave.Location = new System.Drawing.Point(599, 321);
+            this.btnPassSave.Location = new System.Drawing.Point(600, 321);
             this.btnPassSave.Name = "btnPassSave";
             this.btnPassSave.Size = new System.Drawing.Size(94, 35);
             this.btnPassSave.TabIndex = 33;
@@ -349,7 +352,7 @@ namespace POSales
             // 
             // txtRePass2
             // 
-            this.txtRePass2.Location = new System.Drawing.Point(280, 234);
+            this.txtRePass2.Location = new System.Drawing.Point(281, 234);
             this.txtRePass2.Name = "txtRePass2";
             this.txtRePass2.Size = new System.Drawing.Size(527, 30);
             this.txtRePass2.TabIndex = 11;
@@ -367,7 +370,7 @@ namespace POSales
             // 
             // txtNPass
             // 
-            this.txtNPass.Location = new System.Drawing.Point(280, 176);
+            this.txtNPass.Location = new System.Drawing.Point(281, 176);
             this.txtNPass.Name = "txtNPass";
             this.txtNPass.Size = new System.Drawing.Size(527, 30);
             this.txtNPass.TabIndex = 9;
@@ -385,7 +388,7 @@ namespace POSales
             // 
             // txtCurPass
             // 
-            this.txtCurPass.Location = new System.Drawing.Point(280, 121);
+            this.txtCurPass.Location = new System.Drawing.Point(281, 121);
             this.txtCurPass.Name = "txtCurPass";
             this.txtCurPass.Size = new System.Drawing.Size(527, 30);
             this.txtCurPass.TabIndex = 7;
@@ -407,6 +410,7 @@ namespace POSales
             this.metroTabPage3.Controls.Add(this.btnProperties);
             this.metroTabPage3.Controls.Add(this.btnRemove);
             this.metroTabPage3.Controls.Add(this.dgvUser);
+            this.metroTabPage3.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.metroTabPage3.HorizontalScrollbarBarColor = true;
             this.metroTabPage3.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage3.HorizontalScrollbarSize = 1;
@@ -451,6 +455,7 @@ namespace POSales
             this.lblAccNote.Size = new System.Drawing.Size(420, 28);
             this.lblAccNote.TabIndex = 0;
             this.lblAccNote.Text = "ເພື່ອປ່ຽນລະຫັດຜ່ານສໍາລັບຊື່ຜູ້ໃຊ້, ໃຫ້ຄລິກໃສ່ Reset Password.";
+            this.lblAccNote.Click += new System.EventHandler(this.lblAccNote_Click);
             // 
             // btnResetPass
             // 
@@ -490,7 +495,7 @@ namespace POSales
             this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRemove.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemove.ForeColor = System.Drawing.Color.Black;
-            this.btnRemove.Location = new System.Drawing.Point(676, 246);
+            this.btnRemove.Location = new System.Drawing.Point(677, 246);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(111, 35);
             this.btnRemove.TabIndex = 22;
@@ -513,22 +518,13 @@ namespace POSales
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvUser.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvUser.ColumnHeadersHeight = 30;
-            this.dgvUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvUser.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
             this.Column5,
             this.Column4});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvUser.DefaultCellStyle = dataGridViewCellStyle4;
             this.dgvUser.EnableHeadersVisualStyles = false;
             this.dgvUser.Location = new System.Drawing.Point(14, 3);
             this.dgvUser.Name = "dgvUser";
@@ -586,7 +582,7 @@ namespace POSales
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(984, 561);
+            this.ClientSize = new System.Drawing.Size(985, 561);
             this.ControlBox = false;
             this.Controls.Add(this.metroTabControl1);
             this.Controls.Add(this.panel1);

@@ -185,5 +185,15 @@ namespace POSales
         {
 
         }
+
+        private void lblAccNote_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroTabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
