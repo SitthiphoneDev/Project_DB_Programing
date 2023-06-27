@@ -86,7 +86,7 @@ namespace POSales
 
         private void btnAccCancel_Click(object sender, EventArgs e)
         {
-            Clear();
+            Close();
         }
 
         private void btnPassSave_Click(object sender, EventArgs e)
@@ -179,6 +179,11 @@ namespace POSales
             properties.cbActivate.Text = accstatus;
             properties.username = username;
             properties.ShowDialog();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -31,6 +31,7 @@ namespace POSales
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserAccount));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
@@ -134,7 +135,7 @@ namespace POSales
             this.metroTabPage1.Controls.Add(this.label2);
             this.metroTabPage1.HorizontalScrollbarBarColor = true;
             this.metroTabPage1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage1.HorizontalScrollbarSize = 2;
+            this.metroTabPage1.HorizontalScrollbarSize = 1;
             this.metroTabPage1.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage1.Name = "metroTabPage1";
             this.metroTabPage1.Size = new System.Drawing.Size(920, 410);
@@ -142,35 +143,37 @@ namespace POSales
             this.metroTabPage1.Text = "Create Account";
             this.metroTabPage1.VerticalScrollbarBarColor = true;
             this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage1.VerticalScrollbarSize = 4;
+            this.metroTabPage1.VerticalScrollbarSize = 3;
             // 
             // btnAccSave
             // 
             this.btnAccSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAccSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.btnAccSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(100)))), ((int)(((byte)(4)))));
             this.btnAccSave.FlatAppearance.BorderSize = 0;
             this.btnAccSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAccSave.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAccSave.ForeColor = System.Drawing.Color.White;
             this.btnAccSave.Location = new System.Drawing.Point(584, 344);
             this.btnAccSave.Name = "btnAccSave";
             this.btnAccSave.Size = new System.Drawing.Size(94, 35);
             this.btnAccSave.TabIndex = 31;
-            this.btnAccSave.Text = "Save";
+            this.btnAccSave.Text = "ບັນທຶກ";
             this.btnAccSave.UseVisualStyleBackColor = false;
             this.btnAccSave.Click += new System.EventHandler(this.btnAccSave_Click);
             // 
             // btnAccCancel
             // 
             this.btnAccCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAccCancel.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnAccCancel.BackColor = System.Drawing.Color.DarkGray;
             this.btnAccCancel.FlatAppearance.BorderSize = 0;
             this.btnAccCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAccCancel.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAccCancel.ForeColor = System.Drawing.Color.Black;
             this.btnAccCancel.Location = new System.Drawing.Point(698, 344);
             this.btnAccCancel.Name = "btnAccCancel";
             this.btnAccCancel.Size = new System.Drawing.Size(94, 35);
             this.btnAccCancel.TabIndex = 32;
-            this.btnAccCancel.Text = "Cancel";
+            this.btnAccCancel.Text = "ຍົກເລີກ";
             this.btnAccCancel.UseVisualStyleBackColor = false;
             this.btnAccCancel.Click += new System.EventHandler(this.btnAccCancel_Click);
             // 
@@ -218,47 +221,53 @@ namespace POSales
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(95, 274);
+            this.label6.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(120, 273);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(108, 22);
+            this.label6.Size = new System.Drawing.Size(143, 31);
             this.label6.TabIndex = 2;
-            this.label6.Text = "Full Name :";
+            this.label6.Text = "ຊື່ ແລະ ນາມສະກຸນ:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(95, 223);
+            this.label5.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(120, 219);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(59, 22);
+            this.label5.Size = new System.Drawing.Size(73, 31);
             this.label5.TabIndex = 2;
-            this.label5.Text = "Role :";
+            this.label5.Text = "ບົດບາດ:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(95, 172);
+            this.label4.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(120, 168);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(183, 22);
+            this.label4.Size = new System.Drawing.Size(139, 31);
             this.label4.TabIndex = 2;
-            this.label4.Text = "Re-type Password :";
+            this.label4.Text = "ຢັ້ງຢືນລະຫັດຜ່ານ:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(95, 121);
+            this.label3.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(120, 117);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(105, 22);
+            this.label3.Size = new System.Drawing.Size(96, 31);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Password :";
+            this.label3.Text = "ລະຫັດຜ່ານ:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(95, 70);
+            this.label2.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(120, 66);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 22);
+            this.label2.Size = new System.Drawing.Size(67, 31);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Username :";
+            this.label2.Text = "ຊື່ຜູ້ໃຊ້ :";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // metroTabPage2
             // 
@@ -275,7 +284,7 @@ namespace POSales
             this.metroTabPage2.Controls.Add(this.label8);
             this.metroTabPage2.HorizontalScrollbarBarColor = true;
             this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.HorizontalScrollbarSize = 2;
+            this.metroTabPage2.HorizontalScrollbarSize = 1;
             this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage2.Name = "metroTabPage2";
             this.metroTabPage2.Size = new System.Drawing.Size(920, 410);
@@ -283,7 +292,7 @@ namespace POSales
             this.metroTabPage2.Text = "Change Password";
             this.metroTabPage2.VerticalScrollbarBarColor = true;
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.VerticalScrollbarSize = 4;
+            this.metroTabPage2.VerticalScrollbarSize = 3;
             // 
             // lblUsername
             // 
@@ -307,15 +316,16 @@ namespace POSales
             // btnPassSave
             // 
             this.btnPassSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPassSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.btnPassSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(120)))), ((int)(((byte)(4)))));
             this.btnPassSave.FlatAppearance.BorderSize = 0;
             this.btnPassSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPassSave.Font = new System.Drawing.Font("Phetsarath OT", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPassSave.ForeColor = System.Drawing.Color.White;
             this.btnPassSave.Location = new System.Drawing.Point(599, 321);
             this.btnPassSave.Name = "btnPassSave";
             this.btnPassSave.Size = new System.Drawing.Size(94, 35);
             this.btnPassSave.TabIndex = 33;
-            this.btnPassSave.Text = "Save";
+            this.btnPassSave.Text = "ບັນທຶກ";
             this.btnPassSave.UseVisualStyleBackColor = false;
             this.btnPassSave.Click += new System.EventHandler(this.btnPassSave_Click);
             // 
@@ -325,12 +335,13 @@ namespace POSales
             this.btnPassCancel.BackColor = System.Drawing.Color.Gainsboro;
             this.btnPassCancel.FlatAppearance.BorderSize = 0;
             this.btnPassCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPassCancel.Font = new System.Drawing.Font("Phetsarath OT", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPassCancel.ForeColor = System.Drawing.Color.Black;
             this.btnPassCancel.Location = new System.Drawing.Point(713, 321);
             this.btnPassCancel.Name = "btnPassCancel";
             this.btnPassCancel.Size = new System.Drawing.Size(94, 35);
             this.btnPassCancel.TabIndex = 34;
-            this.btnPassCancel.Text = "Cancel";
+            this.btnPassCancel.Text = "ຍົກເລີກ";
             this.btnPassCancel.UseVisualStyleBackColor = false;
             this.btnPassCancel.Click += new System.EventHandler(this.btnPassCancel_Click);
             // 
@@ -345,11 +356,12 @@ namespace POSales
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(110, 237);
+            this.label10.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(135, 233);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(183, 22);
+            this.label10.Size = new System.Drawing.Size(139, 31);
             this.label10.TabIndex = 10;
-            this.label10.Text = "Re-type Password :";
+            this.label10.Text = "ຢັ້ງຢືນລະຫັດຜ່ານ:";
             // 
             // txtNPass
             // 
@@ -362,11 +374,12 @@ namespace POSales
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(110, 179);
+            this.label9.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(135, 175);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(152, 22);
+            this.label9.Size = new System.Drawing.Size(125, 31);
             this.label9.TabIndex = 8;
-            this.label9.Text = "New Password :";
+            this.label9.Text = "ລະຫັດຜ່ານໃໝ່ :";
             // 
             // txtCurPass
             // 
@@ -379,11 +392,12 @@ namespace POSales
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(110, 124);
+            this.label8.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(135, 121);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(180, 22);
+            this.label8.Size = new System.Drawing.Size(123, 31);
             this.label8.TabIndex = 6;
-            this.label8.Text = "Current Password :";
+            this.label8.Text = "ລະ​ຫັດ​ປັດ​ຈຸ​ບັນ:";
             // 
             // metroTabPage3
             // 
@@ -393,7 +407,7 @@ namespace POSales
             this.metroTabPage3.Controls.Add(this.dgvUser);
             this.metroTabPage3.HorizontalScrollbarBarColor = true;
             this.metroTabPage3.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage3.HorizontalScrollbarSize = 2;
+            this.metroTabPage3.HorizontalScrollbarSize = 1;
             this.metroTabPage3.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage3.Name = "metroTabPage3";
             this.metroTabPage3.Size = new System.Drawing.Size(920, 410);
@@ -401,20 +415,21 @@ namespace POSales
             this.metroTabPage3.Text = "Activate/ UnActivate Account";
             this.metroTabPage3.VerticalScrollbarBarColor = true;
             this.metroTabPage3.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage3.VerticalScrollbarSize = 4;
+            this.metroTabPage3.VerticalScrollbarSize = 3;
             // 
             // gbUser
             // 
-            this.gbUser.BackColor = System.Drawing.Color.White;
+            this.gbUser.BackColor = System.Drawing.SystemColors.ControlLight;
             this.gbUser.Controls.Add(this.pictureBox2);
             this.gbUser.Controls.Add(this.lblAccNote);
             this.gbUser.Controls.Add(this.btnResetPass);
+            this.gbUser.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbUser.Location = new System.Drawing.Point(14, 307);
             this.gbUser.Name = "gbUser";
             this.gbUser.Size = new System.Drawing.Size(890, 100);
             this.gbUser.TabIndex = 23;
             this.gbUser.TabStop = false;
-            this.gbUser.Text = "Password For UserName";
+            this.gbUser.Text = "ລະຫັດຜ່ານສໍາລັບຜູ້ໃຊ້";
             // 
             // pictureBox2
             // 
@@ -428,17 +443,19 @@ namespace POSales
             // lblAccNote
             // 
             this.lblAccNote.AutoSize = true;
-            this.lblAccNote.Location = new System.Drawing.Point(103, 27);
+            this.lblAccNote.Font = new System.Drawing.Font("Noto Sans Lao", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAccNote.Location = new System.Drawing.Point(133, 41);
             this.lblAccNote.Name = "lblAccNote";
-            this.lblAccNote.Size = new System.Drawing.Size(562, 22);
+            this.lblAccNote.Size = new System.Drawing.Size(420, 28);
             this.lblAccNote.TabIndex = 0;
-            this.lblAccNote.Text = "To change the password for username, click Reset Password.";
+            this.lblAccNote.Text = "ເພື່ອປ່ຽນລະຫັດຜ່ານສໍາລັບຊື່ຜູ້ໃຊ້, ໃຫ້ຄລິກໃສ່ Reset Password.";
             // 
             // btnResetPass
             // 
             this.btnResetPass.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnResetPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnResetPass.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnResetPass.FlatAppearance.BorderSize = 0;
+            this.btnResetPass.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnResetPass.ForeColor = System.Drawing.Color.Black;
             this.btnResetPass.Location = new System.Drawing.Point(662, 59);
             this.btnResetPass.Name = "btnResetPass";
@@ -465,8 +482,11 @@ namespace POSales
             // btnRemove
             // 
             this.btnRemove.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRemove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnRemove.BackColor = System.Drawing.Color.Red;
+            this.btnRemove.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnRemove.FlatAppearance.BorderSize = 0;
+            this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnRemove.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemove.ForeColor = System.Drawing.Color.Black;
             this.btnRemove.Location = new System.Drawing.Point(676, 246);
             this.btnRemove.Name = "btnRemove";
@@ -484,8 +504,8 @@ namespace POSales
             this.dgvUser.BackgroundColor = System.Drawing.Color.White;
             this.dgvUser.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(110)))), ((int)(((byte)(4)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(140)))), ((int)(((byte)(4)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -514,38 +534,40 @@ namespace POSales
             this.Column1.HeaderText = "No";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
-            this.Column1.Width = 63;
+            this.Column1.Width = 66;
             // 
             // Column2
             // 
             this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column2.HeaderText = "User Name";
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Noto Sans Lao", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Column2.HeaderText = "ຊື່ຜູ້ໃຊ້";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
-            this.Column2.Width = 135;
+            this.Column2.Width = 84;
             // 
             // Column3
             // 
             this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column3.HeaderText = "Full Name";
+            this.Column3.HeaderText = "ຊື່ ແລະ ນາມສະກຸນ";
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
             // 
             // Column5
             // 
             this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column5.HeaderText = "Account Activate";
+            this.Column5.HeaderText = "ສະຖານະບັນຊີ";
             this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
-            this.Column5.Width = 206;
+            this.Column5.Width = 133;
             // 
             // Column4
             // 
             this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column4.HeaderText = "Role";
+            this.Column4.HeaderText = "ບົດບາດ";
             this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
-            this.Column4.Width = 76;
+            this.Column4.Width = 95;
             // 
             // UserAccount
             // 
