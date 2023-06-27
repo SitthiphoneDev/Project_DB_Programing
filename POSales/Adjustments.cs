@@ -115,7 +115,7 @@ namespace POSales
                 {
                     dbcon.ExecuteQuery("UPDATE tbProduct SET qty = (qty - " + int.Parse(txtQty.Text) + ") WHERE pcode LIKE '" + lblPcode.Text + "'");
                 }
-                else if(cbAction.Text== "ເພີ່ມເຂົ້າສາງສິນຄ້າ")
+                else if(cbAction.Text== "Add Inventory")
                 {
                     dbcon.ExecuteQuery("UPDATE tbProduct SET qty = (qty + " + int.Parse(txtQty.Text) + ") WHERE pcode LIKE '" + lblPcode.Text + "'");
                 }
