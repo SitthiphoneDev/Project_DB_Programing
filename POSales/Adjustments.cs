@@ -111,11 +111,11 @@ namespace POSales
                     MessageBox.Show("Stock on hand quantity should be greater than adjustment quantity.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-                if(cbAction.Text=="Remove From Inventory")
+                if(cbAction.Text== "ລົບອອກຈາງຄັງສິນຄ້າ")
                 {
                     dbcon.ExecuteQuery("UPDATE tbProduct SET qty = (qty - " + int.Parse(txtQty.Text) + ") WHERE pcode LIKE '" + lblPcode.Text + "'");
                 }
-                else if(cbAction.Text=="Add To Inventory")
+                else if(cbAction.Text== "ເພີ່ມເຂົ້າສາງສິນຄ້າ")
                 {
                     dbcon.ExecuteQuery("UPDATE tbProduct SET qty = (qty + " + int.Parse(txtQty.Text) + ") WHERE pcode LIKE '" + lblPcode.Text + "'");
                 }
@@ -130,6 +130,11 @@ namespace POSales
             {
                 MessageBox.Show(ex.Message, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void cbAction_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

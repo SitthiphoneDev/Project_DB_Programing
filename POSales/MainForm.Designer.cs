@@ -103,7 +103,7 @@ namespace POSales
             this.btnLogout.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnLogout.Size = new System.Drawing.Size(179, 45);
             this.btnLogout.TabIndex = 9;
-            this.btnLogout.Text = "Logout";
+            this.btnLogout.Text = "ອອກຈາກລະບົບ";
             this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
@@ -549,7 +549,6 @@ namespace POSales
         private System.Windows.Forms.Button btnBrand;
         private System.Windows.Forms.Button btnCategory;
         private System.Windows.Forms.Button btnProductList;
-        private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Panel panelSubSetting;
         private System.Windows.Forms.Button btnStore;
         private System.Windows.Forms.Button btnUser;
@@ -569,6 +568,7 @@ namespace POSales
         public System.Windows.Forms.Label lblUsername;
         public System.Windows.Forms.Label lblName;
         public System.Windows.Forms.Button btnDashboard;
+        private System.Windows.Forms.Button btnLogout;
     }
 }
 

@@ -32,6 +32,7 @@ namespace POSales
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Adjustments));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSave = new System.Windows.Forms.Button();
@@ -204,6 +205,7 @@ namespace POSales
             this.cbAction.Name = "cbAction";
             this.cbAction.Size = new System.Drawing.Size(279, 37);
             this.cbAction.TabIndex = 3;
+            this.cbAction.SelectedIndexChanged += new System.EventHandler(this.cbAction_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -218,11 +220,11 @@ namespace POSales
             // lblDesc
             // 
             this.lblDesc.AutoSize = true;
-            this.lblDesc.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDesc.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDesc.ForeColor = System.Drawing.Color.White;
             this.lblDesc.Location = new System.Drawing.Point(155, 119);
             this.lblDesc.Name = "lblDesc";
-            this.lblDesc.Size = new System.Drawing.Size(139, 22);
+            this.lblDesc.Size = new System.Drawing.Size(131, 29);
             this.lblDesc.TabIndex = 2;
             this.lblDesc.Text = "Product detail";
             // 
@@ -327,7 +329,7 @@ namespace POSales
             // 
             this.dgvAdjustment.AllowUserToAddRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Noto Sans Lao", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvAdjustment.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvAdjustment.BackgroundColor = System.Drawing.Color.White;
             this.dgvAdjustment.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -358,6 +360,8 @@ namespace POSales
             this.dgvAdjustment.Name = "dgvAdjustment";
             this.dgvAdjustment.RowHeadersVisible = false;
             this.dgvAdjustment.RowHeadersWidth = 51;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvAdjustment.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvAdjustment.Size = new System.Drawing.Size(941, 396);
             this.dgvAdjustment.TabIndex = 6;
             this.dgvAdjustment.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAdjustment_CellContentClick);

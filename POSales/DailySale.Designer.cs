@@ -32,9 +32,12 @@ namespace POSales
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DailySale));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.picClose = new System.Windows.Forms.PictureBox();
             this.lblTitle = new System.Windows.Forms.Label();
@@ -70,17 +73,19 @@ namespace POSales
             this.panel1.Controls.Add(this.lblTitle);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1010, 44);
+            this.panel1.Size = new System.Drawing.Size(918, 58);
             this.panel1.TabIndex = 8;
             // 
             // picClose
             // 
             this.picClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.picClose.Image = ((System.Drawing.Image)(resources.GetObject("picClose.Image")));
-            this.picClose.Location = new System.Drawing.Point(981, 0);
+            this.picClose.Location = new System.Drawing.Point(892, 0);
+            this.picClose.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.picClose.Name = "picClose";
-            this.picClose.Size = new System.Drawing.Size(30, 35);
+            this.picClose.Size = new System.Drawing.Size(27, 46);
             this.picClose.TabIndex = 1;
             this.picClose.TabStop = false;
             this.picClose.Visible = false;
@@ -91,7 +96,7 @@ namespace POSales
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(3, 12);
+            this.lblTitle.Location = new System.Drawing.Point(3, 16);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(104, 23);
             this.lblTitle.TabIndex = 0;
@@ -102,9 +107,10 @@ namespace POSales
             // 
             this.dtFrom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.dtFrom.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtFrom.Location = new System.Drawing.Point(195, 14);
+            this.dtFrom.Location = new System.Drawing.Point(182, 17);
+            this.dtFrom.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dtFrom.Name = "dtFrom";
-            this.dtFrom.Size = new System.Drawing.Size(151, 30);
+            this.dtFrom.Size = new System.Drawing.Size(144, 37);
             this.dtFrom.TabIndex = 10;
             this.dtFrom.ValueChanged += new System.EventHandler(this.dtFrom_ValueChanged);
             // 
@@ -112,9 +118,10 @@ namespace POSales
             // 
             this.dtTo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.dtTo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtTo.Location = new System.Drawing.Point(388, 14);
+            this.dtTo.Location = new System.Drawing.Point(366, 17);
+            this.dtTo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dtTo.Name = "dtTo";
-            this.dtTo.Size = new System.Drawing.Size(150, 30);
+            this.dtTo.Size = new System.Drawing.Size(146, 37);
             this.dtTo.TabIndex = 10;
             this.dtTo.ValueChanged += new System.EventHandler(this.dtTo_ValueChanged);
             // 
@@ -122,9 +129,9 @@ namespace POSales
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 18);
+            this.label2.Location = new System.Drawing.Point(-3, 21);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(182, 22);
+            this.label2.Size = new System.Drawing.Size(179, 29);
             this.label2.TabIndex = 11;
             this.label2.Text = "Filter By Date: From";
             // 
@@ -132,9 +139,9 @@ namespace POSales
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(352, 20);
+            this.label3.Location = new System.Drawing.Point(326, 21);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(30, 22);
+            this.label3.Size = new System.Drawing.Size(34, 29);
             this.label3.TabIndex = 11;
             this.label3.Text = "To";
             // 
@@ -143,9 +150,9 @@ namespace POSales
             this.lblTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTotal.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotal.ForeColor = System.Drawing.Color.Navy;
-            this.lblTotal.Location = new System.Drawing.Point(864, 18);
+            this.lblTotal.Location = new System.Drawing.Point(785, 24);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(139, 20);
+            this.lblTotal.Size = new System.Drawing.Size(126, 26);
             this.lblTotal.TabIndex = 12;
             this.lblTotal.Text = "0.00";
             this.lblTotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -154,9 +161,10 @@ namespace POSales
             // 
             this.cboCashier.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.cboCashier.FormattingEnabled = true;
-            this.cboCashier.Location = new System.Drawing.Point(554, 15);
+            this.cboCashier.Location = new System.Drawing.Point(528, 18);
+            this.cboCashier.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cboCashier.Name = "cboCashier";
-            this.cboCashier.Size = new System.Drawing.Size(157, 30);
+            this.cboCashier.Size = new System.Drawing.Size(143, 37);
             this.cboCashier.TabIndex = 13;
             this.cboCashier.Text = "Select Cashier";
             this.cboCashier.SelectedIndexChanged += new System.EventHandler(this.cboCashier_SelectedIndexChanged);
@@ -167,9 +175,10 @@ namespace POSales
             this.btnPrint.FlatAppearance.BorderSize = 0;
             this.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPrint.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.Image")));
-            this.btnPrint.Location = new System.Drawing.Point(762, 13);
+            this.btnPrint.Location = new System.Drawing.Point(707, 17);
+            this.btnPrint.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(42, 36);
+            this.btnPrint.Size = new System.Drawing.Size(38, 47);
             this.btnPrint.TabIndex = 14;
             this.btnPrint.UseVisualStyleBackColor = true;
             this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
@@ -184,24 +193,28 @@ namespace POSales
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 489);
+            this.panel2.Location = new System.Drawing.Point(0, 644);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1010, 59);
+            this.panel2.Size = new System.Drawing.Size(918, 78);
             this.panel2.TabIndex = 15;
             // 
             // dgvSold
             // 
             this.dgvSold.AllowUserToAddRows = false;
+            this.dgvSold.AllowUserToOrderColumns = true;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvSold.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvSold.BackgroundColor = System.Drawing.Color.White;
             this.dgvSold.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvSold.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSold.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvSold.ColumnHeadersHeight = 30;
             this.dgvSold.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvSold.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -217,21 +230,26 @@ namespace POSales
             this.Cancel});
             this.dgvSold.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvSold.EnableHeadersVisualStyles = false;
-            this.dgvSold.Location = new System.Drawing.Point(0, 44);
+            this.dgvSold.Location = new System.Drawing.Point(0, 58);
+            this.dgvSold.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvSold.Name = "dgvSold";
             this.dgvSold.RowHeadersVisible = false;
             this.dgvSold.RowHeadersWidth = 51;
-            this.dgvSold.Size = new System.Drawing.Size(1010, 445);
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvSold.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            this.dgvSold.Size = new System.Drawing.Size(918, 586);
             this.dgvSold.TabIndex = 16;
             this.dgvSold.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSold_CellContentClick_1);
             // 
             // Column1
             // 
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle3;
             this.Column1.HeaderText = "No";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
-            this.Column1.Width = 66;
+            this.Column1.Width = 65;
             // 
             // Column9
             // 
@@ -240,7 +258,7 @@ namespace POSales
             this.Column9.MinimumWidth = 6;
             this.Column9.Name = "Column9";
             this.Column9.Visible = false;
-            this.Column9.Width = 55;
+            this.Column9.Width = 57;
             // 
             // Column3
             // 
@@ -248,7 +266,7 @@ namespace POSales
             this.Column3.HeaderText = "Invoice#";
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
-            this.Column3.Width = 117;
+            this.Column3.Width = 113;
             // 
             // Column2
             // 
@@ -256,7 +274,7 @@ namespace POSales
             this.Column2.HeaderText = "ລະຫັດ";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
-            this.Column2.Width = 86;
+            this.Column2.Width = 82;
             // 
             // Column4
             // 
@@ -268,43 +286,43 @@ namespace POSales
             // Column7
             // 
             this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.Column7.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.Column7.DefaultCellStyle = dataGridViewCellStyle4;
             this.Column7.HeaderText = "ລາຄາ";
             this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
-            this.Column7.Width = 77;
+            this.Column7.Width = 74;
             // 
             // Column5
             // 
             this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Column5.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Column5.DefaultCellStyle = dataGridViewCellStyle5;
             this.Column5.HeaderText = "ຈຳນວນ";
             this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
-            this.Column5.Width = 93;
+            this.Column5.Width = 89;
             // 
             // Column6
             // 
             this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.Column6.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.Column6.DefaultCellStyle = dataGridViewCellStyle6;
             this.Column6.HeaderText = "ສ່ວນຫຼຸດ";
             this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
-            this.Column6.Width = 102;
+            this.Column6.Width = 97;
             // 
             // Column8
             // 
             this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Noto Sans Lao", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Column8.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Noto Sans Lao", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column8.DefaultCellStyle = dataGridViewCellStyle7;
             this.Column8.HeaderText = "ລວມ";
             this.Column8.MinimumWidth = 6;
             this.Column8.Name = "Column8";
-            this.Column8.Width = 76;
+            this.Column8.Width = 73;
             // 
             // Cancel
             // 
@@ -317,17 +335,17 @@ namespace POSales
             // 
             // DailySale
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1010, 548);
+            this.ClientSize = new System.Drawing.Size(918, 722);
             this.Controls.Add(this.dgvSold);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(4, 7, 4, 7);
             this.Name = "DailySale";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SALE HISTORY";

@@ -57,7 +57,7 @@ namespace POSales
                 {
                     MessageBox.Show("Please enter stock in by name", stitle, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     stockIn.txtStockInBy.Focus();
-                    this.Dispose();                                        
+                    Close();                                        
                 }
 
                 if (MessageBox.Show("Add this item?", stitle, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)

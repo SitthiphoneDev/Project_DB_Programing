@@ -33,6 +33,9 @@ namespace POSales
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
@@ -114,7 +117,7 @@ namespace POSales
             this.metroTabControl1.Controls.Add(this.metroTabPage3);
             this.metroTabControl1.Location = new System.Drawing.Point(32, 12);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 2;
+            this.metroTabControl1.SelectedIndex = 0;
             this.metroTabControl1.Size = new System.Drawing.Size(928, 452);
             this.metroTabControl1.TabIndex = 4;
             this.metroTabControl1.UseSelectable = true;
@@ -144,7 +147,7 @@ namespace POSales
             this.metroTabPage1.Text = "Create Account";
             this.metroTabPage1.VerticalScrollbarBarColor = true;
             this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage1.VerticalScrollbarSize = 3;
+            this.metroTabPage1.VerticalScrollbarSize = 2;
             // 
             // btnAccSave
             // 
@@ -188,14 +191,14 @@ namespace POSales
             // 
             // cbRole
             // 
-            this.cbRole.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbRole.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbRole.FormattingEnabled = true;
             this.cbRole.Items.AddRange(new object[] {
             "Administrator",
             "Cashier"});
             this.cbRole.Location = new System.Drawing.Point(265, 220);
             this.cbRole.Name = "cbRole";
-            this.cbRole.Size = new System.Drawing.Size(527, 28);
+            this.cbRole.Size = new System.Drawing.Size(527, 30);
             this.cbRole.TabIndex = 4;
             // 
             // txtRePass
@@ -216,10 +219,10 @@ namespace POSales
             // 
             // txtUsername
             // 
-            this.txtUsername.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.Location = new System.Drawing.Point(265, 67);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(527, 37);
+            this.txtUsername.Size = new System.Drawing.Size(527, 30);
             this.txtUsername.TabIndex = 3;
             // 
             // label6
@@ -228,7 +231,7 @@ namespace POSales
             this.label6.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(120, 273);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(143, 31);
+            this.label6.Size = new System.Drawing.Size(134, 29);
             this.label6.TabIndex = 2;
             this.label6.Text = "ຊື່ ແລະ ນາມສະກຸນ:";
             // 
@@ -238,7 +241,7 @@ namespace POSales
             this.label5.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(120, 219);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 31);
+            this.label5.Size = new System.Drawing.Size(68, 29);
             this.label5.TabIndex = 2;
             this.label5.Text = "ບົດບາດ:";
             // 
@@ -248,7 +251,7 @@ namespace POSales
             this.label4.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(120, 168);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(139, 31);
+            this.label4.Size = new System.Drawing.Size(130, 29);
             this.label4.TabIndex = 2;
             this.label4.Text = "ຢັ້ງຢືນລະຫັດຜ່ານ:";
             // 
@@ -258,7 +261,7 @@ namespace POSales
             this.label3.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(120, 117);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 31);
+            this.label3.Size = new System.Drawing.Size(90, 29);
             this.label3.TabIndex = 2;
             this.label3.Text = "ລະຫັດຜ່ານ:";
             // 
@@ -268,7 +271,7 @@ namespace POSales
             this.label2.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(120, 66);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 31);
+            this.label2.Size = new System.Drawing.Size(63, 29);
             this.label2.TabIndex = 2;
             this.label2.Text = "ຊື່ຜູ້ໃຊ້ :";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -296,7 +299,7 @@ namespace POSales
             this.metroTabPage2.Text = "Change Password";
             this.metroTabPage2.VerticalScrollbarBarColor = true;
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.VerticalScrollbarSize = 3;
+            this.metroTabPage2.VerticalScrollbarSize = 2;
             this.metroTabPage2.Click += new System.EventHandler(this.metroTabPage2_Click);
             // 
             // lblUsername
@@ -364,7 +367,7 @@ namespace POSales
             this.label10.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(135, 233);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(139, 31);
+            this.label10.Size = new System.Drawing.Size(130, 29);
             this.label10.TabIndex = 10;
             this.label10.Text = "ຢັ້ງຢືນລະຫັດຜ່ານ:";
             // 
@@ -382,7 +385,7 @@ namespace POSales
             this.label9.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(135, 175);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(125, 31);
+            this.label9.Size = new System.Drawing.Size(118, 29);
             this.label9.TabIndex = 8;
             this.label9.Text = "ລະຫັດຜ່ານໃໝ່ :";
             // 
@@ -400,7 +403,7 @@ namespace POSales
             this.label8.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(135, 121);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(123, 31);
+            this.label8.Size = new System.Drawing.Size(114, 29);
             this.label8.TabIndex = 6;
             this.label8.Text = "ລະ​ຫັດ​ປັດ​ຈຸ​ບັນ:";
             // 
@@ -537,26 +540,28 @@ namespace POSales
             // Column1
             // 
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Column1.DefaultCellStyle = dataGridViewCellStyle2;
             this.Column1.HeaderText = "No";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
-            this.Column1.Width = 66;
+            this.Column1.Width = 65;
             // 
             // Column2
             // 
             this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Noto Sans Lao", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Column2.DefaultCellStyle = dataGridViewCellStyle3;
             this.Column2.HeaderText = "ຊື່ຜູ້ໃຊ້";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
-            this.Column2.Width = 84;
+            this.Column2.Width = 80;
             // 
             // Column3
             // 
             this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column3.DefaultCellStyle = dataGridViewCellStyle4;
             this.Column3.HeaderText = "ຊື່ ແລະ ນາມສະກຸນ";
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
@@ -564,18 +569,22 @@ namespace POSales
             // Column5
             // 
             this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column5.DefaultCellStyle = dataGridViewCellStyle5;
             this.Column5.HeaderText = "ສະຖານະບັນຊີ";
             this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
-            this.Column5.Width = 133;
+            this.Column5.Width = 126;
             // 
             // Column4
             // 
             this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column4.DefaultCellStyle = dataGridViewCellStyle6;
             this.Column4.HeaderText = "ບົດບາດ";
             this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
-            this.Column4.Width = 95;
+            this.Column4.Width = 90;
             // 
             // UserAccount
             // 
