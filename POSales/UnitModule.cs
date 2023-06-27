@@ -34,14 +34,14 @@ namespace POSales
             // To insert unit name to unit table 
             try
             {
-                if (MessageBox.Show("Are you sure you want to save this brand?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("ທ່ານແນ່ໃຈບໍ່ວ່າຕ້ອງການບັນທຶກ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     cn.Open();
                     cm = new SqlCommand("INSERT INTO tbUnit(unit)VALUES(@unit)", cn);
                     cm.Parameters.AddWithValue("@unit", txtBrand.Text);
                     cm.ExecuteNonQuery();
                     cn.Close();
-                    MessageBox.Show("Record has been successful saved.", "POS");
+                    MessageBox.Show("ບັນທຶກສຳເລັດແລ້ວ.", "POS");
                     Clear();
                     brand.LoadBrand();
                 }
@@ -71,14 +71,14 @@ namespace POSales
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             //Update brand name
-            if (MessageBox.Show("Are you sure you want to update this brand?", "Update Record!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show("ທ່ານແນ່ໃຈບໍ່ວ່າຕ້ອງການອັບເດດ?", "Update Record!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 cn.Open();
                 cm = new SqlCommand("UPDATE tbUnit SET Unit = @unit WHERE id LIKE'" + lblId.Text + "'", cn);
                 cm.Parameters.AddWithValue("@unit", txtBrand.Text);
                 cm.ExecuteNonQuery();
                 cn.Close();
-                MessageBox.Show("Brand has been successfully updated.", "POS");
+                MessageBox.Show("ອັບເດດສຳເລັດແລ້ວ.", "POS");
                 Clear();
                 this.Dispose();// To close this form after update data
             }

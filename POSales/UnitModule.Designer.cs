@@ -78,9 +78,10 @@ namespace POSales
             // 
             // txtBrand
             // 
-            this.txtBrand.Location = new System.Drawing.Point(159, 89);
+            this.txtBrand.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBrand.Location = new System.Drawing.Point(159, 82);
             this.txtBrand.Name = "txtBrand";
-            this.txtBrand.Size = new System.Drawing.Size(531, 30);
+            this.txtBrand.Size = new System.Drawing.Size(531, 37);
             this.txtBrand.TabIndex = 1;
             // 
             // btnSave
@@ -105,7 +106,7 @@ namespace POSales
             this.label2.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(31, 90);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(139, 31);
+            this.label2.Size = new System.Drawing.Size(131, 29);
             this.label2.TabIndex = 3;
             this.label2.Text = "ຊື່ຫົວໜ່ວຍສິນຄ້າ:";
             // 

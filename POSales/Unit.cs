@@ -54,13 +54,13 @@ namespace POSales
             string colName = dgvBrand.Columns[e.ColumnIndex].Name;
             if (colName == "Delete")
             {
-                if (MessageBox.Show("Are you sure you want to delete this record?", "Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("ທ່ານຕ້ອງການລຶບແທ້ບໍ?", "Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     cn.Open();
-                    cm = new SqlCommand("DELETE FROM tbBrand WHERE id LIKE '" + dgvBrand[1, e.RowIndex].Value.ToString() + "'", cn);
+                    cm = new SqlCommand("DELETE FROM tbUnit WHERE id LIKE '" + dgvBrand[1, e.RowIndex].Value.ToString() + "'", cn);
                     cm.ExecuteNonQuery();
                     cn.Close();
-                    MessageBox.Show("Brand has been successfully deleted.", "POS", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("ລຶບສຳເລັດແລ້ວ", "POS", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
 
             }
@@ -77,6 +77,11 @@ namespace POSales
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Unit_Load(object sender, EventArgs e)
         {
 
         }
