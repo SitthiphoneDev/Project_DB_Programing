@@ -393,12 +393,13 @@ namespace POSales
             // lblId
             // 
             this.lblId.AutoSize = true;
-            this.lblId.Location = new System.Drawing.Point(482, 127);
+            this.lblId.Location = new System.Drawing.Point(479, 121);
             this.lblId.Name = "lblId";
             this.lblId.Size = new System.Drawing.Size(46, 29);
             this.lblId.TabIndex = 0;
             this.lblId.Text = "lbId";
             this.lblId.Visible = false;
+            this.lblId.Click += new System.EventHandler(this.lblId_Click);
             // 
             // label7
             // 

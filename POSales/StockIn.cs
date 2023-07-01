@@ -47,7 +47,8 @@ namespace POSales
         {
             string supplier = "";
             cn.Open();
-            cm = new SqlCommand("SELECT * FROM vwStockIn WHERE pcode LIKE '" + pcode + "'", cn);
+            cm = new SqlCommand("SELECT * FROM vwStockIn WHERE pcode LIKE @pcode", cn);
+            cm.Parameters.AddWithValue("@pcode", pcode + "%");
             dr = cm.ExecuteReader();
             while(dr.Read())
             {
@@ -94,7 +95,9 @@ namespace POSales
         {
             ProductStockIn productStock = new ProductStockIn(this);
             productStock.ShowDialog();
+            cn.Close(); // เพิ่มโค้ดปิดการเชื่อมต่อ
         }
+
 
 
         private void btnEntry_Click(object sender, EventArgs e)
@@ -125,6 +128,13 @@ namespace POSales
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, stitle, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            finally // เพิ่มโค้ดปิดการเชื่อมต่อ
+            {
+                if (cn.State == ConnectionState.Open)
+                {
+                    cn.Close();
+                }
             }
         }
 
@@ -188,7 +198,7 @@ namespace POSales
         private void cbSupplier_TextChanged(object sender, EventArgs e)
         {
             cn.Open();
-            cm = new SqlCommand("SELECT * FROM tbSupplier WHERE supplier LIKE '" + cbSupplier.Text + "'", cn);
+            cm = new SqlCommand("SELECT * FROM tbSupplier WHERE supplier LIKE N'" + cbSupplier.Text + "'", cn);
             dr = cm.ExecuteReader();
             dr.Read();
             if (dr.HasRows)
@@ -200,6 +210,11 @@ namespace POSales
             }
             dr.Close();
             cn.Close();
+        }
+
+        private void lblId_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
