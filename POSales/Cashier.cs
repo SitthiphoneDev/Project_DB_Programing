@@ -255,7 +255,7 @@ namespace POSales
             }
         }
 
-        public void AddToCart(string _pcode, double _price,int _qty)
+        public void AddToCart(string _pcode, double _price, int _qty)
         {
             try
             {
@@ -271,7 +271,7 @@ namespace POSales
                 if (dr.HasRows)
                 {
                     id = dr["id"].ToString();
-                    cart_qty = int.Parse(dr["qty"].ToString());
+                    int.TryParse(dr["qty"].ToString(), out cart_qty);
                     found = true;
                 }
                 else found = false;
@@ -280,9 +280,9 @@ namespace POSales
 
                 if (found)
                 {
-                    if (qty < (int.Parse(txtQty.Text) + cart_qty))
+                    if (qty < (_qty + cart_qty))
                     {
-                        MessageBox.Show("Unable to procced. Remaining quantity on hand is " + qty, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Unable to proceed. Remaining quantity on hand is " + (qty - cart_qty), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
                     cn.Open();
@@ -291,13 +291,13 @@ namespace POSales
                     cn.Close();
                     txtBarcode.SelectionStart = 0;
                     txtBarcode.SelectionLength = txtBarcode.Text.Length;
-                    LoadCart();                    
+                    LoadCart();
                 }
                 else
                 {
-                    if (qty < (int.Parse(txtQty.Text) + cart_qty))
+                    if (qty < (_qty + cart_qty))
                     {
-                        MessageBox.Show("Unable to procced. Remaining qty on hand is" + qty, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Unable to proceed. Remaining qty on hand is " + (qty - cart_qty), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
                     cn.Open();
@@ -315,7 +315,7 @@ namespace POSales
             }
             catch (Exception ex)
             {
-               MessageBox.Show(ex.Message, stitle);
+                MessageBox.Show(ex.Message, stitle);
             }
         }
 

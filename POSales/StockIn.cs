@@ -96,6 +96,7 @@ namespace POSales
             productStock.ShowDialog();
         }
 
+
         private void btnEntry_Click(object sender, EventArgs e)
         {
             try
@@ -104,32 +105,29 @@ namespace POSales
                 {
                     if (MessageBox.Show("Are you sure you want to save this records?", stitle, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
-                        for(int i=0; i<dgvStockIn.Rows.Count;i++)
+                        cn.Open();
+                        for (int i = 0; i < dgvStockIn.Rows.Count; i++)
                         {
                             //update product quantity
-                            cn.Open();
                             cm = new SqlCommand("UPDATE tbProduct SET qty = qty + " + int.Parse(dgvStockIn.Rows[i].Cells[5].Value.ToString()) + " WHERE pcode LIKE '" + dgvStockIn.Rows[i].Cells[3].Value.ToString() + "'", cn);
                             cm.ExecuteNonQuery();
-                            cn.Close();
 
                             //update stockin quantity
-                            cn.Open();
                             cm = new SqlCommand("UPDATE tbStockIn SET qty = qty + " + int.Parse(dgvStockIn.Rows[i].Cells[5].Value.ToString()) + ", status='Done' WHERE id LIKE '" + dgvStockIn.Rows[i].Cells[1].Value.ToString() + "'", cn);
                             cm.ExecuteNonQuery();
-                            cn.Close();
                         }
+                        cn.Close();
                         Clear();
                         LoadStockIn();
-
                     }
                 }
             }
             catch (Exception ex)
             {
-
                 MessageBox.Show(ex.Message, stitle, MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
 
         public void Clear()
         {

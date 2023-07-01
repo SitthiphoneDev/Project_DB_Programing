@@ -98,12 +98,12 @@ namespace POSales
                     return;
                 }
 
-                if(txtRemark.Text=="")
+                /*if(txtRemark.Text=="")
                 {
                     MessageBox.Show("Need reason for stock adjustment.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     txtRemark.Focus();
                     return;
-                }
+                }*/
 
                 //update stock
                 if(int.Parse(txtQty.Text)>_qty)
@@ -115,13 +115,13 @@ namespace POSales
                 {
                     dbcon.ExecuteQuery("UPDATE tbProduct SET qty = (qty - " + int.Parse(txtQty.Text) + ") WHERE pcode LIKE '" + lblPcode.Text + "'");
                 }
-                else if(cbAction.Text== "Add Inventory")
+                else if(cbAction.Text== "ເພີ່ມເຂົ້າຄັງສິນຄ້າ")
                 {
                     dbcon.ExecuteQuery("UPDATE tbProduct SET qty = (qty + " + int.Parse(txtQty.Text) + ") WHERE pcode LIKE '" + lblPcode.Text + "'");
                 }
 
                 dbcon.ExecuteQuery("INSERT INTO tbAdjustment(referenceno, pcode, qty, action, remarks, sdate, [user]) VALUES ('"+lblRefNo.Text+ "','" + lblPcode.Text + "','" + int.Parse(txtQty.Text) + "', '" + cbAction.Text + "', '" + txtRemark.Text + "', '" + DateTime.Now.ToShortDateString() + "','" + lblUsername.Text + "')");
-                MessageBox.Show("Stock has been successfully adjusted.", "Process completed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("ປັບສະຕ໋ອກສໍາເລັດແລ້ວ.", "Process completed", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LoadStock();
                 Clear();
                 btnSave.Enabled = false;
@@ -133,6 +133,11 @@ namespace POSales
         }
 
         private void cbAction_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblUsername_Click(object sender, EventArgs e)
         {
 
         }
