@@ -31,12 +31,12 @@ namespace POSales
             int i = 0;
             dgvBrand.Rows.Clear();
             cn.Open();
-            cm = new SqlCommand("SELECT * FROM tbUnit ORDER BY unit", cn);
+            cm = new SqlCommand("SELECT * FROM tbBrand ORDER BY brand", cn);
             dr = cm.ExecuteReader();
             while (dr.Read())
             {
                 i++;
-                dgvBrand.Rows.Add(i, dr["id"].ToString(), dr["unit"].ToString());
+                dgvBrand.Rows.Add(i, dr["id"].ToString(), dr["brand"].ToString());
             }
             dr.Close();
             cn.Close();
@@ -57,7 +57,7 @@ namespace POSales
                 if (MessageBox.Show("ທ່ານຕ້ອງການລຶບແທ້ບໍ?", "Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     cn.Open();
-                    cm = new SqlCommand("DELETE FROM tbUnit WHERE id LIKE '" + dgvBrand[1, e.RowIndex].Value.ToString() + "'", cn);
+                    cm = new SqlCommand("DELETE FROM tbUBrand WHERE id LIKE '" + dgvBrand[1, e.RowIndex].Value.ToString() + "'", cn);
                     cm.ExecuteNonQuery();
                     cn.Close();
                     MessageBox.Show("ລຶບສຳເລັດແລ້ວ", "POS", MessageBoxButtons.OK, MessageBoxIcon.Information);

@@ -83,6 +83,7 @@ namespace POSales
             this.txtBrand.Name = "txtBrand";
             this.txtBrand.Size = new System.Drawing.Size(531, 37);
             this.txtBrand.TabIndex = 1;
+            this.txtBrand.TextChanged += new System.EventHandler(this.txtBrand_TextChanged);
             // 
             // btnSave
             // 

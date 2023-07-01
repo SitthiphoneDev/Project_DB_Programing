@@ -37,8 +37,8 @@ namespace POSales
                 if (MessageBox.Show("ທ່ານແນ່ໃຈບໍ່ວ່າຕ້ອງການບັນທຶກ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     cn.Open();
-                    cm = new SqlCommand("INSERT INTO tbUnit(unit)VALUES(@unit)", cn);
-                    cm.Parameters.AddWithValue("@unit", txtBrand.Text);
+                    cm = new SqlCommand("INSERT INTO tbBrand(brand)VALUES(@brand)", cn);
+                    cm.Parameters.AddWithValue("@brand", txtBrand.Text);
                     cm.ExecuteNonQuery();
                     cn.Close();
                     MessageBox.Show("ບັນທຶກສຳເລັດແລ້ວ.", "POS");
@@ -74,8 +74,8 @@ namespace POSales
             if (MessageBox.Show("ທ່ານແນ່ໃຈບໍ່ວ່າຕ້ອງການອັບເດດ?", "Update Record!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 cn.Open();
-                cm = new SqlCommand("UPDATE tbUnit SET Unit = @unit WHERE id LIKE'" + lblId.Text + "'", cn);
-                cm.Parameters.AddWithValue("@unit", txtBrand.Text);
+                cm = new SqlCommand("UPDATE tbBrand SET brand = @brand WHERE id LIKE'" + lblId.Text + "'", cn);
+                cm.Parameters.AddWithValue("@brand", txtBrand.Text);
                 cm.ExecuteNonQuery();
                 cn.Close();
                 MessageBox.Show("ອັບເດດສຳເລັດແລ້ວ.", "POS");
@@ -85,6 +85,11 @@ namespace POSales
         }
 
         private void UnitModule_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBrand_TextChanged(object sender, EventArgs e)
         {
 
         }
