@@ -63,7 +63,7 @@ namespace POSales
             // dgvProduct
             // 
             this.dgvProduct.AllowUserToAddRows = false;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Noto Sans Lao", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvProduct.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvProduct.BackgroundColor = System.Drawing.Color.White;
             this.dgvProduct.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -96,7 +96,7 @@ namespace POSales
             this.dgvProduct.RowHeadersWidth = 51;
             dataGridViewCellStyle12.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvProduct.RowsDefaultCellStyle = dataGridViewCellStyle12;
-            this.dgvProduct.Size = new System.Drawing.Size(904, 708);
+            this.dgvProduct.Size = new System.Drawing.Size(1600, 708);
             this.dgvProduct.TabIndex = 5;
             this.dgvProduct.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProduct_CellContentClick);
             // 
@@ -110,7 +110,7 @@ namespace POSales
             this.panel1.Location = new System.Drawing.Point(0, 708);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(904, 82);
+            this.panel1.Size = new System.Drawing.Size(1600, 82);
             this.panel1.TabIndex = 4;
             // 
             // btnClose
@@ -120,7 +120,7 @@ namespace POSales
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(807, 24);
+            this.btnClose.Location = new System.Drawing.Point(1503, 24);
             this.btnClose.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(75, 46);
@@ -279,7 +279,7 @@ namespace POSales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(904, 790);
+            this.ClientSize = new System.Drawing.Size(1600, 790);
             this.Controls.Add(this.dgvProduct);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

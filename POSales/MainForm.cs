@@ -175,11 +175,11 @@ namespace POSales
         private void MainForm_Load(object sender, EventArgs e)
         {
             btnDashboard.PerformClick();
-            Noti();
+
         }
 
         // Noti Alart for critical items
-        public void Noti()
+        /*public void Noti()
         {
             int i = 0;
             cn.Open();
@@ -195,6 +195,6 @@ namespace POSales
             }
             dr.Close();
             cn.Close();
-        }
+        }*/
     }
 }
