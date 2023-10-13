@@ -25,31 +25,33 @@ namespace POSales
             LoadInventoryList();
         }
 
-        public void LoadTopSelling()
-        {
-            int i = 0;
-            dgvTopSelling.Rows.Clear();
-            cn.Open();
+public void LoadTopSelling()
+{
+    int i = 0;
+    dgvTopSelling.Rows.Clear();
+    cn.Open();
 
-            //Sort By Total Amount
-            if (cbTopSell.Text == "Sort By Qty")
-            {
-                cm = new SqlCommand("SELECT TOP 10 pcode, pdesc, isnull(sum(qty),0) AS qty, ISNULL(SUM(total),0) AS total FROM vwTopSelling WHERE sdate BETWEEN '" + dtFromTopSell.Value.ToString() + "' AND '" + dtToTopSell.Value.ToString() + "' AND status LIKE 'Sold' GROUP BY pcode, pdesc ORDER BY qty DESC", cn);
-            }
-            else if (cbTopSell.Text == "Sort By Total Amount")
-            {
-                cm = new SqlCommand("SELECT TOP 10 pcode, pdesc, isnull(sum(qty),0) AS qty, ISNULL(SUM(total),0) AS total FROM vwTopSelling WHERE sdate BETWEEN '" + dtFromTopSell.Value.ToString() + "' AND '" + dtToTopSell.Value.ToString() + "' AND status LIKE 'Sold' GROUP BY pcode, pdesc ORDER BY total DESC", cn);
-            }
+    //Sort By Total Amount
+    if (cbTopSell.Text == "Sort By Qty")
+    {
+        cm = new SqlCommand("SELECT TOP 10 pcode, pdesc, isnull(sum(qty),0) AS qty, ISNULL(SUM(total),0) AS total FROM vwTopSelling WHERE sdate BETWEEN @fromDate AND @toDate AND status LIKE 'Sold' GROUP BY pcode, pdesc ORDER BY qty DESC", cn);
+    }
+    else if (cbTopSell.Text == "Sort By Total Amount")
+    {
+        cm = new SqlCommand("SELECT TOP 10 pcode, pdesc, isnull(sum(qty),0) AS qty, ISNULL(SUM(total),0) AS total FROM vwTopSelling WHERE sdate BETWEEN @fromDate AND @toDate AND status LIKE 'Sold' GROUP BY pcode, pdesc ORDER BY total DESC", cn);
+    }
+            cm.Parameters.Add("@fromDate", SqlDbType.DateTime).Value = dtFromTopSell.Value;
+            cm.Parameters.Add("@toDate", SqlDbType.DateTime).Value = dtToTopSell.Value;
+
             dr = cm.ExecuteReader();
-            while(dr.Read())
-            {
-                i++;
-                dgvTopSelling.Rows.Add(i, dr["pcode"].ToString(), dr["pdesc"].ToString(), dr["qty"].ToString(), double.Parse(dr["total"].ToString()).ToString("#,##0.00"));
-            }
-            dr.Close();
-            cn.Close();
-        }
-
+    while(dr.Read())
+    {
+        i++;
+        dgvTopSelling.Rows.Add(i, dr["pcode"].ToString(), dr["pdesc"].ToString(), dr["qty"].ToString(), double.Parse(dr["total"].ToString()).ToString("#,##0.00"));
+    }
+    dr.Close();
+    cn.Close();
+}
         public void LoadSoldItems()
         {
             try
@@ -57,7 +59,10 @@ namespace POSales
                 dgvSoldItems.Rows.Clear();
                 int i = 0;
                 cn.Open();
-                cm = new SqlCommand("SELECT c.pcode, p.pdesc, c.price, sum(c.qty) as qty, SUM(c.disc) AS disc, SUM(c.total) AS total FROM tbCart AS c INNER JOIN tbProduct AS p ON c.pcode=p.pcode WHERE status LIKE 'Sold' AND sdate BETWEEN '" + dtFromSoldItems.Value.ToString() + "' AND '" + dtToSoldItems.Value.ToString() + "' GROUP BY c.pcode, p.pdesc, c.price",cn);
+                cm = new SqlCommand("SELECT c.pcode, p.pdesc, c.price, sum(c.qty) as qty, SUM(c.disc) AS disc, SUM(c.total) AS total FROM tbCart AS c INNER JOIN tbProduct AS p ON c.pcode=p.pcode WHERE status LIKE 'Sold' AND sdate BETWEEN @fromDate AND @toDate GROUP BY c.pcode, p.pdesc, c.price", cn);
+                cm.Parameters.AddWithValue("@fromDate", dtFromSoldItems.Value);
+                cm.Parameters.AddWithValue("@toDate", dtToSoldItems.Value);
+
                 dr = cm.ExecuteReader();
                 while (dr.Read())
                 {
@@ -68,17 +73,17 @@ namespace POSales
                 cn.Close();
 
                 cn.Open();
-                cm = new SqlCommand("SELECT ISNULL(SUM(total),0) FROM tbCart WHERE status LIKE 'Sold' AND sdate BETWEEN '" + dtFromSoldItems.Value.ToString() + "' AND '" + dtToSoldItems.Value.ToString() + "'", cn);
+                cm = new SqlCommand("SELECT ISNULL(SUM(total),0) FROM tbCart WHERE status LIKE 'Sold' AND sdate BETWEEN @fromDate AND @toDate", cn);
+                cm.Parameters.AddWithValue("@fromDate", dtFromSoldItems.Value);
+                cm.Parameters.AddWithValue("@toDate", dtToSoldItems.Value);
                 lblTotal.Text = double.Parse(cm.ExecuteScalar().ToString()).ToString("#,##0.00");
                 cn.Close();
             }
             catch (Exception ex)
             {
-
                 MessageBox.Show(ex.Message);
             }
         }
-
         public void LoadCriticalItems()
         {
             try
@@ -151,7 +156,10 @@ namespace POSales
             int i = 0;
             dgvStockIn.Rows.Clear();
             cn.Open();
-            cm = new SqlCommand("SELECT * FROM vwStockIn WHERE cast(sdate AS date) BETWEEN '" + dtFromStockIn.Value.ToString() + "' AND '" + dtToStockIn.Value.ToString() + "' AND status LIKE 'Done'", cn);
+            cm = new SqlCommand("SELECT * FROM vwStockIn WHERE cast(sdate AS date) BETWEEN @fromDate AND @toDate AND status LIKE 'Done'", cn);
+            cm.Parameters.AddWithValue("@fromDate", dtFromStockIn.Value.Date);
+            cm.Parameters.AddWithValue("@toDate", dtToStockIn.Value.Date);
+
             dr = cm.ExecuteReader();
             while (dr.Read())
             {
@@ -161,7 +169,6 @@ namespace POSales
             dr.Close();
             cn.Close();
         }
-
         private void btnLoadTopSell_Click(object sender, EventArgs e)
         {
             if(cbTopSell.Text== "Select sort type")

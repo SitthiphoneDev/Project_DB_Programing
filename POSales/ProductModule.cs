@@ -43,7 +43,8 @@ namespace POSales
             cboBrand.ValueMember = "id";
         }
 
-        private void picClose_Click(object sender, EventArgs e)
+        private void picClose_Click(object sender,
+            EventArgs e)
         {
             this.Dispose();
         }

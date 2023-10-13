@@ -94,7 +94,7 @@ namespace POSales
 
         private void btnDSales_Click(object sender, EventArgs e)
         {
-            slide(btnDSales);
+           // slide(btnDSales);
             DailySale dailySale = new DailySale(new MainForm());
             dailySale.solduser = lblUsername.Text;
             dailySale.dtFrom.Enabled = false;
