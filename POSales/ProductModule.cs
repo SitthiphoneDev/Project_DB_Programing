@@ -38,8 +38,8 @@ namespace POSales
         public void LoadBrand()
         {
             cboBrand.Items.Clear();
-            cboBrand.DataSource = dbcon.getTable("SELECT * FROM tbUnit");
-            cboBrand.DisplayMember = "unit";
+            cboBrand.DataSource = dbcon.getTable("SELECT * FROM tbBrand");
+            cboBrand.DisplayMember = "brand";
             cboBrand.ValueMember = "id";
         }
 
@@ -137,6 +137,11 @@ namespace POSales
         }
 
         private void txtPrice_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cboBrand_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

@@ -241,6 +241,7 @@ namespace POSales
             this.cboBrand.Name = "cboBrand";
             this.cboBrand.Size = new System.Drawing.Size(531, 37);
             this.cboBrand.TabIndex = 14;
+            this.cboBrand.SelectedIndexChanged += new System.EventHandler(this.cboBrand_SelectedIndexChanged);
             // 
             // cboCategory
             // 

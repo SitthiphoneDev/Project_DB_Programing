@@ -45,7 +45,6 @@ namespace POSales
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnPass = new System.Windows.Forms.Button();
-            this.btnDSales = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnSettle = new System.Windows.Forms.Button();
             this.btnDiscount = new System.Windows.Forms.Button();
@@ -91,6 +90,7 @@ namespace POSales
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panelSlide = new System.Windows.Forms.Panel();
+            this.btnDSales = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -158,26 +158,6 @@ namespace POSales
             this.btnPass.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPass.UseVisualStyleBackColor = false;
             this.btnPass.Click += new System.EventHandler(this.btnPass_Click);
-            // 
-            // btnDSales
-            // 
-            this.btnDSales.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
-            this.btnDSales.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDSales.FlatAppearance.BorderSize = 0;
-            this.btnDSales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDSales.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDSales.ForeColor = System.Drawing.Color.White;
-            this.btnDSales.Image = ((System.Drawing.Image)(resources.GetObject("btnDSales.Image")));
-            this.btnDSales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDSales.Location = new System.Drawing.Point(0, 568);
-            this.btnDSales.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnDSales.Name = "btnDSales";
-            this.btnDSales.Size = new System.Drawing.Size(182, 66);
-            this.btnDSales.TabIndex = 9;
-            this.btnDSales.Text = "ຍອດຂາາຍປະຈຳວັນ";
-            this.btnDSales.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnDSales.UseVisualStyleBackColor = false;
-            this.btnDSales.Click += new System.EventHandler(this.btnDSales_Click);
             // 
             // btnClear
             // 
@@ -744,6 +724,26 @@ namespace POSales
             this.panelSlide.Size = new System.Drawing.Size(7, 66);
             this.panelSlide.TabIndex = 4;
             // 
+            // btnDSales
+            // 
+            this.btnDSales.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(32)))));
+            this.btnDSales.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDSales.FlatAppearance.BorderSize = 0;
+            this.btnDSales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDSales.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDSales.ForeColor = System.Drawing.Color.White;
+            this.btnDSales.Image = ((System.Drawing.Image)(resources.GetObject("btnDSales.Image")));
+            this.btnDSales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDSales.Location = new System.Drawing.Point(0, 568);
+            this.btnDSales.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnDSales.Name = "btnDSales";
+            this.btnDSales.Size = new System.Drawing.Size(182, 66);
+            this.btnDSales.TabIndex = 9;
+            this.btnDSales.Text = "ຍອດຂາາຍປະຈຳວັນ";
+            this.btnDSales.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDSales.UseVisualStyleBackColor = false;
+            this.btnDSales.Click += new System.EventHandler(this.btnDSales_Click);
+            // 
             // Cashier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 29F);
@@ -790,7 +790,6 @@ namespace POSales
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button btnPass;
-        private System.Windows.Forms.Button btnDSales;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnSettle;
         private System.Windows.Forms.Button btnDiscount;
@@ -830,5 +829,6 @@ namespace POSales
         private System.Windows.Forms.DataGridViewImageColumn colReduce;
         private System.Windows.Forms.DataGridViewImageColumn Delete;
         private System.Windows.Forms.Panel panelSlide;
+        private System.Windows.Forms.Button btnDSales;
     }
 }
