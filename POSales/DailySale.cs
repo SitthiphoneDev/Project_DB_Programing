@@ -53,16 +53,19 @@ namespace POSales
             dgvSold.Rows.Clear();
             cn.Open();
 
-            if (cboCashier.Text=="All Cashier")
+            if (cboCashier.Text == "All Cashier")
             {
-                cm = new SqlCommand("select c.id, c.transno, c.pcode, p.pdesc, c.price, c.qty, c.disc, c.total from tbCart as c inner join tbProduct as p on c.pcode = p.pcode where status like 'Sold' and sdate between '" + dtFrom.Value + "' and '" + dtTo.Value + "'", cn);
+                cm = new SqlCommand("select c.id, c.transno, c.pcode, p.pdesc, c.price, c.qty, c.disc, c.total from tbCart as c inner join tbProduct as p on c.pcode = p.pcode where status like 'Sold' and sdate between @fromDate and @toDate", cn);
             }
             else
             {
-                cm = new SqlCommand("select c.id, c.transno, c.pcode, p.pdesc, c.price, c.qty, c.disc, c.total from tbCart as c inner join tbProduct as p on c.pcode = p.pcode where status like 'Sold' and sdate between '" + dtFrom.Value + "' and '" + dtTo.Value + "' and cashier like '" + cboCashier.Text + "'", cn);
+                cm = new SqlCommand("select c.id, c.transno, c.pcode, p.pdesc, c.price, c.qty, c.disc, c.total from tbCart as c inner join tbProduct as p on c.pcode = p.pcode where status like 'Sold' and sdate between @fromDate and @toDate and cashier like @cashier", cn);
+                cm.Parameters.AddWithValue("@cashier", cboCashier.Text);
             }
+            cm.Parameters.AddWithValue("@fromDate", dtFrom.Value);
+            cm.Parameters.AddWithValue("@toDate", dtTo.Value);
             dr = cm.ExecuteReader();
-            while(dr.Read())
+            while (dr.Read())
             {
                 i++;
                 total += double.Parse(dr["total"].ToString());
@@ -90,16 +93,15 @@ namespace POSales
 
         private void DailySale_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode==Keys.Escape)
+            if (e.KeyCode == Keys.Escape)
             {
                 this.Dispose();
             }
         }
-
         private void dgvSold_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             string colName = dgvSold.Columns[e.ColumnIndex].Name;
-            if(colName=="Cancel")
+            if (colName == "Cancel")
             {
                 CancelOrder cancelOrder = new CancelOrder(this);
                 cancelOrder.txtId.Text = dgvSold.Rows[e.RowIndex].Cells[1].Value.ToString();
@@ -116,12 +118,13 @@ namespace POSales
             }
         }
 
+
         private void btnPrint_Click(object sender, EventArgs e)
         {
 
             POSReport report = new POSReport();
             string param = "Date From: " + dtFrom.Value.ToShortDateString() + " To: " + dtTo.Value.ToShortDateString();
-               
+
             if (cboCashier.Text == "All Cashier")
             {
                 report.LoadDailyReport("select c.id, c.transno, c.pcode, p.pdesc, c.price, c.qty, c.disc as discount, c.total from tbCart as c inner join tbProduct as p on c.pcode = p.pcode where status like 'Sold' and sdate between '" + dtFrom.Value + "' and '" + dtTo.Value + "'", param, cboCashier.Text);
