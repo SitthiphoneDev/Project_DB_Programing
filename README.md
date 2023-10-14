@@ -14,7 +14,7 @@
 
  [ກົດລິ້ງ: https://youtu.be/Yu_0bAJSPbs](https://youtu.be/Yu_0bAJSPbs)
 
- ### ລະຫັດເຂົ້າໃຊ້ລະບົບ
+ ## ລະຫັດເຂົ້າໃຊ້ລະບົບ
 
  - **Admin** 
 	 - user: admin
