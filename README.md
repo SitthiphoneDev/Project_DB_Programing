@@ -13,7 +13,7 @@
 
 
 
-## ວິທີໃຊ້ງານ
+## ວິທີການໃຊ້ງານ
 
  [ກົດລິ້ງ: https://youtu.be/Yu_0bAJSPbs](https://youtu.be/Yu_0bAJSPbs)
 
