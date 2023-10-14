@@ -1,4 +1,4 @@
-# ໂປຣເຈັກວິຊາ Database Programing
+## ໂປຣເຈັກວິຊາ Database Programing
 
  - ຊື່ໂປຣເຈັກ: ລະບົບຂາຍ ແລະ ຈັດການຄັງສິນຄ້າ
  - ພາສາ: C#
